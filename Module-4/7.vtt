@@ -1,0 +1,281 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:11.960
+Welcome to this video on Clustering, Dimension Reduction, and Feature Engineering.
+
+2
+00:00:11.960 --> 00:00:16.620
+After watching this video, you will be able to explain clustering, dimension reduction,
+
+3
+00:00:16.620 --> 00:00:21.079
+and feature engineering and how these techniques work together to enhance model performance.
+
+4
+00:00:21.079 --> 00:00:25.239
+You will also learn about dimension reduction and its role in simplifying data structures
+
+5
+00:00:25.239 --> 00:00:26.559
+and improving outcomes.
+
+6
+00:00:26.559 --> 00:00:31.520
+Additionally, you'll analyze the application of dimension reduction in face recognition
+
+7
+00:00:31.520 --> 00:00:34.919
+and explore how clustering can facilitate feature selection.
+
+8
+00:00:34.919 --> 00:00:39.080
+Clustering, dimension reduction, and feature engineering are complementary techniques in
+
+9
+00:00:39.080 --> 00:00:41.060
+machine learning and data science.
+
+10
+00:00:41.060 --> 00:00:46.319
+They work well together to improve model performance, quality, and interpretability.
+
+11
+00:00:46.319 --> 00:00:49.720
+Clustering helps with feature selection and creation while supporting dimension reduction
+
+12
+00:00:49.720 --> 00:00:53.240
+to enhance computational efficiency and scalability.
+
+13
+00:00:53.240 --> 00:00:56.480
+Dimension reduction simplifies the visualization of high-dimensional clustering,
+
+14
+00:00:56.480 --> 00:00:59.360
+aiding feature engineering and improving model quality.
+
+15
+00:00:59.360 --> 00:01:03.040
+It also reduces the number of features required for a data model.
+
+16
+00:01:03.040 --> 00:01:06.799
+Dimension reduction is commonly used as a pre-processing step for clustering,
+
+17
+00:01:06.799 --> 00:01:09.699
+simplifying data structure and improving outcomes.
+
+18
+00:01:09.699 --> 00:01:13.319
+High-dimensional data poses challenges for distance-based clustering algorithms like
+
+19
+00:01:13.319 --> 00:01:15.580
+k-means and DBSCAN.
+
+20
+00:01:15.580 --> 00:01:20.440
+As dimensionality increases, volume expands rapidly, causing data points to become sparse
+
+21
+00:01:20.440 --> 00:01:21.760
+and less similar.
+
+22
+00:01:21.760 --> 00:01:25.479
+This leads to smaller clusters requiring more data to fill gaps.
+
+23
+00:01:25.479 --> 00:01:30.360
+Techniques like PCA, t-SNE, and UMAP are employed to reduce dimensions
+
+24
+00:01:30.360 --> 00:01:33.959
+before applying clustering algorithms, enhancing efficiency.
+
+25
+00:01:33.959 --> 00:01:38.959
+This example uses eigenfaces as input features for supervised face recognition.
+
+26
+00:01:38.959 --> 00:01:41.780
+PCA is performed on an unlabeled face dataset,
+
+27
+00:01:41.780 --> 00:01:47.680
+extracting the top 150 eigenfaces from a total of 966 faces.
+
+28
+00:01:47.680 --> 00:01:54.120
+These 150 eigenfaces form an orthonormal basis for the feature space defined by the face dataset.
+
+29
+00:01:54.120 --> 00:01:57.120
+The input data is then projected onto this eigenface basis,
+
+30
+00:01:57.120 --> 00:02:00.559
+and an SMV is trained to predict faces.
+
+31
+00:02:00.559 --> 00:02:04.940
+Dimensionality reduction techniques preserve the key features for identifying faces while
+
+32
+00:02:04.940 --> 00:02:07.160
+minimizing computational load.
+
+33
+00:02:07.160 --> 00:02:12.600
+The facial recognition task accurately predicts 12 faces, as illustrated in this image.
+
+34
+00:02:12.600 --> 00:02:17.600
+This chart illustrates the quantitative evaluation of the model's quality on the dataset.
+
+35
+00:02:17.600 --> 00:02:22.000
+Clustering results cannot be visualized directly when working with feature spaces beyond three dimensions.
+
+36
+00:02:22.000 --> 00:02:26.320
+However, advanced dimension reduction techniques can project these clustering outcomes into
+
+37
+00:02:26.320 --> 00:02:31.039
+two or three dimensions, significantly improving visual interpretation.
+
+38
+00:02:31.039 --> 00:02:36.160
+Methods such as PCA, t-SNE, and UMAP allow for meaningful projections of higher-dimensional
+
+39
+00:02:36.160 --> 00:02:38.740
+clusters into two or three dimensions.
+
+40
+00:02:38.740 --> 00:02:43.720
+This enables the creation of scatter plots that facilitate the visualization of clustering quality.
+
+41
+00:02:43.720 --> 00:02:47.600
+Reducing the dimensionality of data often enhances cluster interoperability, making
+
+42
+00:02:47.600 --> 00:02:53.119
+it easier to identify key patterns or relationships that may be obscured in higher dimensions.
+
+43
+00:02:53.119 --> 00:02:56.419
+Clustering techniques can be applied to data observations and features.
+
+44
+00:02:56.419 --> 00:02:59.000
+By clustering similar or correlated features,
+
+45
+00:02:59.000 --> 00:03:02.039
+you can identify sets that provide redundant information.
+
+46
+00:03:02.039 --> 00:03:05.880
+This enables feature selection by choosing a representative feature from each cluster,
+
+47
+00:03:05.880 --> 00:03:09.600
+reducing the total number of features while preserving valuable information.
+
+48
+00:03:09.600 --> 00:03:11.600
+Clustering can help with feature engineering decisions.
+
+49
+00:03:11.600 --> 00:03:16.699
+For instance, if clusters indicate distinct subgroups in data, specific interactions between
+
+50
+00:03:16.699 --> 00:03:20.720
+features or certain transformations could benefit predictive modeling.
+
+51
+00:03:20.720 --> 00:03:25.160
+Here is a simple simulation using a clustering method like k-means to cluster features.
+
+52
+00:03:25.160 --> 00:03:28.800
+Each of the five features plotted here was generated with a random normal distribution
+
+53
+00:03:28.800 --> 00:03:34.639
+with three different mean values, 1, 5, and 10, and variances of 1, except for feature
+
+54
+00:03:34.639 --> 00:03:37.279
+number 4, which has a variance of 2.
+
+55
+00:03:37.279 --> 00:03:41.199
+As you can see visually, features 1 through 3 are statistically very similar, with the
+
+56
+00:03:41.199 --> 00:03:42.919
+same mean and variance.
+
+57
+00:03:42.919 --> 00:03:44.839
+Features 4 and 5 stand out.
+
+58
+00:03:44.839 --> 00:03:50.240
+Indeed, running k-means on the features, not the data values, with k equals 3 correctly,
+
+59
+00:03:50.240 --> 00:03:51.720
+clustering the features.
+
+60
+00:03:51.720 --> 00:03:56.119
+Cluster 1 contains redundant features, so if you were to do any modeling with this dataset,
+
+61
+00:03:56.119 --> 00:03:58.059
+you would want to select only one of them.
+
+62
+00:03:58.059 --> 00:04:01.919
+This is an example of implementing feature selection, part of feature engineering.
+
+63
+00:04:01.919 --> 00:04:04.479
+You can also view it as dimension reduction.
+
+64
+00:04:04.479 --> 00:04:09.339
+In this video, you learned to explain clustering, dimension reduction, and feature engineering
+
+65
+00:04:09.339 --> 00:04:14.699
+and how they work well together to improve model performance, quality, and interpretability.
+
+66
+00:04:14.699 --> 00:04:18.700
+Explain dimension reduction and how it is used as a preprocessing step for clustering,
+
+67
+00:04:18.700 --> 00:04:21.920
+simplifying data structure, and improving outcomes.
+
+68
+00:04:21.920 --> 00:04:27.420
+Analyze how dimension reduction is used for face recognition with eigenfaces as input features.
+
+69
+00:04:27.420 --> 00:04:32.339
+Analyze how clustering can be used for feature selection to identify sets that provide redundant information.
+
+70
+00:04:32.339 --> 00:04:36.140
+And finally, analyze feature selection using k-means to cluster features.

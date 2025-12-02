@@ -1,0 +1,506 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:10.039
+Welcome to Data Leakage and Other Pitfalls.
+
+2
+00:00:10.039 --> 00:00:13.699
+After watching this video, you will be
+able to define data leakage and explain how to
+
+3
+00:00:13.699 --> 00:00:14.800
+mitigate it.
+
+4
+00:00:14.800 --> 00:00:19.799
+You will also be able to describe feature
+importance interpretation and other modeling pitfalls
+
+5
+00:00:19.799 --> 00:00:23.000
+Imagine you want to train a model to predict house prices.
+
+6
+00:00:23.000 --> 00:00:27.040
+Along with historical data like square footage,
+you engineer a feature using the average of
+
+7
+00:00:27.040 --> 00:00:30.159
+the actual home prices over the entire dataset.
+
+8
+00:00:30.159 --> 00:00:33.319
+You are pleased to see how well your model
+performs on the test data.
+
+9
+00:00:33.319 --> 00:00:37.479
+However, your model was taught using data
+that was leaked from the future and that it
+
+10
+00:00:37.479 --> 00:00:39.279
+can't access in production.
+
+11
+00:00:39.279 --> 00:00:42.840
+Without this access, deploying your model
+won't perform as well as you thought it
+
+12
+00:00:42.840 --> 00:00:45.200
+would given the test results.
+
+13
+00:00:45.200 --> 00:00:48.919
+Data leakage occurs when your model's
+training data includes information that would not be
+
+14
+00:00:48.919 --> 00:00:53.000
+available in the real world,
+such as unseen data after deployment.
+
+15
+00:00:53.000 --> 00:00:57.159
+Data leakage deceives your model,
+leading it to perform misleadingly well during training
+
+16
+00:00:57.159 --> 00:00:58.520
+and validation.
+
+17
+00:00:58.520 --> 00:01:02.520
+Since your test dataset will also contain
+this leaked data, evaluation won't detect
+
+18
+00:01:02.520 --> 00:01:06.800
+the poor generalizability until you implement
+your model into production.
+
+19
+00:01:06.800 --> 00:01:10.720
+Data snooping happens when the training set
+contains information about the testing set
+
+20
+00:01:10.720 --> 00:01:13.839
+or the model sees data it shouldn't have access to.
+
+21
+00:01:13.839 --> 00:01:18.319
+This can occur when you include future
+information when predicting outcomes, such as tomorrow's
+
+22
+00:01:18.319 --> 00:01:20.040
+stock price, to predict today's.
+
+23
+00:01:20.040 --> 00:01:23.919
+It can also take place while engineering
+new features using the entire dataset.
+
+24
+00:01:23.919 --> 00:01:28.779
+Data processing pipelines should be run
+independently on the training and testing data.
+
+25
+00:01:28.779 --> 00:01:33.699
+To mitigate the data leakage risk, you
+must carefully select training and testing data.
+
+26
+00:01:33.699 --> 00:01:37.400
+If any future data leaks into the training data,
+you have a problem.
+
+27
+00:01:37.400 --> 00:01:39.900
+Let's look at what mitigation measures you can take.
+
+28
+00:01:39.900 --> 00:01:44.440
+Avoid features like global averages or other
+statistics derived from the entire dataset.
+
+29
+00:01:44.440 --> 00:01:49.160
+Ensure proper separation between your training,
+validation, and test sets, avoiding overlap
+
+30
+00:01:49.160 --> 00:01:50.680
+or contamination.
+
+31
+00:01:50.680 --> 00:01:54.059
+Ensure that none of your features contain
+unavailable information when making real-world
+
+32
+00:01:54.059 --> 00:01:56.199
+predictions with your deployed model.
+
+33
+00:01:56.199 --> 00:02:00.360
+Pay attention to how you implement cross-validation
+to ensure you aren't leaking data across
+
+34
+00:02:00.360 --> 00:02:02.279
+different validation folds.
+
+35
+00:02:02.279 --> 00:02:05.400
+This is particularly important when using
+time-dependent data.
+
+36
+00:02:05.400 --> 00:02:10.240
+In this case, you should use a time-series
+split rather than the usual train-test split.
+
+37
+00:02:10.240 --> 00:02:14.119
+To avoid leakage when using cross-validation
+to tune your model's hyperparameters, fit
+
+38
+00:02:14.119 --> 00:02:17.979
+your pipeline separately to each training fold
+and apply the resultant fitted pipeline
+
+39
+00:02:17.979 --> 00:02:20.860
+to its corresponding validation fold.
+
+40
+00:02:20.860 --> 00:02:24.820
+Assuming you have imported the required libraries,
+loaded your data, and taken precautions to
+
+41
+00:02:24.820 --> 00:02:30.139
+ensure you don't already have any data leakage,
+consider this Python code for training a classifier.
+
+42
+00:02:30.139 --> 00:02:34.039
+First, you split your data into training and test data sets.
+
+43
+00:02:34.039 --> 00:02:38.539
+For this example, assume this is a valid
+method for your dataset and no temporal or other
+
+44
+00:02:38.539 --> 00:02:40.740
+leakage contamination will occur.
+
+45
+00:02:40.740 --> 00:02:46.619
+Then, define a pipeline of three models,
+a scalar, PCA, and a KNN classifier.
+
+46
+00:02:46.699 --> 00:02:51.539
+Next, a parameter grid consisting of a set of
+values is set up to try for a number of
+
+47
+00:02:51.539 --> 00:02:54.820
+PCA components and the number of neighbors in KNN.
+
+48
+00:02:54.820 --> 00:02:59.820
+Now, optimize your model by performing a
+grid search using cross-validation.
+
+49
+00:02:59.820 --> 00:03:03.660
+It is important to notice here that the
+pipeline is input to the grid search.
+
+50
+00:03:03.660 --> 00:03:07.500
+This ensures that the pipeline is applied
+separately to each training fold and its corresponding
+
+51
+00:03:07.500 --> 00:03:08.940
+validation set.
+
+52
+00:03:08.940 --> 00:03:13.220
+After finding the best parameters,
+you evaluate your final model on the first set you held
+
+53
+00:03:13.220 --> 00:03:17.660
+back to get an unbiased estimate of your
+model's performance in the wild.
+
+54
+00:03:17.660 --> 00:03:21.740
+If your data is temporal, where the order of
+your data points in time is crucial, you
+
+55
+00:03:21.740 --> 00:03:25.059
+want to avoid randomly splitting it into training and test sets.
+
+56
+00:03:25.059 --> 00:03:29.179
+Instead, you need to split your data into
+sequential training and testing sets, ensuring
+
+57
+00:03:29.179 --> 00:03:32.339
+that the training set always precedes the test set.
+
+58
+00:03:32.339 --> 00:03:35.699
+Modifying your code to implement time-series
+cross-validation is easy.
+
+59
+00:03:35.699 --> 00:03:39.940
+Instead of using train-test-split, you
+would use time-series-split and specify that you
+
+60
+00:03:39.940 --> 00:03:44.699
+want to use this cross-validation method
+during hyperparameter tuning by setting CV
+
+61
+00:03:44.699 --> 00:03:47.539
+equals TSCV in grid-search-cv.
+
+62
+00:03:47.539 --> 00:03:52.899
+In this example, Scikit-learn's time-series-split
+splits your data into four equal-sized folds,
+
+63
+00:03:52.899 --> 00:03:54.580
+retaining their temporal order.
+
+64
+00:03:54.580 --> 00:03:58.699
+Each split uses a portion of the data from
+the past for training and the remaining future
+
+65
+00:03:58.699 --> 00:04:00.300
+data for validation.
+
+66
+00:04:00.300 --> 00:04:06.059
+The training set expands to include more
+data with each split while the test set shrinks.
+
+67
+00:04:06.059 --> 00:04:09.979
+Identifying some common pitfalls and assessing
+feature importances provided by a trained
+
+68
+00:04:09.979 --> 00:04:12.380
+machine learning model is essential.
+
+69
+00:04:12.380 --> 00:04:16.739
+Highly correlated or redundant features used
+in modeling result in shared importances,
+
+70
+00:04:16.739 --> 00:04:18.820
+which lowers their apparent influence.
+
+71
+00:04:18.820 --> 00:04:23.220
+Further, blindly selecting what seems to be
+the most important features to use in subsequent
+
+72
+00:04:23.220 --> 00:04:27.660
+modeling can cause a significant feature to be
+selected to degrade your results.
+
+73
+00:04:27.660 --> 00:04:31.940
+Some algorithms, like linear regression,
+don't naturally account for the scale of features
+
+74
+00:04:31.940 --> 00:04:35.500
+so that unskilled data can distort importance rankings.
+
+75
+00:04:35.500 --> 00:04:39.420
+Feature importance indicates correlation, not causation.
+
+76
+00:04:39.420 --> 00:04:42.140
+Important features don't necessarily drive outcomes.
+
+77
+00:04:42.140 --> 00:04:46.299
+Some models rank individual feature importance
+without accounting for interactions, potentially
+
+78
+00:04:46.299 --> 00:04:49.260
+underestimating or overestimating their combined impact.
+
+79
+00:04:49.260 --> 00:04:52.579
+For example, suppose you have two features
+that don't provide enough information for
+
+80
+00:04:52.579 --> 00:04:54.540
+linear regression to perform well.
+
+81
+00:04:54.540 --> 00:04:58.420
+Still, their interaction or product boosts the
+linear regression performance.
+
+82
+00:04:58.420 --> 00:05:04.700
+Then, a nonlinear algorithm like random forest
+regression could implicitly detect this interaction,
+
+83
+00:05:04.700 --> 00:05:06.140
+leading to good performance.
+
+84
+00:05:06.140 --> 00:05:10.339
+For linear regression, the separate features
+would erroneously seem unimportant.
+
+85
+00:05:10.339 --> 00:05:14.299
+At the same time, their importance would be
+shared for random forest, and you would have
+
+86
+00:05:14.299 --> 00:05:18.739
+no idea that their product is the crucial explanatory variable.
+
+87
+00:05:18.739 --> 00:05:21.500
+Here are some common modeling pitfalls to consider.
+
+88
+00:05:21.500 --> 00:05:25.019
+Using raw data without appropriate feature
+selection or transformation prevents you from
+
+89
+00:05:25.019 --> 00:05:26.980
+discovering your optimal model.
+
+90
+00:05:26.980 --> 00:05:31.540
+Choosing the wrong evaluation metric or
+misinterpreting metrics can mislead your evaluation.
+
+91
+00:05:31.540 --> 00:05:35.700
+Failing to address class imbalances and
+classification problems biases your predictions towards
+
+92
+00:05:35.700 --> 00:05:37.859
+the majority classes.
+
+93
+00:05:37.859 --> 00:05:41.619
+Automated machine learning tools can be powerful,
+but you still need to understand your data
+
+94
+00:05:41.619 --> 00:05:43.899
+and the model the system creates for you.
+
+95
+00:05:43.899 --> 00:05:48.339
+It is crucial to understand that if your
+model lacks features that have a causal impact on
+
+96
+00:05:48.339 --> 00:05:53.239
+the target variable, then the what-if scenarios
+generated by the model may be invalid.
+
+97
+00:05:53.239 --> 00:05:56.899
+Without causal relationships, your model's
+predictions based on hypothetical changes
+
+98
+00:05:56.899 --> 00:05:59.480
+can be highly misleading or inaccurate.
+
+99
+00:05:59.480 --> 00:06:03.399
+In this video, you learned that data leakage
+occurs when your model's training data includes
+
+100
+00:06:03.399 --> 00:06:08.640
+information that would not be available in the
+real world or unseen data after deployment.
+
+101
+00:06:08.640 --> 00:06:12.959
+You can mitigate data leakage by avoiding
+overlap or contamination between training,
+
+102
+00:06:12.959 --> 00:06:18.000
+validation, and test sets, ensuring training
+features are available for real-world deployment,
+
+103
+00:06:18.000 --> 00:06:21.559
+using cross-validation carefully, and hyperparameter tuning.
+
+104
+00:06:21.559 --> 00:06:25.079
+Some common pitfalls in assessing feature
+importances provided by a trained machine
+
+105
+00:06:25.079 --> 00:06:30.559
+learning model are feature redundancy, scale sensitivity,
+assuming causation, and overlooking
+
+106
+00:06:30.559 --> 00:06:32.279
+feature interactions.
+
+107
+00:06:32.279 --> 00:06:36.640
+Other modeling pitfalls include selecting
+inappropriate features, misinterpreting evaluation
+
+108
+00:06:36.640 --> 00:06:41.760
+metrics, ignoring class imbalance, blind reliance
+on automation, and performing what-if scenarios
+
+109
+00:06:41.760 --> 00:06:43.320
+based on non-causal data.

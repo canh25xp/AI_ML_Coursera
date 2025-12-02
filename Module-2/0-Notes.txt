@@ -1,0 +1,22 @@
+In this module, you will explore two foundational statistical modeling methods, linear regression and logistic regression, which are considered classical machine learning models. Linear regression, often applied in real-world problem-solving, models a linear relationship between independent variables and a dependent variable. Logistic regression, an extension of linear regression, functions as a classifier and can handle nonlinear relationships through input transformation. By implementing these models, you'll gain insight into their limitations and better understand the advancements offered by modern machine learning models.
+Learning Objectives
+Describe how to train a logistic regression model
+Explain how logistic regression is used
+Describe logistic regression
+Demonstrate applications of nonlinear regression
+Describe polynomial regression
+Describe nonlinear regression
+List the pitfalls of multiple linear regression
+Compare multiple linear regression and simple linear regression
+Describe multiple linear regression
+Explain how simple linear regression works
+Describe simple linear regression
+Explain applications of regression
+Compare simple and multiple regression
+Define regression as a supervised learning approach
+Apply scikit-learn to implement, create, train, and test a simple linear regression model on real data
+Utilize scikit-learn to create and implement a multiple linear regression model, then train and test it on real data
+Apply scikit-learn to implement logistic regression for classification and analyze the results using a confusion matrix
+Explain why data is important for machine learning (ML) models
+List common languages for ML
+Describe different types of machine learning tools

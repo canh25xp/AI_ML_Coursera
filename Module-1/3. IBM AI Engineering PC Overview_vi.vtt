@@ -1,0 +1,397 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:11.640
+Chào mừng bạn đến với video Tổng quan về Chứng chỉ Chuyên nghiệp IBM (PC),
+
+2
+00:00:11.640 --> 00:00:15.319
+giới thiệu hai PC mà khóa học này là một phần của nó.
+
+3
+00:00:15.319 --> 00:00:21.520
+Khóa học này là một phần của cả IBM AI Engineering PC và IBM Data Science PC.
+
+4
+00:00:21.520 --> 00:00:24.200
+Mỗi chương trình cung cấp một trọng tâm duy nhất.
+
+5
+00:00:24.200 --> 00:00:29.159
+Data Science PC tập trung vào các kỹ năng cho sự nghiệp khoa học dữ liệu, bao gồm làm sạch dữ liệu
+
+6
+00:00:29.159 --> 00:00:35.919
+, phân tích và mô hình hóa dự đoán với các công cụ như Python, SQL, Pandas và NumPy để
+
+7
+00:00:35.919 --> 00:00:38.360
+giúp bạn xây dựng danh mục đầu tư sẵn sàng cho công việc.
+
+8
+00:00:38.360 --> 00:00:43.639
+AI Engineering PC chuẩn bị cho các nhà khoa học dữ liệu, kỹ sư máy học và kỹ sư phần mềm
+
+9
+00:00:43.639 --> 00:00:45.439
+cho kỹ thuật AI.
+
+10
+00:00:45.439 --> 00:00:51.439
+Bạn sẽ học cách xây dựng, đào tạo và triển khai các mô hình, bao gồm các mô hình ngôn ngữ lớn (LLM), sử dụng
+
+11
+00:00:51.439 --> 00:00:56.799
+Python và các thư viện như SciPy, Keras, PyTorch và TensorFlow.
+
+12
+00:00:56.799 --> 00:01:02.240
+Nếu bạn đang hoàn thành IBM Data Science PC, AI Engineering PC là một
+
+13
+00:01:02.240 --> 00:01:05.559
+bước tiếp theo tuyệt vời để mở rộng chuyên môn AI của bạn.
+
+14
+00:01:05.559 --> 00:01:09.160
+Cả hai chương trình đều nhấn mạnh việc học thực hành với các dự án và phòng thí nghiệm,
+
+15
+00:01:09.160 --> 00:01:11.319
+xây dựng trải nghiệm thực tế.
+
+16
+00:01:11.319 --> 00:01:17.279
+Những chứng chỉ này với chương trình giảng dạy toàn diện chuẩn bị cho bạn sự nghiệp trong AI hoặc khoa học dữ liệu.
+
+17
+00:01:17.279 --> 00:01:22.239
+IBM Data Science PC phù hợp cho người mới bắt đầu, không có điều kiện tiên quyết và được thiết kế cho
+
+18
+00:01:22.239 --> 00:01:27.160
+bất kỳ ai quan tâm đến phân tích dữ liệu, ML và mô hình thống kê.
+
+19
+00:01:27.160 --> 00:01:32.879
+IBM AI Engineering PC lý tưởng cho người học có kiến thức về Python, phân tích dữ liệu và kiến thức
+
+20
+00:01:32.879 --> 00:01:38.239
+cơ bản về AI tổng hợp, cũng như kinh nghiệm về khoa học dữ liệu, học máy (ML)
+
+21
+00:01:38.239 --> 00:01:40.019
+hoặc kỹ thuật phần mềm.
+
+22
+00:01:45.440 --> 00:01:51.839
+IBM AI Engineering PC bao gồm các chủ đề và kỹ năng cần thiết cho
+
+23
+00:01:51.839 --> 00:01:56.230
+vai trò kỹ thuật AI cấp đầu vào, bao gồm Giới thiệu về AI và Deep Learning, ML và Deep Learning Framework, Học tập có giám sát và
+
+24
+00:01:56.230 --> 00:02:02.839
+không giám sát, Mạng nơron, Mạng Convolutional và Mạng lặp lại,
+
+25
+00:02:02.839 --> 00:02:07.000
+Mô hình AI Generative và LLM, và làm việc với các thư viện Python như SciPy, SciKit-learn, Keras, PyTorch và TensorFlow.
+
+26
+00:02:07.000 --> 00:02:11.580
+Mỗi chủ đề tương ứng với một khóa học trực tuyến tự theo nhịp độ bao gồm 2-6 mô-đun.
+
+27
+00:02:11.580 --> 00:02:14.460
+Hoàn thành các khóa học này và các dự án bắt
+
+28
+00:02:14.460 --> 00:02:18.020
+buộc sẽ giúp bạn có được Chứng chỉ Chuyên nghiệp Kỹ thuật AI IBM. Hành
+
+29
+00:02:18.020 --> 00:02:21.070
+trình Chứng chỉ Chuyên nghiệp này sẽ giới thiệu
+
+30
+00:02:21.070 --> 00:02:23.919
+cho bạn những nguyên tắc cơ bản của học máy bằng Python.
+
+31
+00:02:23.919 --> 00:02:29.360
+Bạn sẽ học cách triển khai các thuật toán như hồi quy tuyến tính, hồi quy logistic
+
+32
+00:02:29.360 --> 00:02:33.039
+, cây quyết định và hơn thế nữa để xây dựng các mô hình dự đoán.
+
+33
+00:02:33.039 --> 00:02:37.600
+Cuối cùng, bạn sẽ hiểu các khái niệm chính của học tập có giám sát và có thể áp dụng các
+
+34
+00:02:37.600 --> 00:02:40.360
+mô hình này để giải quyết các vấn đề trong thế giới thực. Những kiến thức
+
+35
+00:02:40.360 --> 00:02:45.759
+cơ bản về học sâu và kiến trúc mạng nơ-ron là điều cần thiết cho bất kỳ chuyên gia AI nào.
+
+36
+00:02:45.759 --> 00:02:50.500
+Bạn sẽ nghiên cứu các mô hình học sâu không được giám sát như bộ mã hóa tự động và
+
+37
+00:02:50.500 --> 00:02:55.720
+máy Boltzmann bị hạn chế đồng thời tìm hiểu về các mạng kết hợp và lặp lại và xây dựng các mô hình và mạng
+
+38
+00:02:55.720 --> 00:02:59.960
+học sâu bằng cách sử dụng thư viện Keras.
+
+39
+00:02:59.960 --> 00:03:04.759
+Khám phá các kỹ thuật học sâu nâng cao với Keras và TensorFlow 2.x, nơi bạn sẽ
+
+40
+00:03:04.759 --> 00:03:10.460
+tạo các lớp và mô hình tùy chỉnh và tích hợp Keras với TensorFlow để nâng cao chức năng.
+
+41
+00:03:15.839 --> 00:03:17.460
+Phát triển mạng nơ-ron chập (CNN) và các mô hình biến áp cho dữ liệu tuần tự và chuỗi thời gian.
+
+42
+00:03:22.960 --> 00:03:28.160
+Khóa học cũng đi sâu vào việc học không giám sát để tối ưu hóa mô hình, các vòng đào tạo tùy chỉnh,
+
+43
+00:03:28.160 --> 00:03:30.880
+mạng Q sâu (DQNs) để học tăng cường và giới thiệu về mô hình tổng hợp và các nguyên tắc học tập củng cố.
+
+44
+00:03:30.880 --> 00:03:36.399
+Phát triển các kỹ năng cần thiết trong PyTorch để thiết kế, đào tạo và tối ưu hóa mạng nơ-ron.
+
+45
+00:03:36.399 --> 00:03:41.960
+Bạn sẽ khám phá các tensor 2D, đạo hàm, hồi quy tuyến tính và tính toán tổn thất, cùng với
+
+46
+00:03:41.960 --> 00:03:47.440
+xử lý hàng loạt, giảm gradient và hồi quy logistic, các kỹ thuật chính để xây dựng mô hình
+
+47
+00:03:47.440 --> 00:03:50.960
+trong các lĩnh vực như nhận dạng hình ảnh và phân tích dự đoán.
+
+48
+00:03:50.960 --> 00:03:56.199
+Tiếp theo, bạn sẽ tiến tới các kỹ thuật học sâu phức tạp với PyTorch, bao gồm hồi quy Softmax
+
+49
+00:03:56.199 --> 00:04:01.559
+, mạng nơ-ron đa lớp và các kiến trúc chuyên biệt như CNN.
+
+50
+00:04:01.559 --> 00:04:06.919
+Bạn sẽ giải quyết quá phù hợp, lan truyền ngược và gradient biến mất, đồng thời áp dụng các
+
+51
+00:04:06.919 --> 00:04:11.479
+chức năng kích hoạt như sigmoid, tanh và ReLU.
+
+52
+00:04:11.479 --> 00:04:14.480
+Các dự án và bài tập thực hành sẽ xây dựng chuyên môn
+
+53
+00:04:14.480 --> 00:04:18.000
+trong việc tạo ra các mô hình mạnh mẽ cho các ứng dụng trong thế giới thực.
+
+54
+00:04:18.000 --> 00:04:23.359
+Dự án capstone thách thức bạn áp dụng chuyên môn học sâu vào một vấn đề trong thế giới thực.
+
+55
+00:04:23.359 --> 00:04:29.190
+Chọn một thư viện, xử lý trước dữ liệu, xây dựng và kiểm tra một mô hình và xác thực hiệu suất của nó.
+
+56
+00:04:29.190 --> 00:04:32.350
+Một báo cáo dự án sẽ thể hiện hiệu quả của mô hình của
+
+57
+00:04:32.350 --> 00:04:35.359
+bạn và trình độ học tập sâu của bạn cho danh mục đầu tư của bạn.
+
+58
+00:04:35.359 --> 00:04:43.000
+Tiếp theo, bạn sẽ khám phá các loại và ứng dụng của các mô hình AI tổng hợp, bao gồm RNN, máy biến áp, GAN
+
+59
+00:04:43.000 --> 00:04:47.079
+, VAE và mô hình khuếch tán.
+
+60
+00:04:47.079 --> 00:04:52.920
+Hiểu sự khác biệt chính trong phương pháp đào tạo, kỹ thuật mã hóa và quy trình chuẩn bị dữ liệu.
+
+61
+00:04:53.320 --> 00:04:59.160
+Có được các kỹ năng để làm việc với các mô hình ngôn ngữ lớn, LLM, như GPT và BERT.
+
+62
+00:04:59.160 --> 00:05:02.600
+Và học cách sử dụng các trình mã hóa và trình tải dữ liệu, chuẩn bị cho bạn triển khai
+
+63
+00:05:02.600 --> 00:05:06.519
+AI tổng hợp với các thư viện như Hugging Face.
+
+64
+00:05:13.679 --> 00:05:15.600
+Đi sâu vào các mô hình NLP cơ bản, khám phá mã hóa, nhúng và Word2Vec để biểu diễn văn bản.
+
+65
+00:05:15.600 --> 00:05:20.399
+Xây dựng và tối ưu hóa mạng nơ-ron cho các tác vụ như phân loại tài liệu và tạo văn bản
+
+66
+00:05:20.399 --> 00:05:23.559
+bằng PyTorch và TorchText.
+
+67
+00:05:23.559 --> 00:05:29.040
+Áp dụng mô hình N-gram và trình tự sang trình tự cho các ứng dụng như dịch ngôn ngữ
+
+68
+00:05:29.040 --> 00:05:33.440
+và đánh giá chất lượng văn bản được tạo bằng số liệu BLEU.
+
+69
+00:05:33.440 --> 00:05:39.720
+Có được chuyên môn về các mô hình dựa trên máy biến áp như GPT và BERT, tập trung vào phân loại văn bản,
+
+70
+00:05:39.720 --> 00:05:45.720
+mã hóa vị trí, nhúng từ và cơ chế chú ý để hiểu ngữ cảnh.
+
+71
+00:05:45.880 --> 00:05:50.150
+Đi sâu vào sự chú ý nhiều đầu và áp dụng GPT để dịch ngôn ngữ bằng cách
+
+72
+00:05:50.150 --> 00:05:52.260
+sử dụng mô hình dựa trên bộ giải mã.
+
+73
+00:05:52.260 --> 00:05:55.300
+Khám phá mã hóa hai chiều của BERT với các kỹ thuật
+
+74
+00:05:55.300 --> 00:06:00.340
+như Mô hình hóa ngôn ngữ khối (MLM) và Dự đoán câu tiếp theo (NSP)
+
+75
+00:06:00.340 --> 00:06:05.170
+và triển khai các mô hình này trong PyTorch cho các tác vụ ngôn ngữ phức tạp.
+
+76
+00:06:05.170 --> 00:06:08.510
+Khám phá các kỹ thuật tinh chỉnh tiên tiến cho máy biến áp
+
+77
+00:06:08.510 --> 00:06:11.840
+bằng cách sử dụng các khung như Hugging Face và PyTorch.
+
+78
+00:06:11.840 --> 00:06:15.990
+Học cách tối ưu hóa các mô hình ngôn ngữ lớn (LLM) với các phương pháp như Điều
+
+79
+00:06:16.493 --> 00:06:22.165
+chỉnh thông số hiệu quả (PEFT), Thích ứng thứ hạng thấp (LORA), Thích ứng thứ hạng thấp định lượng (QLORA)
+
+80
+00:06:22.165 --> 00:06:26.200
+và nhắc nhở.
+
+81
+00:06:26.200 --> 00:06:31.600
+Có được kinh nghiệm thực hành trong các phòng thí nghiệm trực tuyến, bao gồm tải, đào tạo trước và tinh chỉnh các mô hình
+
+82
+00:06:31.600 --> 00:06:34.440
+để nâng cao hiệu suất cho các nhiệm vụ cụ thể.
+
+83
+00:06:34.440 --> 00:06:38.980
+Tinh chỉnh kỹ năng của bạn trong việc tinh chỉnh LLM với phản hồi của con người và sở thích trực tiếp.
+
+84
+00:06:38.980 --> 00:06:42.840
+Khám phá điều chỉnh hướng dẫn với Hugging Face, mô hình hóa phần thưởng
+
+85
+00:06:44.040 --> 00:06:47.480
+và các kỹ thuật học tập tăng cường như RLHF và PPO.
+
+86
+00:06:47.480 --> 00:06:53.079
+Có được kinh nghiệm thực hành trong các phòng thí nghiệm trực tuyến tập trung vào mô hình hóa phần thưởng, PPO và DPO để tối ưu hóa
+
+87
+00:06:53.079 --> 00:06:56.380
+hiệu suất LLM cho các ứng dụng cụ thể theo nhiệm vụ.
+
+88
+00:06:56.380 --> 00:07:03.119
+Khám phá các khái niệm Generation Augmented Retrieval (RAG), Kỹ thuật nhắc nhở và LangChain.
+
+89
+00:07:03.119 --> 00:07:07.880
+Tìm hiểu cách RAG tích hợp dữ liệu bên ngoài và các trình mã hóa cho các phản hồi động.
+
+90
+00:07:07.880 --> 00:07:14.120
+Có được kinh nghiệm thực tế với các công cụ, thành phần và LLM của LangChain để phát triển các ứng dụng trong thế giới thực.
+
+91
+00:07:14.120 --> 00:07:19.920
+Áp dụng những kỹ năng này trong các phòng thí nghiệm trực tuyến và một dự án cuối cùng để có trải nghiệm thực tế, sẵn sàng phỏng vấn.
+
+92
+00:07:19.920 --> 00:07:22.358
+Cuối cùng, trong khóa học dựa trên dự án ứng dụng,
+
+93
+00:07:22.358 --> 00:07:27.363
+bạn sẽ nâng cao kiến thức của mình về trình tải tài liệu LangChain, áp dụng các chiến lược chia văn bản và sử dụng cơ sở dữ liệu
+
+94
+00:07:27.363 --> 00:07:31.710
+watsonx và vector để lưu trữ và truy xuất tài liệu.
+
+95
+00:07:31.710 --> 00:07:37.030
+Phát triển bot QA với RAG và tạo giao diện Gradio để tương tác mô hình.
+
+96
+00:07:37.030 --> 00:07:41.530
+Cuối cùng, bạn sẽ có một dự án giới thiệu các kỹ năng AI tổng hợp của bạn cho các cuộc phỏng vấn.
+
+97
+00:07:41.530 --> 00:07:45.850
+Khi bạn tiến bộ, các câu đố và dự án đánh giá sự hiểu biết của bạn về tài liệu,
+
+98
+00:07:45.850 --> 00:07:50.279
+góp phần vào việc bạn hoàn thành khóa học và kiếm được chứng chỉ chuyên môn.
+
+99
+00:07:50.279 --> 00:07:52.180
+Chúc các bạn những điều tốt đẹp nhất trên hành trình này!

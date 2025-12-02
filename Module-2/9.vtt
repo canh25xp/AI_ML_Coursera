@@ -1,0 +1,397 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:10.300
+Welcome to training a logistic regression model.
+
+2
+00:00:10.300 --> 00:00:14.180
+After watching this video, you will be able to describe how to train a logistic regression
+
+3
+00:00:14.180 --> 00:00:15.180
+model.
+
+4
+00:00:15.180 --> 00:00:19.600
+You will also be able to explain the features of the gradient descent and stochastic gradient
+
+5
+00:00:19.600 --> 00:00:21.100
+descent method.
+
+6
+00:00:21.100 --> 00:00:25.139
+In logistical regression training, you look for the best parameters that map the input
+
+7
+00:00:25.139 --> 00:00:27.459
+features to the target outcomes.
+
+8
+00:00:27.459 --> 00:00:30.719
+The objective is to predict classes with minimal error.
+
+9
+00:00:30.719 --> 00:00:35.819
+The training process seeks to find a set of parameters, also known as theta, that minimizes
+
+10
+00:00:35.819 --> 00:00:37.220
+the cost function.
+
+11
+00:00:37.220 --> 00:00:41.220
+The process of training a logistical regression model comprises several steps.
+
+12
+00:00:41.220 --> 00:00:45.279
+First, you have to choose a starting set of parameters called theta.
+
+13
+00:00:45.279 --> 00:00:46.860
+This can be a random choice.
+
+14
+00:00:46.860 --> 00:00:51.700
+You then predict the probability that the class is 1 for each observation of your data.
+
+15
+00:00:51.700 --> 00:00:56.520
+The next step is to measure the error between the predicted classes and the actual classes.
+
+16
+00:00:56.520 --> 00:00:58.939
+This error is called a cost function.
+
+17
+00:00:58.939 --> 00:01:02.200
+You then determine a new theta that reduces the prediction error.
+
+18
+00:01:02.200 --> 00:01:06.480
+Finally, you need to repeat the process until you reach a small enough value for the log
+
+19
+00:01:06.480 --> 00:01:09.639
+loss or a specified maximum number of iterations.
+
+20
+00:01:09.639 --> 00:01:13.099
+Next, let's understand optimal logistic regression.
+
+21
+00:01:13.099 --> 00:01:17.500
+The process of creating a decision boundary by combining a linear model y-hat in terms
+
+22
+00:01:17.500 --> 00:01:22.959
+of parameters theta with a sigmoid function yields a binary classification model or what
+
+23
+00:01:22.959 --> 00:01:26.279
+might be called a preliminary logistic regression.
+
+24
+00:01:26.279 --> 00:01:31.120
+The model is called preliminary because it's not necessarily the best logistic regression
+
+25
+00:01:31.120 --> 00:01:32.120
+model.
+
+26
+00:01:32.120 --> 00:01:35.879
+The best logistic regression model can only be achieved after the first pass.
+
+27
+00:01:35.879 --> 00:01:39.080
+The model parameters, theta, need to be found.
+
+28
+00:01:39.080 --> 00:01:41.800
+An optimization step finds the best parameters.
+
+29
+00:01:41.800 --> 00:01:45.919
+To achieve optimization, you need a metric that determines the model's goodness of fit
+
+30
+00:01:45.919 --> 00:01:47.959
+for a given set of parameters.
+
+31
+00:01:47.959 --> 00:01:52.879
+The metric for optimizing logistic regression is a cost function called log loss, which
+
+32
+00:01:52.879 --> 00:01:54.419
+needs to be minimized.
+
+33
+00:01:54.419 --> 00:01:58.580
+Log loss is a cost function that measures how well the predicted probabilities, p-hat
+
+34
+00:01:58.580 --> 00:02:02.059
+i, match the actual class's yi.
+
+35
+00:02:02.059 --> 00:02:04.739
+Logistic regression seeks to minimize this cost function.
+
+36
+00:02:04.739 --> 00:02:10.500
+Here, i refers to the ith observation of the data, which is n rows.
+
+37
+00:02:10.500 --> 00:02:14.699
+Log loss is defined as minus the average over i of two terms.
+
+38
+00:02:14.699 --> 00:02:19.539
+The actual class times the logarithm of the predicted probability that the class is 1
+
+39
+00:02:19.539 --> 00:02:24.740
+plus 1 minus the actual class times the log of the probability that the class is 0.
+
+40
+00:02:24.740 --> 00:02:30.539
+The negative sign exists because the logarithm is negative for arguments between 0 and 1.
+
+41
+00:02:30.539 --> 00:02:33.979
+Log loss favors confident classifications that are correct.
+
+42
+00:02:33.979 --> 00:02:39.660
+For instance, when the predicted probability of class 1 is high and correct, p-hat i is
+
+43
+00:02:39.660 --> 00:02:43.940
+close to 1 for an observation, and yi is equal to 1.
+
+44
+00:02:43.940 --> 00:02:47.699
+You can convince yourself by inspecting the formula that the log loss is small.
+
+45
+00:02:47.699 --> 00:02:53.139
+Indeed, the first term vanishes because the log term tends to 0 as the probability approaches
+
+46
+00:02:53.139 --> 00:02:59.139
+1, while the second term vanishes because the factor 1 minus yi is 0.
+
+47
+00:02:59.139 --> 00:03:03.500
+In this way, log loss penalizes confident, incorrect predictions.
+
+48
+00:03:03.500 --> 00:03:08.899
+When the predicted probability of class 0 is high and incorrect, that is, when p-hat
+
+49
+00:03:08.899 --> 00:03:15.820
+is close to 1 for an observation, and the actual class is 0, the log loss is very large.
+
+50
+00:03:15.820 --> 00:03:19.419
+There are various ways to stop iterations, but essentially, you stop training when your
+
+51
+00:03:19.419 --> 00:03:22.300
+model's log loss is satisfactory.
+
+52
+00:03:22.300 --> 00:03:26.619
+Different techniques can be used to change the values of theta, and one of the most popular
+
+53
+00:03:26.619 --> 00:03:29.139
+methods is gradient descent.
+
+54
+00:03:29.139 --> 00:03:33.339
+Gradient descent is a clever iterative approach to finding the minimum of a function.
+
+55
+00:03:33.339 --> 00:03:37.699
+It adjusts the parameter values in the direction of the steepest descent using the derivative
+
+56
+00:03:37.699 --> 00:03:39.839
+of the log loss function.
+
+57
+00:03:39.839 --> 00:03:44.259
+Gradient descent depends on a specified learning rate, which controls how far it's allowed
+
+58
+00:03:44.259 --> 00:03:47.300
+to step the parameters on each iteration.
+
+59
+00:03:47.300 --> 00:03:51.380
+The main objective of gradient descent is to change the parameter values and find a
+
+60
+00:03:51.380 --> 00:03:56.100
+path to the optimal parameters to minimize the cost function.
+
+61
+00:03:56.100 --> 00:04:00.899
+Consider the plot, which simulates a parabolic log loss cost function of the trial parameters
+
+62
+00:04:00.899 --> 00:04:03.979
+theta1, theta2.
+
+63
+00:04:03.979 --> 00:04:08.380
+This surface represents the error for different values of parameters.
+
+64
+00:04:08.380 --> 00:04:12.100
+The gradient of the surface points in the direction of the steepest ascent.
+
+65
+00:04:12.100 --> 00:04:16.579
+Thus, the negative of the gradient points in the direction of the steepest descent,
+
+66
+00:04:16.579 --> 00:04:18.820
+hence the name gradient descent.
+
+67
+00:04:18.820 --> 00:04:23.119
+The steeper the slope, the greater the magnitude of the gradient, and thus, the greater the
+
+68
+00:04:23.119 --> 00:04:24.899
+step toward the minimum.
+
+69
+00:04:24.899 --> 00:04:30.019
+You can control the size of each step by scaling the gradient by a factor called the learning rate.
+
+70
+00:04:30.019 --> 00:04:34.059
+As the lowest point is reached, the slope diminishes to zero.
+
+71
+00:04:34.059 --> 00:04:39.700
+This lowest point of the path occurs at the optimum theta1, theta2.
+
+72
+00:04:39.700 --> 00:04:42.500
+Let's explore some additional features of gradient descent.
+
+73
+00:04:42.500 --> 00:04:47.519
+The gradient of the cost function is calculated over the entire data set on each iteration.
+
+74
+00:04:47.519 --> 00:04:51.000
+When the data set is large, gradient descent becomes very slow.
+
+75
+00:04:51.000 --> 00:04:54.619
+You could try speeding up the convergence by increasing the learning rate, but convergence
+
+76
+00:04:54.619 --> 00:04:58.859
+becomes less likely as the steps might be too big to notice the minima.
+
+77
+00:04:58.859 --> 00:05:02.540
+Instead of using the whole, the cost function gradient can be approximated by choosing a
+
+78
+00:05:02.540 --> 00:05:05.540
+random subset of the data to calculate it on.
+
+79
+00:05:05.540 --> 00:05:11.779
+A variation of the gradient descent algorithm is stochastic gradient descent, or SGD.
+
+80
+00:05:11.779 --> 00:05:14.179
+It's faster, but can be less accurate.
+
+81
+00:05:14.179 --> 00:05:17.459
+It uses a random subset of training data and scales well.
+
+82
+00:05:17.459 --> 00:05:22.799
+SGD is more likely to overlook local minima and find global minima of the cost function.
+
+83
+00:05:22.799 --> 00:05:27.459
+It converges quickly toward a global minimum, but can wander around it for some time.
+
+84
+00:05:27.459 --> 00:05:32.980
+The convergence can be improved by slowing down as the algorithm gets closer to a global minimum.
+
+85
+00:05:32.980 --> 00:05:36.640
+You can home in on the minimum by decreasing the learning rate as you get closer, or you
+
+86
+00:05:36.640 --> 00:05:40.320
+can gradually increase the size of the random data sample used to calculate the gradient
+
+87
+00:05:40.320 --> 00:05:41.959
+of the cost function.
+
+88
+00:05:41.959 --> 00:05:46.500
+In this video, you learned that the objective of logistical regression training is to predict
+
+89
+00:05:46.500 --> 00:05:48.359
+classes with minimal error.
+
+90
+00:05:48.359 --> 00:05:53.040
+The training process consists of key steps created to find a set of parameters, or theta,
+
+91
+00:05:53.040 --> 00:05:54.920
+that minimize the cost function.
+
+92
+00:05:54.920 --> 00:05:58.000
+An optimization step is used to find the best parameters.
+
+93
+00:05:58.000 --> 00:06:02.880
+The metric for optimizing logistic regression is a cost function called log loss, which
+
+94
+00:06:02.880 --> 00:06:04.640
+needs to be minimized.
+
+95
+00:06:04.640 --> 00:06:08.959
+Log loss favors confident classifications that are correct and penalizes confident,
+
+96
+00:06:08.959 --> 00:06:11.000
+incorrect predictions.
+
+97
+00:06:11.000 --> 00:06:15.519
+Gradient descent is a clever, iterative approach to finding the minimum of a function.
+
+98
+00:06:15.519 --> 00:06:19.359
+Stochastic gradient descent is a scalable variation of the gradient descent algorithm,
+
+99
+00:06:19.359 --> 00:06:21.640
+which uses a random subset of training data.

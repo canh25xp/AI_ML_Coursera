@@ -1,0 +1,129 @@
+WEBVTT
+
+1
+00:00:05.394 --> 00:00:08.580
+Welcome to Machine Learning Model Lifecycle.
+
+2
+00:00:08.580 --> 00:00:11.500
+After watching this video, you will be able
+to:
+
+3
+00:00:11.500 --> 00:00:16.657
+List the processes within the lifecycle of
+a Machine Learning product.
+
+4
+00:00:16.657 --> 00:00:17.390
+Hello!
+
+5
+00:00:17.390 --> 00:00:19.050
+My name is Isioma.
+
+6
+00:00:19.050 --> 00:00:22.829
+I work as a Machine Learning Engineer at a
+leading company.
+
+7
+00:00:22.829 --> 00:00:27.259
+We sell machine learning solutions that enhance
+the user experience for people shopping for
+
+8
+00:00:27.259 --> 00:00:28.579
+beauty products.
+
+9
+00:00:29.125 --> 00:00:33.600
+Today, I will walk you through a Machine Learning
+project from start to finish.
+
+10
+00:00:34.045 --> 00:00:39.070
+Let’s begin by looking at the processes
+in the Lifecycle of a Machine Learning Model.
+
+11
+00:00:39.070 --> 00:00:43.910
+First, define the problem or state the situation.
+
+12
+00:00:43.910 --> 00:00:46.820
+Next, move to data collection,
+
+13
+00:00:46.820 --> 00:00:48.820
+then to data preparation,
+
+14
+00:00:48.820 --> 00:00:52.749
+then to model development and evaluation,
+and finally
+
+15
+00:00:52.749 --> 00:00:55.030
+to model deployment.
+
+16
+00:00:55.030 --> 00:01:01.030
+In reality, the model lifecycle is iterative,
+which means that we tend to go back and forth
+
+17
+00:01:01.030 --> 00:01:03.019
+between these processes.
+
+18
+00:01:03.019 --> 00:01:08.140
+For example, if you find some problems with
+your models that are deployed in production,
+
+19
+00:01:08.140 --> 00:01:13.979
+you may need to go back to data collection,
+or even the problem definition step, and then
+
+20
+00:01:13.979 --> 00:01:17.070
+re-iterate the subsequent processes.
+
+21
+00:01:17.070 --> 00:01:24.000
+Data collection and preparation is called
+the Extract, Transform, and Load, or ETL process.
+
+22
+00:01:24.000 --> 00:01:28.270
+The ETL process involves collecting data from
+various sources,
+
+23
+00:01:28.270 --> 00:01:33.680
+then cleaning, transforming, and storing it
+into a new single place.
+
+24
+00:01:33.680 --> 00:01:38.320
+The data is then accessible to the machine
+learning engineer, allowing them to perform
+
+25
+00:01:38.320 --> 00:01:42.630
+tasks like building a machine learning model.
+
+26
+00:01:42.630 --> 00:01:44.820
+In this video, you learned that:
+
+27
+00:01:44.820 --> 00:01:50.670
+The processes involved in a Machine Learning
+Model Lifecycle are Problem Definition, Data
+
+28
+00:01:50.670 --> 00:01:58.367
+Collection, Data Preparation, Model Development
+and Evaluation, and Model Deployment.

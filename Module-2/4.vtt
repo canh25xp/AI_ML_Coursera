@@ -1,0 +1,455 @@
+WEBVTT
+
+1
+00:00:06.000 --> 00:00:11.319
+Welcome to this video on Introduction to Multiple Linear Regression.
+
+2
+00:00:11.319 --> 00:00:13.760
+After watching this video, you will be able to
+
+3
+00:00:13.760 --> 00:00:17.799
+Describe multiple linear regression,
+Compare multiple linear regression and simple
+
+4
+00:00:17.799 --> 00:00:19.639
+linear regression, and
+
+5
+00:00:19.639 --> 00:00:23.040
+List the pitfalls of multiple linear regression.
+
+6
+00:00:23.040 --> 00:00:26.920
+Multiple linear regression is an
+extension of the simple linear regression model.
+
+7
+00:00:26.920 --> 00:00:31.360
+It uses two or more independent variables
+to estimate a dependent variable.
+
+8
+00:00:31.360 --> 00:00:36.840
+Mathematically, the multiple regression
+model is a linear combination of the form
+
+9
+00:00:36.840 --> 00:00:42.680
+y hat equals theta zero plus theta one x one,
+where the x one are the feature vectors that
+
+10
+00:00:42.680 --> 00:00:47.639
+can be represented as a matrix x that includes
+a constant value of one in the first entry
+
+11
+00:00:47.639 --> 00:00:52.560
+to account for the bias or intercept term
+theta underscore zero, and the thetas are
+
+12
+00:00:52.560 --> 00:00:56.520
+the unknown weights, which can be represented as matrix theta.
+
+13
+00:00:56.520 --> 00:01:00.119
+Let's consider the dataset in this table.
+Multiple linear regression can be used to
+
+14
+00:01:00.119 --> 00:01:05.239
+measure the strength of each independent
+variable's effect on a dependent variable.
+
+15
+00:01:05.239 --> 00:01:09.199
+You can predict the CO2 emission of a motor
+car from features like engine size, number
+
+16
+00:01:09.199 --> 00:01:13.480
+of cylinders, and fuel consumption by forming a
+linear combination of the features using
+
+17
+00:01:13.480 --> 00:01:17.839
+trained weights, theta i. You can use the
+trained model to predict the
+
+18
+00:01:17.839 --> 00:01:22.480
+expected CO2 emission of an unknown case,
+such as record number 9.
+
+19
+00:01:22.480 --> 00:01:26.639
+Simple linear regression results in a better
+model than using a simple linear regression.
+
+20
+00:01:26.639 --> 00:01:31.000
+However, adding too many variables can cause your
+model to overfit or essentially memorize
+
+21
+00:01:31.000 --> 00:01:35.199
+the training data, making it a poor predictor for
+unseen observations.
+
+22
+00:01:35.199 --> 00:01:39.959
+To improve prediction, categorical independent
+variables can be incorporated into a regression
+
+23
+00:01:39.959 --> 00:01:45.260
+model by converting them into numerical variables.
+For example, given a binary variable such
+
+24
+00:01:45.260 --> 00:01:50.400
+as car type, the code zero for manual and one for
+automatic cars can be substituted
+
+25
+00:01:50.400 --> 00:01:53.860
+to make it numerical. For a categorical variable with more than
+
+26
+00:01:53.860 --> 00:01:59.760
+two classes, you can opt to transform it into new
+Boolean features, one for each class.
+
+27
+00:01:59.760 --> 00:02:03.760
+Multiple linear regression has applications in every
+industry. It is widely used in the
+
+28
+00:02:03.760 --> 00:02:09.160
+education sector to predict outcomes and explain
+relationships between variables. For example,
+
+29
+00:02:09.160 --> 00:02:15.059
+do revision time, test anxiety, lecture attendance,
+and gender affect student exam performance?
+
+30
+00:02:15.059 --> 00:02:18.880
+Multiple linear regression can also be used to
+predict the impact of changes in what-if
+
+31
+00:02:18.880 --> 00:02:23.779
+scenarios. What-if scenarios involve hypothetical
+changes to one or more of your model's input
+
+32
+00:02:23.779 --> 00:02:28.800
+features to see the predicted outcome.
+For example, suppose you were reviewing a person's
+
+33
+00:02:28.800 --> 00:02:33.199
+health data. In that case, multiple linear
+regression might be able to tell you how much
+
+34
+00:02:33.199 --> 00:02:37.320
+that person's blood pressure would rise or
+fall for every change in a patient's body
+
+35
+00:02:37.320 --> 00:02:41.320
+mass index, BMI. The what-if scenario can sometimes provide
+
+36
+00:02:41.320 --> 00:02:45.800
+inaccurate findings in the following situations.
+You might consider impossible scenarios for
+
+37
+00:02:45.800 --> 00:02:50.240
+your model to obtain predictions. You might
+extrapolate scenarios that are too distant
+
+38
+00:02:50.240 --> 00:02:54.479
+from the realm of data it was trained on.
+Your model might depend on more than one variable
+
+39
+00:02:54.479 --> 00:03:00.139
+amongst a group of correlated or collinear variables.
+When two variables are correlated,
+
+40
+00:03:00.139 --> 00:03:04.160
+they are no longer independent variables because
+they are predictors of each other. They are
+
+41
+00:03:04.160 --> 00:03:09.240
+collinear. You can perform a what-if scenario
+with a linear regression model by changing
+
+42
+00:03:09.240 --> 00:03:13.800
+a single variable while holding all other
+variables constant. However, if the variable
+
+43
+00:03:13.800 --> 00:03:17.960
+is correlated with another feature, then this
+is not feasible because the other variable
+
+44
+00:03:17.960 --> 00:03:23.039
+must also change realistically. The solution for
+avoiding pitfalls from correlated variables
+
+45
+00:03:23.039 --> 00:03:26.559
+is to remove any redundant variables from the regression analyses.
+
+46
+00:03:26.559 --> 00:03:30.800
+To build your multiple regression model, you
+must select your variables using a balanced
+
+47
+00:03:30.800 --> 00:03:36.679
+approach, considering uncorrelated variables,
+which are most understood, controllable, and
+
+48
+00:03:36.679 --> 00:03:41.320
+most correlated with the target.
+Multiple linear regression assigns a relative importance
+
+49
+00:03:41.320 --> 00:03:46.880
+to each feature. Imagine you are predicting CO2 emission,
+or Y, from other variables for
+
+50
+00:03:46.880 --> 00:03:51.600
+the automobile in record number 9.
+Once you find the parameters, you can plug them into
+
+51
+00:03:51.600 --> 00:03:57.880
+the linear model equation model. For example,
+let's use theta 0 equals 125, theta 1 equals
+
+52
+00:03:57.880 --> 00:04:04.320
+6.2, theta 2 equals 14, and so on. If we map these
+values to our dataset, we can rewrite
+
+53
+00:04:04.320 --> 00:04:11.479
+the linear model as CO2 emission equals 125 plus
+6.2 multiplied by engine size plus 14
+
+54
+00:04:11.479 --> 00:04:16.679
+multiplied by cylinder, and so on.
+Now, let's plug in the 9th row of R and calculate the
+
+55
+00:04:16.679 --> 00:04:24.399
+CO2 emissions for a car with a 2.4 liter engine.
+So, CO2 emission equals 125 plus 6.2 times
+
+56
+00:04:24.399 --> 00:04:30.880
+2.4 plus 14 times 4, and so on. We can predict that
+CO2 emission for this specific car will
+
+57
+00:04:30.880 --> 00:04:37.040
+be 214.1. For a simple linear regression,
+where there is only one feature vector, the
+
+58
+00:04:37.040 --> 00:04:42.200
+regression in the equation defines a line.
+For multiple linear regression using two features,
+
+59
+00:04:42.200 --> 00:04:47.079
+the solution describes a plane. Beyond two dimensions,
+it describes a hyperplane. Like
+
+60
+00:04:47.079 --> 00:04:51.160
+with simple linear regression, the values in the
+weight vector theta can be determined
+
+61
+00:04:51.160 --> 00:04:56.119
+by minimizing the mean square prediction error.
+Given a set of parameters, consider a linear
+
+62
+00:04:56.119 --> 00:05:00.640
+model based on the linear combination of the
+parameters with the features. You can measure
+
+63
+00:05:00.640 --> 00:05:05.679
+the residual error for each car in the dataset as
+the difference between its true CO2
+
+64
+00:05:05.679 --> 00:05:10.279
+emission value and the value predicted by the model.
+For example, if the model predicts
+
+65
+00:05:10.279 --> 00:05:15.839
+140 as the value for the first car in the dataset,
+using the actual value of 196, you
+
+66
+00:05:15.839 --> 00:05:22.600
+can see the residual error is 196 minus 140, or 56.
+The average of all the residual errors
+
+67
+00:05:22.600 --> 00:05:27.079
+indicates how poorly the model predicts the actual values.
+This information is called
+
+68
+00:05:27.079 --> 00:05:32.519
+the mean squared error, or MSC.
+MSC is not the only way to expose the error of a linear
+
+69
+00:05:32.519 --> 00:05:37.839
+model. However, it is the most popular.
+With this metric, the best model for the dataset
+
+70
+00:05:37.839 --> 00:05:42.720
+is the one with the least squared error.
+The factor of 1 slash n in the MSC equation isn't
+
+71
+00:05:42.720 --> 00:05:48.200
+necessary to include to minimize the error,
+so this method is called least squares linear
+
+72
+00:05:48.200 --> 00:05:53.079
+regression. So, multiple linear regression aims
+to minimize the MSE equation by finding
+
+73
+00:05:53.079 --> 00:05:57.559
+the best parameters. There are many ways to
+estimate the value of these coefficients.
+
+74
+00:05:57.559 --> 00:06:03.040
+However, ordinary least squares and an optimization
+approach are the most common methods. Ordinary
+
+75
+00:06:03.040 --> 00:06:07.820
+least squares estimate the values of the
+coefficients by minimizing the mean squared error. This
+
+76
+00:06:07.820 --> 00:06:12.799
+approach uses the data as a matrix and uses
+linear algebra operations to calculate the
+
+77
+00:06:12.799 --> 00:06:17.640
+optimal values for theta. Another option is
+to use an optimization algorithm to find the
+
+78
+00:06:17.640 --> 00:06:23.600
+best parameters. That is, you can use a process
+of optimizing the coefficients by iteratively
+
+79
+00:06:23.600 --> 00:06:28.200
+minimizing the model's error on your training data.
+For example, you can use the gradient
+
+80
+00:06:28.200 --> 00:06:33.160
+descent method, which starts the optimization
+with random values for each coefficient. Gradient
+
+81
+00:06:33.160 --> 00:06:36.959
+descent is a good approach if you have a large dataset.
+
+82
+00:06:36.959 --> 00:06:40.760
+Multiple linear regression is an extension of the
+simple linear regression model. It
+
+83
+00:06:40.760 --> 00:06:45.160
+uses two or more independent variables to
+estimate a dependent variable. It is widely
+
+84
+00:06:45.160 --> 00:06:50.440
+used in the education sector to predict outcomes
+and explain relationships between variables.
+
+85
+00:06:50.440 --> 00:06:54.440
+Multiple linear regression can also be used to
+predict the impact of changes in what-if
+
+86
+00:06:54.440 --> 00:06:57.839
+scenarios. Adding too many variables can cause your model
+
+87
+00:06:57.839 --> 00:07:03.079
+to overfit or essentially memorize the training data,
+making it a poor predictor for unseen
+
+88
+00:07:03.079 --> 00:07:08.000
+observations. To build your multiple regression model,
+you must select your variables using
+
+89
+00:07:08.000 --> 00:07:14.399
+a balanced approach, considering uncorrelated variables,
+which are most understood, controllable,
+
+90
+00:07:14.399 --> 00:07:18.760
+and most correlated with the target.
+There are many ways to estimate the parameters for
+
+91
+00:07:18.760 --> 00:07:23.679
+multiple linear regression. However, ordinary least
+squares and an optimization with random
+
+92
+00:07:23.679 --> 00:07:28.679
+values approach are the most common methods.
+In this video, you learned how multiple linear
+
+93
+00:07:28.679 --> 00:07:32.079
+regression results in a better model than using a simple linear regression.

@@ -1,0 +1,549 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:09.880
+Welcome to K-Means Clustering.
+
+2
+00:00:09.880 --> 00:00:13.960
+After watching this video, you will be
+able to describe K-Means Clustering and explain
+
+3
+00:00:13.960 --> 00:00:16.399
+how the K-Means algorithm works.
+
+4
+00:00:16.399 --> 00:00:19.479
+You will also be able to discuss how to determine K.
+
+5
+00:00:19.479 --> 00:00:24.600
+K-Means is an iterative, centroid-based
+clustering algorithm that partitions a dataset into similar
+
+6
+00:00:24.600 --> 00:00:27.719
+groups based on the distance between their centroids.
+
+7
+00:00:27.719 --> 00:00:33.119
+K-Means divides data into k non-overlapping
+clusters, where k is a chosen parameter.
+
+8
+00:00:33.119 --> 00:00:37.599
+The k clusters are constructed to have
+minimal variances around their centroids and maximum
+
+9
+00:00:37.599 --> 00:00:39.479
+dissimilarity between clusters.
+
+10
+00:00:39.479 --> 00:00:43.159
+Let's understand this definition with
+the help of this chart showing a cluster of data
+
+11
+00:00:43.159 --> 00:00:44.240
+points.
+
+12
+00:00:44.240 --> 00:00:47.700
+At the center of the cluster is the
+centroid marked with a red X.
+
+13
+00:00:47.700 --> 00:00:50.580
+This is the average position of all
+points in the cluster.
+
+14
+00:00:50.580 --> 00:00:53.919
+Data points nearest to a centroid are
+grouped within the same category.
+
+15
+00:00:53.919 --> 00:00:58.959
+A higher k value, or the number of clusters,
+signifies smaller clusters with greater detail,
+
+16
+00:00:58.959 --> 00:01:02.560
+while a lower k value results in larger
+clusters with less detail.
+
+17
+00:01:02.560 --> 00:01:04.839
+Let's look at how to use K-Means.
+
+18
+00:01:04.839 --> 00:01:07.599
+First, initialize the algorithm.
+
+19
+00:01:07.599 --> 00:01:11.360
+Choose the number of clusters that you
+would like to partition the feature space into and
+
+20
+00:01:11.360 --> 00:01:14.599
+randomly select k starting centroid locations.
+
+21
+00:01:14.599 --> 00:01:18.879
+These initial centroids can be data points
+or other points from the feature space.
+
+22
+00:01:18.879 --> 00:01:21.040
+Next, assign centroids.
+
+23
+00:01:21.040 --> 00:01:24.760
+Iteratively assign points to clusters and
+update their centroids.
+
+24
+00:01:24.760 --> 00:01:30.480
+First, compute the distance matrix consisting
+of the distances from each point to each centroid.
+
+25
+00:01:30.480 --> 00:01:34.879
+Then, assign each data point to the cluster
+with the nearest centroid.
+
+26
+00:01:34.879 --> 00:01:38.360
+Update each cluster centroid as the mean
+of the cluster's data points.
+
+27
+00:01:38.360 --> 00:01:43.160
+Repeat until the centroid positions stabilize
+or you reach maximum iterations.
+
+28
+00:01:43.160 --> 00:01:46.319
+The algorithm converges once the centroids stop moving.
+
+29
+00:01:46.319 --> 00:01:50.279
+Here is an experiment demonstrating how
+K-Means updates centroids and cluster points with
+
+30
+00:01:50.279 --> 00:01:51.760
+each iteration.
+
+31
+00:01:51.760 --> 00:01:56.279
+The demo starts with two unknown classes
+comprising circular clusters of points in red and blue
+
+32
+00:01:56.279 --> 00:02:00.919
+and two randomly selected initial centroids
+in gold, each represented by an X and the
+
+33
+00:02:00.919 --> 00:02:02.199
+plus symbol.
+
+34
+00:02:02.199 --> 00:02:07.360
+With each iteration, you can see the centroids
+getting closer to their final destinations.
+
+35
+00:02:07.360 --> 00:02:09.320
+Iterations 3 and 4 are identical.
+
+36
+00:02:09.320 --> 00:02:12.880
+Thus, K-Means have already converged by
+iteration 3.
+
+37
+00:02:12.919 --> 00:02:16.880
+Although the final clustering contains a
+few mislabeled points, K-Means does a good job
+
+38
+00:02:16.880 --> 00:02:18.320
+of separating them.
+
+39
+00:02:18.320 --> 00:02:22.320
+However, K-Means doesn't perform very well on
+imbalanced clusters.
+
+40
+00:02:22.320 --> 00:02:26.759
+In this experiment, the unknown classes, indicated
+by the pair of circular clusters of points
+
+41
+00:02:26.759 --> 00:02:29.639
+in red and blue, differ in their number of points.
+
+42
+00:02:29.639 --> 00:02:33.559
+The red cluster has 200 points and the blue one has 10.
+
+43
+00:02:33.559 --> 00:02:37.119
+Interestingly, the result in the first
+iteration is quite good.
+
+44
+00:02:37.119 --> 00:02:40.720
+The centroid updates for the larger cluster
+stabilize very quickly.
+
+45
+00:02:40.720 --> 00:02:45.520
+However, the smaller cluster centroid drifts
+closer to the larger cluster centroid and
+
+46
+00:02:45.520 --> 00:02:49.440
+its cluster consumes more and more of the larger
+cluster's points.
+
+47
+00:02:49.440 --> 00:02:54.839
+K-Means assumes that clusters are convex, meaning
+that any line drawn between two points
+
+48
+00:02:54.839 --> 00:02:57.080
+remains within the cluster.
+
+49
+00:02:57.080 --> 00:03:00.639
+The figure here shows a non-convex set of
+points colored blue.
+
+50
+00:03:00.639 --> 00:03:05.440
+The boundary defined by the blue line segments
+approximates the boundary of the set of points.
+
+51
+00:03:05.440 --> 00:03:09.399
+The red lines outline what is called the convex hull of the points.
+
+52
+00:03:09.399 --> 00:03:13.960
+The algorithm also assumes that the clusters
+contain approximately the same number of points.
+
+53
+00:03:13.960 --> 00:03:18.080
+Because statistical variance is sensitive to
+outliers, K-Means can perform poorly in
+
+54
+00:03:18.080 --> 00:03:19.600
+the presence of noise.
+
+55
+00:03:19.600 --> 00:03:24.460
+As a partition-based algorithm, K-Means is
+efficient and scales well to big data.
+
+56
+00:03:24.460 --> 00:03:29.639
+The goal of K-Means is to minimize the within-cluster
+variance for all clusters simultaneously.
+
+57
+00:03:29.639 --> 00:03:35.160
+Mathematically, this means a double sum over each
+cluster, i, and each point, x, within
+
+58
+00:03:35.160 --> 00:03:36.160
+each cluster.
+
+59
+00:03:36.360 --> 00:03:41.039
+Ci of the square distance between x and this
+cluster's centroid, mu i.
+
+60
+00:03:41.039 --> 00:03:45.160
+Here are the results from three experiments to
+illustrate how well K-Means performs under
+
+61
+00:03:45.160 --> 00:03:46.759
+different conditions.
+
+62
+00:03:46.759 --> 00:03:50.600
+The three scatter plots on the left are from
+data generated with Scikit-learn's make
+
+63
+00:03:50.600 --> 00:03:51.979
+blob function.
+
+64
+00:03:51.979 --> 00:03:55.119
+The three blobs represent three different clusters.
+
+65
+00:03:55.119 --> 00:03:59.460
+The difference between the three datasets is
+the standard deviation of each blob, increasing
+
+66
+00:03:59.460 --> 00:04:01.839
+from 1 to 4 to 15.
+
+67
+00:04:01.839 --> 00:04:05.919
+Higher values disperse the blobs and they
+become visually less distinguishable.
+
+68
+00:04:05.919 --> 00:04:10.520
+On the right, are each experiment's K-Means
+clustering results for k equals 3.
+
+69
+00:04:10.520 --> 00:04:13.919
+The red Xs indicate the K-Means cluster centroids.
+
+70
+00:04:13.919 --> 00:04:19.079
+K-Means does not know the classes or colors
+assigned to the blobs in the input data.
+
+71
+00:04:19.079 --> 00:04:23.220
+The goal of these experiments is for K-Means
+to uncover these three classes.
+
+72
+00:04:23.220 --> 00:04:27.399
+As you can see, K-Means has distinguished the
+blobs quite well for standard deviations
+
+73
+00:04:27.399 --> 00:04:28.399
+of 1 and 4.
+
+74
+00:04:28.399 --> 00:04:32.399
+Where the blobs overlap, the resulting clusters
+have errors.
+
+75
+00:04:32.399 --> 00:04:36.640
+It would be unreasonable to expect any clustering
+algorithm to untangle blobs where the standard
+
+76
+00:04:36.640 --> 00:04:38.399
+deviation is 15.
+
+77
+00:04:38.399 --> 00:04:43.399
+However, K-Means did what was instructed to do
+and generated three clusters anyway.
+
+78
+00:04:43.399 --> 00:04:49.399
+Intuitively, you might expect at most two
+clusters to be found, the core and outlying points
+
+79
+00:04:49.399 --> 00:04:54.640
+If the input data had three class labels,
+as depicted, the two features would be incapable
+
+80
+00:04:54.640 --> 00:04:56.119
+of separating them.
+
+81
+00:04:56.119 --> 00:04:59.000
+More features would be needed to accomplish
+this separation.
+
+82
+00:04:59.000 --> 00:05:03.279
+Observe that, as the standard deviation of
+the blobs increases, the cluster centroids
+
+83
+00:05:03.279 --> 00:05:06.359
+that K-Means finds get closer together.
+
+84
+00:05:06.359 --> 00:05:09.480
+What if K differs from the unknown number
+of classes in the input data?
+
+85
+00:05:09.480 --> 00:05:15.019
+Here, the experiment is run with k equals 2
+clusters for K-Means to determine, and three
+
+86
+00:05:15.019 --> 00:05:17.640
+blobs with three unknown classes are given.
+
+87
+00:05:17.640 --> 00:05:22.279
+For a standard deviation of 1, K-Means correctly
+identifies one blob and merges the other two
+
+88
+00:05:22.279 --> 00:05:25.799
+into one cluster, with its centroid between
+the two blobs.
+
+89
+00:05:25.799 --> 00:05:30.920
+Similarly, for a standard deviation of 4,
+K-Means identifies one blob and merges most
+
+90
+00:05:30.920 --> 00:05:35.600
+of the other two blobs into one cluster,
+with its centroid between the two blobs.
+
+91
+00:05:35.600 --> 00:05:40.540
+When the standard deviation is 15,
+K-Means is left with no option and must impose the
+
+92
+00:05:40.540 --> 00:05:43.720
+two clusters onto what looks like indistinguishable data.
+
+93
+00:05:43.720 --> 00:05:48.839
+As the standard deviation of the blobs increases,
+the cluster centroids that K-Means finds get
+
+94
+00:05:48.839 --> 00:05:50.279
+closer together.
+
+95
+00:05:50.279 --> 00:05:54.760
+The two blobs gradually merge into one,
+and a blob can have only one centroid.
+
+96
+00:05:54.760 --> 00:05:58.519
+When K is too large, K-Means returns unacceptable results.
+
+97
+00:05:58.519 --> 00:06:02.760
+How do you find the best value for K when
+you don't know much about your data?
+
+98
+00:06:02.760 --> 00:06:04.920
+Choosing K is difficult for complex data.
+
+99
+00:06:04.920 --> 00:06:08.760
+When the data is separable, choosing the
+suitable K is feasible.
+
+100
+00:06:08.760 --> 00:06:11.200
+How do you know whether the data is separable?
+
+101
+00:06:11.200 --> 00:06:14.959
+While obvious in two or three dimensions,
+you can't visualize the patterns easily for
+
+102
+00:06:14.959 --> 00:06:17.239
+higher-dimensional feature spaces.
+
+103
+00:06:17.239 --> 00:06:21.239
+You can gain some insight by considering
+scatter plots between pairs of your variables to see
+
+104
+00:06:21.239 --> 00:06:24.160
+whether any of these demonstrate separability.
+
+105
+00:06:24.160 --> 00:06:29.040
+Some heuristic techniques for gauging
+K-Means' performance for a given K include silhouette
+
+106
+00:06:29.040 --> 00:06:34.040
+analysis, which measures how similar a data point
+is to its cluster, known as cohesion,
+
+107
+00:06:34.040 --> 00:06:36.760
+compared to other clusters, known as separation.
+
+108
+00:06:36.760 --> 00:06:41.679
+The Elbow method is a plot of the K-Means objective
+function for different numbers of clusters,
+
+109
+00:06:41.679 --> 00:06:46.239
+and the Davies-Bouldin index measures each
+cluster's average similarity ratio, with
+
+110
+00:06:46.239 --> 00:06:47.880
+the cluster most similar.
+
+111
+00:06:47.880 --> 00:06:52.920
+In this video, you learned that K-Means is an
+iterative, centroid-based clustering algorithm
+
+112
+00:06:52.920 --> 00:06:58.000
+that partitions a dataset into similar groups
+based on the distance between their centroids.
+
+113
+00:06:58.000 --> 00:07:02.320
+The K-Means clustering algorithm categorizes
+data points into clusters using a mathematical
+
+114
+00:07:02.320 --> 00:07:04.920
+distance measure from the cluster center.
+
+115
+00:07:04.920 --> 00:07:10.239
+K-Means doesn't perform very well on imbalanced
+clusters and assumes that clusters are convex.
+
+116
+00:07:10.239 --> 00:07:15.579
+The objective of K-Means is to minimize the
+within-cluster variance for all clusters simultaneously.
+
+117
+00:07:15.579 --> 00:07:19.559
+Some heuristic techniques for gauging K-Means'
+performance for a given K include silhouette
+
+118
+00:07:19.559 --> 00:07:23.119
+analysis, the elbow method, and the Davies-Bouldin index.

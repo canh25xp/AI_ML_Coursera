@@ -1,0 +1,389 @@
+WEBVTT
+
+1
+00:00:05.120 --> 00:00:08.080
+Chào mừng bạn đến với Một ngày trong cuộc đời của một kỹ sư học máy.
+
+2
+00:00:08.880 --> 00:00:11.840
+Sau khi xem video này, bạn sẽ có thể: Mô
+
+3
+00:00:11.840 --> 00:00:14.080
+tả tầm quan trọng và yêu cầu của
+
+4
+00:00:14.080 --> 00:00:17.200
+từng quy trình trong vòng đời của mô hình học máy.
+
+5
+00:00:17.200 --> 00:00:21.453
+Và, đặt tên cho các quy trình tốn nhiều thời gian hơn các quy trình khác.
+
+6
+00:00:22.160 --> 00:00:25.280
+Bây giờ, chúng ta hãy xem qua Vòng đời của Mô hình Machine Learning
+
+7
+00:00:25.280 --> 00:00:27.468
+trong một dự án mà tôi hiện đang thực hiện.
+
+8
+00:00:27.920 --> 00:00:32.720
+Để giúp tăng doanh thu kinh doanh, tôi đã được giao nhiệm vụ tạo và triển khai một
+
+9
+00:00:32.720 --> 00:00:36.880
+mô hình đề xuất các sản phẩm tương tự với những gì khách hàng đã mua.
+
+10
+00:00:37.680 --> 00:00:42.348
+Tôi đã làm việc cùng với khách hàng để đưa ra điểm khó khăn của người dùng cuối:
+
+11
+00:00:42.800 --> 00:00:46.640
+“Là một khách hàng sản phẩm làm đẹp, tôi muốn nhận được các khuyến nghị cho
+
+12
+00:00:46.640 --> 00:00:51.360
+các sản phẩm khác dựa trên lịch sử mua hàng của mình để tôi có thể giải quyết nhu cầu chăm sóc da của mình
+
+13
+00:00:51.360 --> 00:00:54.070
+và cải thiện sức khỏe tổng thể của làn da của tôi.”
+
+14
+00:00:54.640 --> 00:01:00.080
+Xác định vấn đề hoặc nêu rõ tình huống là rất quan trọng, bởi vì tôi
+
+15
+00:01:00.080 --> 00:01:06.112
+muốn đảm bảo giải pháp học máy mà tôi đang cung cấp phù hợp với nhu cầu của khách hàng.
+
+16
+00:01:06.960 --> 00:01:13.120
+Bây giờ, khi tôi hiểu nhu cầu của khách hàng, bước tiếp theo là bắt đầu thu thập dữ liệu. Tôi nên
+
+17
+00:01:13.120 --> 00:01:18.400
+xác định loại dữ liệu mà công ty có và xác định các nguồn mà nó sẽ đến từ.
+
+18
+00:01:19.120 --> 00:01:23.120
+Đây có thể là dữ liệu người dùng như nhân khẩu học, lịch sử mua hàng
+
+19
+00:01:23.120 --> 00:01:26.240
+và bất cứ điều gì liên quan đến các giao dịch đã hoàn thành.
+
+20
+00:01:26.240 --> 00:01:32.480
+Tôi cũng có thể lấy dữ liệu sản phẩm, nghĩa là hàng tồn kho của sản phẩm và những gì chúng làm,
+
+21
+00:01:32.480 --> 00:01:37.440
+thành phần của chúng, mức độ phổ biến của chúng, xếp hạng khách hàng của họ, v.v.
+
+22
+00:01:38.240 --> 00:01:43.680
+Hơn nữa, tôi có thể xem xét các dữ liệu khác bao gồm thông tin như sản phẩm đã lưu của người dùng, sản phẩm được
+
+23
+00:01:43.680 --> 00:01:48.560
+yêu thích, lịch sử tìm kiếm, sản phẩm được truy cập nhiều nhất, v.v.
+
+24
+00:01:49.760 --> 00:01:55.760
+Sau đó, tôi sẽ tiếp tục và thực hiện một số chuyển đổi lớn bằng cách tranh cãi, tổng hợp, kết hợp
+
+25
+00:01:55.760 --> 00:02:00.080
+, hợp nhất và ánh xạ dữ liệu vào một nguồn trung tâm.
+
+26
+00:02:00.800 --> 00:02:05.840
+Điều này làm giảm nhu cầu xử lý nhiều cơ sở dữ liệu mỗi khi chúng ta cần lấy dữ liệu.
+
+27
+00:02:06.640 --> 00:02:11.600
+Bước tiếp theo trong quá trình này là chuẩn bị dữ liệu. Hầu hết thời gian,
+
+28
+00:02:11.600 --> 00:02:17.280
+dữ liệu từ nhiều nguồn sẽ chứa lỗi, định dạng khác nhau và dữ liệu bị thiếu.
+
+29
+00:02:18.240 --> 00:02:22.880
+Quá trình này trùng lặp với quy trình Thu thập dữ liệu vì chúng có thể được thực hiện song song.
+
+30
+00:02:23.520 --> 00:02:28.480
+Lĩnh vực trọng tâm ở đây là chuẩn bị một phiên bản cuối cùng của dữ liệu.
+
+31
+00:02:29.040 --> 00:02:31.120
+Tôi sẽ cần đảm bảo rằng
+
+32
+00:02:31.120 --> 00:02:34.080
+dữ liệu được làm sạch để lọc ra dữ liệu không liên quan, các
+
+33
+00:02:34.720 --> 00:02:38.240
+giá trị cực đoan được xóa để tránh ảnh hưởng đến tập dữ liệu, các
+
+34
+00:02:38.800 --> 00:02:41.920
+giá trị bị thiếu được xóa hoặc tạo ngẫu nhiên,
+
+35
+00:02:41.920 --> 00:02:45.840
+tùy thuộc vào ý nghĩa của dữ liệu bị thiếu và
+
+36
+00:02:45.840 --> 00:02:48.480
+mỗi cột dữ liệu ở định dạng thích hợp.
+
+37
+00:02:49.040 --> 00:02:55.360
+Ví dụ: ngày tháng phải ở định dạng ngày và chuỗi phải được xác định chính xác.
+
+38
+00:02:56.240 --> 00:02:59.280
+Tôi cũng có thể cần tạo các tính năng bổ sung.
+
+39
+00:02:59.280 --> 00:03:05.120
+Ví dụ: tôi có thể cần tính toán thời lượng trung bình giữa các giao dịch cho mỗi người dùng
+
+40
+00:03:05.120 --> 00:03:07.440
+và tìm sản phẩm họ mua nhiều nhất.
+
+41
+00:03:08.000 --> 00:03:12.160
+Hoặc, tôi có thể cần một tính năng xác định loại
+
+42
+00:03:12.160 --> 00:03:16.320
+vấn đề da mà mỗi sản phẩm nhắm mục tiêu và chỉ định chúng cho từng người dùng.
+
+43
+00:03:16.960 --> 00:03:20.160
+Tôi có thể tạo các biểu đồ để xác định các mẫu một cách trực quan, xác
+
+44
+00:03:20.800 --> 00:03:26.960
+thực dữ liệu dựa trên thông tin mà chuyên gia chủ đề sản phẩm
+
+45
+00:03:26.960 --> 00:03:34.000
+làm đẹp đã cung cấp cho tôi và thực hiện một số phân tích tương quan để xác định những biến số hoặc tính năng nào rất quan trọng đối
+
+46
+00:03:34.000 --> 00:03:40.080
+với thói quen và nhu cầu mua hàng của người dùng. Điều này được gọi là phân tích dữ liệu thăm dò.
+
+47
+00:03:41.040 --> 00:03:46.000
+Tôi cũng có thể xác định cách tôi dự định chia dữ liệu để đào tạo và thử nghiệm.
+
+48
+00:03:46.000 --> 00:03:52.960
+Ví dụ: tôi có muốn chia ngẫu nhiên dữ liệu hoặc sử dụng giao dịch gần đây nhất làm bộ thử nghiệm không?
+
+49
+00:03:53.840 --> 00:03:59.040
+Trong ví dụ này, tôi quyết định đưa giao dịch gần đây nhất vào bộ thử nghiệm và
+
+50
+00:03:59.040 --> 00:04:03.830
+đảm bảo rằng có ít nhất một giao dịch của cùng một người dùng đó trong bộ đào tạo.
+
+51
+00:04:05.223 --> 00:04:10.423
+Trong bước Phát triển Mô hình, tôi sẽ tiếp tục và xây dựng một mô hình Machine Learning.
+
+52
+00:04:10.880 --> 00:04:16.640
+Trên thực tế, tôi cố gắng tận dụng càng nhiều framework và tài nguyên đã có từ trước càng tốt, vì
+
+53
+00:04:16.640 --> 00:04:18.880
+vậy tôi không tạo bất cứ thứ gì từ đầu.
+
+54
+00:04:19.680 --> 00:04:24.240
+Đối với nhiệm vụ này, tôi sẽ sử dụng một kỹ thuật gọi là lọc dựa trên nội dung.
+
+55
+00:04:24.880 --> 00:04:29.854
+Kỹ thuật này tìm thấy sự tương đồng giữa các sản phẩm, dựa trên nội dung sản phẩm.
+
+56
+00:04:30.240 --> 00:04:36.800
+Ví dụ, nếu ai đó đang sử dụng sữa rửa mặt với nhiều nước, có khả năng người dùng có
+
+57
+00:04:36.800 --> 00:04:41.840
+làn da khô và sẽ muốn có một loại kem dưỡng ẩm có độ ẩm cao.
+
+58
+00:04:42.560 --> 00:04:46.560
+Một trong những bước tôi có thể thực hiện ở đây là tạo điểm tương đồng của
+
+59
+00:04:46.560 --> 00:04:50.720
+các sản phẩm mà người dùng đã mua và xếp hạng chúng với các sản phẩm khác.
+
+60
+00:04:51.280 --> 00:04:53.920
+Tôi có thể giới thiệu sản phẩm tương tự nhất
+
+61
+00:04:53.920 --> 00:04:59.600
+trong khi lưu ý rằng có thể có các yếu tố khác có thể phát huy tác dụng. Ví dụ,
+
+62
+00:04:59.600 --> 00:05:04.320
+tôi có thể nhận thấy rằng người dùng đã tìm kiếm các sản phẩm không có thành phần cụ thể, vì
+
+63
+00:05:04.320 --> 00:05:06.480
+vậy tôi muốn đảm bảo rằng chúng tôi không đề
+
+64
+00:05:06.480 --> 00:05:10.320
+xuất một sản phẩm mà họ hoàn toàn sẽ không sử dụng.
+
+65
+00:05:10.320 --> 00:05:15.520
+Tôi cũng sẽ sử dụng một kỹ thuật gọi là Collaborative Filtering sử dụng dữ liệu của người dùng.
+
+66
+00:05:16.320 --> 00:05:22.075
+Ở đây, tôi đang tạo ra những điểm tương đồng giữa hai người dùng dựa trên cách họ xem một sản phẩm.
+
+67
+00:05:22.560 --> 00:05:28.400
+Ví dụ, tôi có thể tạo ra sự tương đồng, dựa trên cách hai người dùng đánh giá sản phẩm của họ.
+
+68
+00:05:29.120 --> 00:05:31.280
+Đầu tiên, tôi nhóm người dùng vào một thùng
+
+69
+00:05:31.280 --> 00:05:33.120
+dựa trên đặc điểm của họ.
+
+70
+00:05:33.120 --> 00:05:39.440
+Đây có thể là độ tuổi, khu vực và loại da, sản phẩm mà người dùng đánh giá và hoặc đã mua.
+
+71
+00:05:40.080 --> 00:05:43.600
+Sau đó, tôi có thể lấy xếp hạng trung bình cho các thành viên hiện tại
+
+72
+00:05:43.600 --> 00:05:48.320
+và giả định rằng người dùng mới sẽ ở đâu đó xung quanh mức trung bình và
+
+73
+00:05:48.320 --> 00:05:52.291
+đề xuất một sản phẩm dựa trên những gì người khác đánh giá cao.
+
+74
+00:05:52.720 --> 00:05:56.531
+Mô hình cuối cùng sẽ là sự kết hợp của hai kỹ thuật.
+
+75
+00:05:57.440 --> 00:06:02.800
+Sau khi hoàn thành việc xây dựng mô hình, tôi sẽ tiếp tục và kiểm tra xem mô hình có hoạt động tốt không
+
+76
+00:06:02.800 --> 00:06:06.800
+và các đề xuất có thể hiện những gì người dùng muốn hay không.
+
+77
+00:06:06.800 --> 00:06:09.520
+Đây được gọi là bước Đánh giá Mô hình;
+
+78
+00:06:10.640 --> 00:06:15.680
+các giai đoạn đầu của Đánh giá Mô hình sẽ liên quan đến việc tôi điều chỉnh mô hình và
+
+79
+00:06:15.680 --> 00:06:20.000
+thực hiện một số thử nghiệm trên tập dữ liệu tôi đã giữ trước đó để thử nghiệm.
+
+80
+00:06:20.000 --> 00:06:22.160
+Khi tôi hài lòng với kết quả,
+
+81
+00:06:22.160 --> 00:06:24.320
+tôi sẽ đánh giá thêm mô hình
+
+82
+00:06:24.320 --> 00:06:29.280
+bằng cách thử nghiệm các khuyến nghị trên một nhóm người dùng và yêu cầu phản hồi của họ.
+
+83
+00:06:30.080 --> 00:06:34.480
+Phản hồi sẽ bao gồm yêu cầu nhóm người dùng đánh giá các đề xuất
+
+84
+00:06:35.040 --> 00:06:38.640
+và thu thập dữ liệu về số lượng người đã nhấp
+
+85
+00:06:38.640 --> 00:06:43.360
+và mua các sản phẩm được đề xuất, cùng với bất kỳ số liệu cần thiết nào khác.
+
+86
+00:06:44.480 --> 00:06:50.249
+Bây giờ tôi đã hoàn thành việc xây dựng và thử nghiệm, mô hình đã sẵn sàng để đi vào sản xuất.
+
+87
+00:06:50.560 --> 00:06:54.560
+Đối với dự án này, nó sẽ là một phần của ứng dụng và trang web sản phẩm làm đẹp.
+
+88
+00:06:55.440 --> 00:06:59.600
+Mặc dù đây là bước cuối cùng, tôi vẫn cần theo dõi
+
+89
+00:06:59.600 --> 00:07:04.000
+hiệu suất của mô hình được triển khai để đảm bảo nó tiếp tục thực hiện công việc mà doanh nghiệp yêu cầu.
+
+90
+00:07:04.560 --> 00:07:09.440
+Các lần lặp
+
+91
+00:07:09.440 --> 00:07:11.760
+trong tương lai có thể bao gồm đào tạo lại mô hình dựa trên thông tin mới để mở rộng khả năng của nó.
+
+92
+00:07:13.200 --> 00:07:15.840
+Trong video này, bạn đã học được rằng:
+
+93
+00:07:15.840 --> 00:07:19.120
+Mỗi bước của Vòng đời Mô hình Học Máy đều
+
+94
+00:07:19.120 --> 00:07:21.760
+quan trọng đối với sự thành công của giải pháp.
+
+95
+00:07:22.640 --> 00:07:27.120
+Sau khi triển khai, cần phải theo dõi và cải tiến liên tục
+
+96
+00:07:27.120 --> 00:07:30.240
+để đảm bảo rằng chất lượng của giải pháp được duy trì.
+
+97
+00:07:31.120 --> 00:07:35.498
+Cảm ơn bạn đã xem, Một ngày trong cuộc đời của một kỹ sư học máy.

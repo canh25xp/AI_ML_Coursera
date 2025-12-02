@@ -1,0 +1,436 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:11.560
+Welcome to Supervised Learning with KNN.
+
+2
+00:00:11.560 --> 00:00:16.159
+After watching this video, you'll be able
+to explain what K-Nearest Neighbors, or KNN,
+
+3
+00:00:16.159 --> 00:00:23.520
+is, describe how a K-NN algorithm works,
+and discuss how K affects the outcome of the K-NN algorithm
+
+4
+00:00:23.520 --> 00:00:28.360
+K-Nearest Neighbors, or KNN, is a supervised
+machine learning algorithm that takes a group
+
+5
+00:00:28.360 --> 00:00:32.599
+of labeled data points and then uses them to
+learn to label other data points.
+
+6
+00:00:32.599 --> 00:00:36.040
+K-NN is used for both classification and regression.
+
+7
+00:00:36.040 --> 00:00:41.259
+In K-NN, data points near each other are
+said to be neighbors based on the paradigm.
+
+8
+00:00:41.259 --> 00:00:46.000
+Points close to each other should have similar
+features, and therefore, tend to be like each other
+
+9
+00:00:46.680 --> 00:00:49.200
+Let's consider this chart.
+
+10
+00:00:49.200 --> 00:00:54.040
+Here, for each queried data point, K-NN finds
+its nearest data points and makes a prediction
+
+11
+00:00:54.040 --> 00:00:57.680
+based on the known target labels of the queried
+point's neighbors.
+
+12
+00:00:58.000 --> 00:01:01.479
+You also need to define mathematically what is
+meant by a neighbor.
+
+13
+00:01:01.479 --> 00:01:04.339
+Let's understand how K-NN works.
+
+14
+00:01:04.339 --> 00:01:07.519
+In a classification problem, K-NN works as follows.
+
+15
+00:01:07.519 --> 00:01:10.879
+First, pick a value for k.
+
+16
+00:01:10.879 --> 00:01:15.760
+Then, calculate the distance from each unlabeled
+query point to all labeled cases in the training
+
+17
+00:01:15.760 --> 00:01:16.760
+data.
+
+18
+00:01:16.760 --> 00:01:21.839
+Search for the k observations in the training
+data that are nearest to the query point.
+
+19
+00:01:21.839 --> 00:01:25.000
+Predict the value of the given data point using
+the most popular class value from the
+
+20
+00:01:25.000 --> 00:01:26.720
+k-nearest neighbors.
+
+21
+00:01:26.760 --> 00:01:31.080
+In the case of regression, you would predict
+using the average or median of target values.
+
+22
+00:01:31.080 --> 00:01:35.680
+Let's see how you can calculate the similarity
+between two data points in classification.
+
+23
+00:01:35.680 --> 00:01:40.559
+Let's consider this dataset comprising 50
+samples each from the three species of iris
+
+24
+00:01:40.559 --> 00:01:45.080
+– Iris setosa, Iris virginica, and Iris versicolor.
+
+25
+00:01:45.080 --> 00:01:49.839
+Each row in the dataset contains four features
+listed in centimeters – sepal length, sepal
+
+26
+00:01:49.839 --> 00:01:53.000
+width, petal length, and petal width.
+
+27
+00:01:53.000 --> 00:01:57.919
+We want to use this dataset to train K-NN to
+classify the four iris types.
+
+28
+00:01:57.919 --> 00:02:02.080
+Here is a scatterplot of the iris flower data
+between two features – sepal length and
+
+29
+00:02:02.080 --> 00:02:03.319
+petal length.
+
+30
+00:02:03.319 --> 00:02:08.199
+The points are the sepal-petal length pairs
+labeled with their actual iris type – setosa,
+
+31
+00:02:08.199 --> 00:02:10.440
+versicolor, or virginica.
+
+32
+00:02:10.440 --> 00:02:15.919
+Now, consider the region bound by the box and
+the point at the center of the red circle.
+
+33
+00:02:15.919 --> 00:02:19.960
+Its three nearest neighbors are indicated by
+the line segments connecting to them.
+
+34
+00:02:19.960 --> 00:02:25.639
+Using a majority vote, K-NN would correctly
+classify this point as blue, or virginica.
+
+35
+00:02:25.639 --> 00:02:29.479
+Looking at another point, showing its nearest
+three neighbors, you can see that the majority
+
+36
+00:02:29.479 --> 00:02:31.720
+class is green, or versicolor.
+
+37
+00:02:31.720 --> 00:02:36.520
+Thus, K-NN would incorrectly classify this iris.
+
+38
+00:02:36.520 --> 00:02:40.839
+Illustrated here is the decision boundary
+for the K-NN classification result using K
+
+39
+00:02:40.839 --> 00:02:46.080
+equals 3 nearest neighbors and two input
+features – sepal length and petal length.
+
+40
+00:02:46.080 --> 00:02:50.279
+The model was generated with the K-Neighbors
+classifier from Scikit-Learn.
+
+41
+00:02:50.279 --> 00:02:55.360
+The three different colored regions indicate
+which of the three classes or types of irises
+
+42
+00:02:55.360 --> 00:02:59.479
+K-NN predicted for each pair of sepal and petal lengths.
+
+43
+00:02:59.479 --> 00:03:04.679
+The points are the sepal-petal length pairs
+labeled with their actual iris type – setosa,
+
+44
+00:03:04.679 --> 00:03:06.880
+versicolor, or virginica.
+
+45
+00:03:06.880 --> 00:03:13.800
+As you can see, K-NN correctly classified
+most of the irises with an accuracy of 93%.
+
+46
+00:03:13.800 --> 00:03:18.520
+To find an optimal value for K, you can test
+a range of values using a labeled test dataset
+
+47
+00:03:18.520 --> 00:03:20.080
+and measure accuracy.
+
+48
+00:03:20.080 --> 00:03:24.919
+Once you've done so, choose K equals 1, use
+the training part for modeling, and calculate
+
+49
+00:03:24.919 --> 00:03:28.160
+the prediction accuracy using all samples in
+your test set.
+
+50
+00:03:28.160 --> 00:03:33.080
+Repeat this process, increasing the K, and
+see which K is best for your model.
+
+51
+00:03:33.080 --> 00:03:38.080
+For example, K equals 4 will give you the
+best accuracy in this case.
+
+52
+00:03:38.080 --> 00:03:42.279
+The K-NN algorithm is a lazy learner, so it
+doesn't learn in the sense that other machine
+
+53
+00:03:42.279 --> 00:03:43.759
+learning models do.
+
+54
+00:03:43.759 --> 00:03:48.240
+It stores the training data and makes predictions
+for each query point based on its distances
+
+55
+00:03:48.240 --> 00:03:50.000
+to all points in the training data.
+
+56
+00:03:50.000 --> 00:03:54.360
+Thus, it is still a supervised model because
+it must calculate all distances from each
+
+57
+00:03:54.360 --> 00:03:59.199
+query point to the training points, then sort
+the observations by increasing distance, and
+
+58
+00:03:59.199 --> 00:04:02.399
+finally, select the top K observations.
+
+59
+00:04:02.399 --> 00:04:07.039
+Now, how does K affect the outcome of the K-NN algorithm?
+
+60
+00:04:07.039 --> 00:04:11.839
+If K is small, the values assigned to unlabeled
+observations will tend to fluctuate, causing
+
+61
+00:04:11.839 --> 00:04:12.839
+overfitting.
+
+62
+00:04:12.839 --> 00:04:19.359
+If K is large, then K-N will smooth out the
+finer details and cause underfitting.
+
+63
+00:04:19.359 --> 00:04:23.079
+Somewhere in between, there will be a happy
+medium value for K.
+
+64
+00:04:23.079 --> 00:04:28.720
+In classification, the majority voting algorithm
+becomes unreliable when the class distribution
+
+65
+00:04:28.720 --> 00:04:30.880
+is skewed.
+
+66
+00:04:30.880 --> 00:04:34.279
+More frequent classes tend to dominate the
+prediction of the new example because they
+
+67
+00:04:34.279 --> 00:04:38.040
+are more prevalent among the nearest neighbors
+owing to their higher number.
+
+68
+00:04:38.040 --> 00:04:41.679
+To overcome this challenge, you can weigh the
+classification by considering the distance
+
+69
+00:04:41.679 --> 00:04:46.760
+from the test point to each of its K-NN.
+
+70
+00:04:46.760 --> 00:04:51.640
+When features have large values, they will
+dominate the distance measure and the predictions.
+
+71
+00:04:51.640 --> 00:04:56.579
+Artificially more important features can cause
+biased or low-accuracy predictions.
+
+72
+00:04:56.579 --> 00:05:02.920
+Features need to be scaled to remove this effect,
+and the simplest way is standardization.
+
+73
+00:05:02.920 --> 00:05:06.239
+Including an irrelevant feature is like adding noise.
+
+74
+00:05:06.239 --> 00:05:10.779
+Noisy data requires a higher value of K to avoid
+overfitting, which in turn drives up
+
+75
+00:05:10.880 --> 00:05:13.779
+computational cost and diminishes accuracy.
+
+76
+00:05:13.779 --> 00:05:18.500
+Keeping only relevant features lowers the
+optimal K and improves both accuracy and computational
+
+77
+00:05:18.500 --> 00:05:20.940
+efficiency.
+
+78
+00:05:20.940 --> 00:05:22.700
+Features must be relevant to the problem.
+
+79
+00:05:22.700 --> 00:05:27.500
+Redundant features add computational cost
+with no expected improvement in accuracy.
+
+80
+00:05:27.500 --> 00:05:30.980
+Being able to identify relevant features
+comes from domain knowledge.
+
+81
+00:05:30.980 --> 00:05:34.980
+To check whether an independent feature is
+important, you can tune K with and without
+
+82
+00:05:34.980 --> 00:05:39.179
+the feature and evaluate the change in model performance.
+
+83
+00:05:39.179 --> 00:05:43.220
+In this video, you learned that K-NN is a
+supervised machine learning algorithm that
+
+84
+00:05:43.220 --> 00:05:46.179
+uses labeled points to learn how to label other points.
+
+85
+00:05:46.179 --> 00:05:49.540
+K-NN is used for classification and regression.
+
+86
+00:05:49.540 --> 00:05:54.420
+To find an optimal value for K, you can test a
+range of values using a labeled test dataset
+
+87
+00:05:54.420 --> 00:05:56.179
+and measure accuracy.
+
+88
+00:05:56.179 --> 00:06:00.380
+When the class distribution is skewed, there is
+a disadvantage in the basic majority voting
+
+89
+00:06:00.380 --> 00:06:01.380
+classification.
+
+90
+00:06:01.380 --> 00:06:07.660
+A possible resolution can be to weigh the
+classification or by abstraction in data representation.
+
+91
+00:06:07.660 --> 00:06:12.579
+Keeping only relevant features lowers the
+optimal K and improves both accuracy and computational
+
+92
+00:06:12.579 --> 00:06:13.779
+efficiency.
+
+93
+00:06:13.779 --> 00:06:17.500
+To check whether an independent feature is
+important, you can tune K with and without
+
+94
+00:06:17.500 --> 00:06:20.220
+the feature and evaluate the change in model performance.

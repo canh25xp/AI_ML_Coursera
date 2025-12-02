@@ -1,0 +1,521 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.680
+Trong nhiều năm, khoa học dữ liệu đã được gọi là công việc quyến rũ nhất thế kỷ 21, nhưng trong những
+
+2
+00:00:12.680 --> 00:00:17.799
+năm gần đây, có vẻ như có một công việc mới cạnh tranh cho chức danh đó, kỹ sư AI.
+
+3
+00:00:17.799 --> 00:00:19.559
+Vậy những đứa trẻ mới trên tòa nhà này là ai?
+
+4
+00:00:19.559 --> 00:00:22.440
+Họ chỉ là những nhà khoa học dữ liệu ngụy trang?
+
+5
+00:00:22.440 --> 00:00:23.440
+Mọi người có chuyện gì vậy?
+
+6
+00:00:23.440 --> 00:00:27.280
+Tôi là Isaac Key, và tôi là một cựu nhà khoa học dữ liệu trở thành kỹ sư AI tại IBM.
+
+7
+00:00:27.280 --> 00:00:30.959
+Để trả lời những câu hỏi này, tôi sẽ trình bày bốn lĩnh vực chính trong đó công việc của một
+
+8
+00:00:30.959 --> 00:00:36.799
+nhà khoa học dữ liệu khác với một kỹ sư AI, cụ thể là một kỹ sư AI tổng hợp.
+
+9
+00:00:36.799 --> 00:00:40.159
+Nhưng trước khi tôi đi sâu vào những khác biệt này, trước tiên chúng ta phải hiểu thêm về những gì
+
+10
+00:00:40.159 --> 00:00:42.319
+đang xảy ra trong ngành.
+
+11
+00:00:42.319 --> 00:00:47.919
+Vì vậy, theo truyền thống, các nhà khoa học dữ liệu luôn sử dụng các mô hình AI để thực hiện phân tích của họ.
+
+12
+00:00:47.919 --> 00:00:49.080
+Vậy điều gì đã thay đổi?
+
+13
+00:00:49.080 --> 00:00:54.000
+Chà, với sự ra đời của AI phát triển, ranh giới của những gì AI có thể làm đang được đẩy lên
+
+14
+00:00:54.000 --> 00:00:56.400
+theo những cách mà chúng ta chưa từng thấy trước đây.
+
+15
+00:00:56.400 --> 00:01:02.119
+Và vì vậy những đột phá này đã mang tính đột phá đến mức AI phát triển đã tách ra thành một
+
+16
+00:01:02.119 --> 00:01:06.040
+lĩnh vực riêng biệt, và chúng tôi gọi đó là kỹ thuật AI.
+
+17
+00:01:06.040 --> 00:01:10.919
+Được rồi, vì vậy bây giờ chúng ta đã hiểu cảnh quan, hãy đi sâu vào sự khác biệt.
+
+18
+00:01:10.919 --> 00:01:15.519
+Khu vực khác biệt đầu tiên nằm ở các trường hợp sử dụng.
+
+19
+00:01:15.519 --> 00:01:19.239
+Vì vậy, ở cấp độ rất cao, hãy nghĩ về một nhà khoa học dữ liệu như một người kể chuyện dữ liệu.
+
+20
+00:01:19.239 --> 00:01:23.959
+Họ lấy một lượng lớn dữ liệu thế giới thực lộn xộn và họ sử dụng các mô hình toán học để chuyển
+
+21
+00:01:24.000 --> 00:01:27.040
+dữ liệu này thành những hiểu biết sâu sắc.
+
+22
+00:01:27.040 --> 00:01:31.160
+Mặt khác, hãy nghĩ về một kỹ sư AI như một nhà xây dựng hệ thống AI.
+
+23
+00:01:31.160 --> 00:01:36.680
+Họ sử dụng các mô hình nền tảng để xây dựng các hệ thống AI tổng hợp giúp chuyển đổi các
+
+24
+00:01:36.680 --> 00:01:38.440
+quy trình kinh doanh.
+
+25
+00:01:38.440 --> 00:01:44.400
+Vì vậy, vì các nhà khoa học dữ liệu là những người kể chuyện tuyệt vời, họ sử dụng rất nhiều phân tích
+
+26
+00:01:44.400 --> 00:01:46.040
+mô tả để mô tả quá khứ.
+
+27
+00:01:46.040 --> 00:01:51.680
+Một ví dụ về điều này là thông qua cái được gọi là phân tích dữ liệu thăm dò, hoặc EDA,
+
+28
+00:01:51.680 --> 00:01:55.599
+tất cả là vẽ đồ thị dữ liệu và thực hiện suy luận thống kê.
+
+29
+00:01:55.599 --> 00:02:01.879
+Họ cũng có thể làm điều này thông qua cái được gọi là phân cụm, nhóm các điểm dữ liệu tương tự
+
+30
+00:02:01.879 --> 00:02:07.080
+dựa trên các đặc điểm tương tự, chẳng hạn như thực hiện phân khúc khách hàng.
+
+31
+00:02:07.080 --> 00:02:11.000
+Giờ đây, mỗi câu chuyện hay đều có một độc giả cố gắng tìm ra điều gì sẽ xảy ra tiếp theo, và
+
+32
+00:02:11.000 --> 00:02:14.320
+đó là nơi các trường hợp sử dụng dự đoán xuất hiện.
+
+33
+00:02:14.320 --> 00:02:18.800
+Tuy nhiên, trái ngược với một cuốn sách, một nhà khoa học dữ liệu không có kết thúc đã được viết sẵn, vì vậy
+
+34
+00:02:18.800 --> 00:02:23.199
+họ phải sử dụng những gì được gọi là mô hình học máy để đưa ra dự đoán của họ.
+
+35
+00:02:23.199 --> 00:02:30.559
+Một ví dụ về điều này được gọi là mô hình hồi quy, dự đoán một giá trị số, chẳng hạn như
+
+36
+00:02:30.559 --> 00:02:32.839
+nhiệt độ hoặc doanh thu.
+
+37
+00:02:32.839 --> 00:02:38.440
+Một loại khác của các mô hình này là các mô hình phân loại, dự đoán một giá trị phân loại
+
+38
+00:02:38.440 --> 00:02:41.559
+như thành công hoặc thất bại.
+
+39
+00:02:41.559 --> 00:02:47.300
+Vì vậy, đặt mũ kỹ thuật AI ngay bây giờ, một trong những trường hợp sử dụng chính mà các kỹ sư AI
+
+40
+00:02:47.300 --> 00:02:52.259
+làm việc được gọi là các trường hợp sử dụng quy định, tất cả đều liên quan đến việc lựa chọn cách
+
+41
+00:02:52.259 --> 00:02:54.080
+hành động tốt nhất.
+
+42
+00:02:54.080 --> 00:03:01.220
+Một ví dụ về điều này là một kỹ thuật được gọi là tối ưu hóa quyết định, cho phép các doanh nghiệp
+
+43
+00:03:01.220 --> 00:03:06.500
+đánh giá một tập hợp các hành động có thể và sau đó chọn con đường tối ưu nhất dựa trên một tập hợp
+
+44
+00:03:06.500 --> 00:03:09.300
+các yêu cầu hoặc tiêu chuẩn.
+
+45
+00:03:09.300 --> 00:03:14.220
+Một ví dụ khác về trường hợp sử dụng quy định là thông qua việc tạo ra những gì được gọi là
+
+46
+00:03:14.220 --> 00:03:16.779
+công cụ khuyến nghị.
+
+47
+00:03:16.779 --> 00:03:22.460
+Ví dụ, điều này có thể liên quan đến việc đề xuất các chiến dịch tiếp thị được nhắm mục tiêu cho một
+
+48
+00:03:22.460 --> 00:03:24.559
+cơ sở khách hàng được chọn.
+
+49
+00:03:24.559 --> 00:03:28.899
+Ngoài các trường hợp sử dụng quy định, còn có các trường hợp sử dụng tổng hợp, do đó có tên AI
+
+50
+00:03:28.899 --> 00:03:30.619
+generative.
+
+51
+00:03:30.619 --> 00:03:36.020
+Bây giờ các mô hình nền tảng, mà tôi sẽ đề cập nhiều hơn một chút, cho phép tạo ra những gì
+
+52
+00:03:36.020 --> 00:03:44.660
+được gọi là trợ lý thông minh, ví dụ, trợ lý mã hóa hoặc cố vấn kỹ thuật số.
+
+53
+00:03:44.660 --> 00:03:51.139
+Chúng cũng cho phép tạo ra các chatbot, ví dụ, cho phép
+
+54
+00:03:51.139 --> 00:03:55.820
+tìm kiếm đàm thoại thông qua truy xuất thông tin và tóm tắt các nội dung khác nhau.
+
+55
+00:03:55.820 --> 00:03:59.820
+Vì vậy, sau khi chúng tôi đã xác định được trường hợp sử dụng, chúng tôi cần dữ liệu.
+
+56
+00:03:59.820 --> 00:04:05.259
+Bây giờ mọi người nói rằng dữ liệu là một loại dầu mới bởi vì giống như dầu, bạn phải tìm kiếm và tìm
+
+57
+00:04:05.259 --> 00:04:10.820
+dữ liệu phù hợp và sau đó sử dụng các quy trình phù hợp để biến nó thành các sản phẩm khác nhau,
+
+58
+00:04:10.820 --> 00:04:13.259
+sau đó cung cấp năng lượng cho các quy trình khác nhau.
+
+59
+00:04:13.259 --> 00:04:19.540
+Đối với một nhà khoa học dữ liệu, dầu được lựa chọn thường là dữ liệu có cấu trúc, hay còn gọi là dữ liệu dạng bảng.
+
+60
+00:04:19.540 --> 00:04:24.940
+Lưu ý rằng các nhà khoa học dữ liệu vẫn làm việc với dữ liệu phi cấu trúc, nhưng không nhiều như các kỹ sư AI.
+
+61
+00:04:24.940 --> 00:04:32.980
+Bây giờ các bảng này thường theo thứ tự hàng trăm đến hàng trăm nghìn quan sát,
+
+62
+00:04:32.980 --> 00:04:38.579
+và chúng đòi hỏi rất nhiều việc làm sạch và xử lý trước khi dữ liệu có thể được mô hình hóa.
+
+63
+00:04:38.579 --> 00:04:44.940
+Ví dụ, một số công việc dọn dẹp liên quan đến việc loại bỏ các ngoại lệ hoặc nối và
+
+64
+00:04:44.940 --> 00:04:52.179
+lọc trên một bảng mới, hoặc thậm chí tạo ra các tính năng mới hoàn toàn.
+
+65
+00:04:52.179 --> 00:04:56.820
+Dữ liệu sạch này sau đó được sử dụng để đào tạo các mô hình học máy khác nhau.
+
+66
+00:04:56.820 --> 00:05:02.299
+Mặt khác, một kỹ sư AI, đối với họ, dầu được lựa chọn chủ yếu là
+
+67
+00:05:02.299 --> 00:05:07.739
+dữ liệu phi cấu trúc như văn bản, hình ảnh, video, tệp âm thanh, v.v.
+
+68
+00:05:07.899 --> 00:05:14.019
+Hãy lấy một mô hình nền tảng dựa trên văn bản được gọi là LLM, hoặc Mô hình ngôn ngữ lớn, làm ví dụ.
+
+69
+00:05:14.019 --> 00:05:20.380
+Các mô hình này đòi hỏi từ hàng tỷ đến hàng nghìn tỷ mã thông báo văn bản để được đào tạo
+
+70
+00:05:20.380 --> 00:05:25.899
+, quy mô lớn hơn rất nhiều so với các mô hình học máy truyền thống.
+
+71
+00:05:25.899 --> 00:05:32.540
+Điều này dẫn tôi đến lĩnh vực khác biệt tiếp theo, đó là các mô hình cơ bản.
+
+72
+00:05:32.540 --> 00:05:40.019
+Vì vậy, hộp công cụ khoa học dữ liệu bao gồm hàng trăm mô hình khác nhau và các thuật toán khác nhau
+
+73
+00:05:40.019 --> 00:05:42.859
+mà họ có thể lựa chọn. Do
+
+74
+00:05:42.859 --> 00:05:48.260
+bản chất của các mô hình này, mỗi trường hợp sử dụng khác nhau yêu cầu thu thập một tập dữ liệu khác nhau
+
+75
+00:05:48.260 --> 00:05:50.899
+và do đó yêu cầu đào tạo một mô hình khác nhau.
+
+76
+00:05:50.899 --> 00:05:58.779
+Và do đó, phạm vi của các mô hình riêng lẻ này hẹp hơn rất nhiều, có nghĩa là
+
+77
+00:05:58.779 --> 00:06:03.579
+chúng khó khái quát hóa vượt qua miền dữ liệu mà họ đã được đào tạo.
+
+78
+00:06:03.579 --> 00:06:08.140
+Và nói chung, các mô hình này có kích thước nhỏ hơn rất nhiều về số lượng tham
+
+79
+00:06:08.140 --> 00:06:15.299
+số, chúng mất ít sức mạnh tính toán hơn để đào tạo và suy luận, và chúng đòi hỏi
+
+80
+00:06:15.299 --> 00:06:21.940
+ít thời gian hơn để đào tạo, từ giây đến giờ.
+
+81
+00:06:21.940 --> 00:06:26.700
+Mặt khác, hộp công cụ AI tạo ra ít lộn xộn hơn rất nhiều và nó thực sự chỉ
+
+82
+00:06:26.700 --> 00:06:32.140
+chứa một loại mô hình, và đó được gọi là mô hình nền tảng.
+
+83
+00:06:32.140 --> 00:06:36.140
+Bây giờ các mô hình nền tảng đã mang tính cách mạng vì chúng cho phép một loại mô hình duy nhất
+
+84
+00:06:36.140 --> 00:06:40.619
+khái quát hóa cho một loạt các nhiệm vụ mà không cần phải đào tạo lại.
+
+85
+00:06:40.619 --> 00:06:45.899
+Do đó phạm vi của họ được gọi là rộng hơn.
+
+86
+00:06:45.899 --> 00:06:51.799
+Và do sự tinh vi của các mô hình này, chúng có kích thước lớn hơn rất nhiều, thường là hàng tỷ tham
+
+87
+00:06:51.799 --> 00:06:59.519
+số, chúng đòi hỏi nhiều sức mạnh tính toán hơn để đào tạo, chúng ta đang nói đến hàng trăm đến hàng
+
+88
+00:06:59.519 --> 00:07:05.320
+nghìn GPU và chúng đòi hỏi nhiều thời gian đào tạo hơn rất nhiều.
+
+89
+00:07:05.320 --> 00:07:09.239
+Bây giờ chúng ta đang nói bất cứ nơi nào từ tuần đến tháng.
+
+90
+00:07:09.239 --> 00:07:13.480
+Do sự khác biệt về
+
+91
+00:07:13.480 --> 00:07:20.160
+bản chất nội tại giữa các mô hình học máy truyền thống và mô hình nền tảng, điều này cũng có nghĩa là các quy trình và kỹ thuật cơ bản
+
+92
+00:07:20.160 --> 00:07:24.179
+được sử dụng để phát triển các giải pháp với những mô hình này cũng khác nhau.
+
+93
+00:07:24.179 --> 00:07:28.440
+Vì vậy, một quá trình khoa học dữ liệu điển hình sẽ trông giống như thế này.
+
+94
+00:07:28.440 --> 00:07:34.279
+Bạn bắt đầu với một trường hợp sử dụng, và sau đó từ trường hợp sử dụng đó, bạn chọn dữ liệu phù hợp.
+
+95
+00:07:34.279 --> 00:07:39.760
+Sau đó, sau khi dữ liệu đó được chuẩn bị, bạn sử dụng nó để đào tạo và xác thực một mô hình bằng cách sử dụng
+
+96
+00:07:39.760 --> 00:07:47.380
+các kỹ thuật như kỹ thuật tính năng, xác thực chÉO hoặc điều chỉnh siêu tham số, làm ví dụ.
+
+97
+00:07:47.380 --> 00:07:53.040
+Mô hình này sau đó được triển khai tại một số điểm cuối, ví dụ trong đám mây, để thực hiện
+
+98
+00:07:53.040 --> 00:07:55.760
+dự đoán và suy luận thời gian thực.
+
+99
+00:07:55.760 --> 00:08:02.799
+Mặt khác, quy trình AI tạo ra cũng bắt đầu với một trường hợp sử dụng, nhưng sau đó
+
+100
+00:08:02.799 --> 00:08:07.200
+chúng ta có thể chuyển trực tiếp sang làm việc với một mô hình được đào tạo trước.
+
+101
+00:08:07.200 --> 00:08:11.559
+Và điều làm cho điều này trở nên khả thi là một hiện tượng gọi là dân chủ hóa AI, một
+
+102
+00:08:11.559 --> 00:08:17.040
+từ lạ mắt đơn giản có nghĩa là làm cho AI dễ tiếp cận hơn đối với người dùng hàng ngày.
+
+103
+00:08:17.040 --> 00:08:21.059
+Một số mô hình nền tảng tốt nhất hiện có được xuất bản cho các cộng đồng mã nguồn mở
+
+104
+00:08:21.059 --> 00:08:26.140
+như Hugging Face, và vì các mô hình này rất khái quát và rất mạnh mẽ
+
+105
+00:08:26.140 --> 00:08:29.619
+, chúng giúp các nhà phát triển dễ dàng bắt đầu.
+
+106
+00:08:29.619 --> 00:08:34.739
+Các kỹ sư AI tương tác với các mô hình nền tảng này thông qua các hướng dẫn ngôn ngữ tự nhiên
+
+107
+00:08:34.739 --> 00:08:42.780
+để nhắc họ thực hiện các nhiệm vụ khác nhau và quá trình này được gọi là kỹ thuật nhanh chóng.
+
+108
+00:08:42.780 --> 00:08:46.940
+Giờ đây, kỹ thuật nhanh có thể được sử dụng kết hợp với các khung khác nhau để sau đó xây dựng các
+
+109
+00:08:46.940 --> 00:08:49.200
+hệ thống AI lớn hơn.
+
+110
+00:08:49.200 --> 00:08:55.760
+Một ví dụ về các khung này bao gồm, như một, chuỗi các lời nhắc khác nhau lại với nhau
+
+111
+00:08:55.760 --> 00:09:02.260
+hoặc thực hiện cái được gọi là tinh chỉnh hiệu quả tham số hoặc PEFT, trên dữ liệu miền cụ thể hoặc thực hiện tạo
+
+112
+00:09:02.260 --> 00:09:08.640
+tăng cường truy xuất, hay còn gọi là RAG, để căn cứ câu trả lời trong sự thật, hoặc thậm chí
+
+113
+00:09:08.640 --> 00:09:16.440
+bằng cách tạo các tác nhân tự trị để suy luận thông qua các vấn đề đa bước rất phức tạp.
+
+114
+00:09:16.440 --> 00:09:20.000
+Vì vậy, đây chỉ là một vài ví dụ về các khối xây dựng có thể được sử dụng để xây dựng
+
+115
+00:09:20.000 --> 00:09:22.900
+các ứng dụng AI lớn hơn.
+
+116
+00:09:22.900 --> 00:09:29.059
+Bước cuối cùng là nhúng AI vào một hệ thống hoặc quy trình làm việc lớn hơn.
+
+117
+00:09:29.059 --> 00:09:35.780
+Điều này có thể ở dạng tạo trợ lý hoặc tác nhân ảo, xây dựng một ứng dụng lớn hơn
+
+118
+00:09:35.780 --> 00:09:39.940
+với giao diện người dùng hoặc thậm chí thực hiện một số loại tự động hóa.
+
+119
+00:09:39.940 --> 00:09:44.440
+Vì vậy, được rồi, chúng ta hãy lùi lại một bước và xem xét tất cả sự khác biệt ở mức độ rất cao.
+
+120
+00:09:44.440 --> 00:09:48.979
+Như chúng ta có thể thấy, những đột phá trong AI tổng hợp làm nền tảng cho nhiều sự khác biệt trong các
+
+121
+00:09:48.979 --> 00:09:55.380
+trường hợp sử dụng, dữ liệu, mô hình và quy trình mà các nhà khoa học dữ liệu và kỹ sư AI làm việc.
+
+122
+00:09:55.380 --> 00:09:59.260
+Điều quan trọng cần lưu ý là vẫn có sự trùng lặp giữa hai trường.
+
+123
+00:09:59.260 --> 00:10:04.419
+Ví dụ, các nhà khoa học dữ liệu vẫn sẽ làm việc trên các trường hợp sử dụng quy định hoặc kỹ sư AI
+
+124
+00:10:04.419 --> 00:10:07.380
+vẫn sẽ làm việc với dữ liệu có cấu trúc.
+
+125
+00:10:07.380 --> 00:10:11.820
+Bất kể những khác biệt này, cả hai lĩnh vực này đang tiếp tục phát triển
+
+126
+00:10:11.840 --> 00:10:17.840
+với tốc độ nhanh chóng với các bài báo nghiên cứu mới, mô hình mới, công cụ mới xuất hiện mỗi ngày.
+
+127
+00:10:17.840 --> 00:10:22.760
+Với dữ liệu, AI và một trí óc sáng tạo, thực sự mọi thứ đều có thể thực hiện được với những thứ này.
+
+128
+00:10:22.760 --> 00:10:23.760
+Cảm ơn bạn đã theo dõi.
+
+129
+00:10:23.760 --> 00:10:25.119
+Tôi hy vọng điều này hữu ích.
+
+130
+00:10:25.119 --> 00:10:26.559
+Cho đến lần sau, hòa bình.

@@ -1,0 +1,381 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:09.420
+Welcome to Regression Trees.
+
+2
+00:00:09.420 --> 00:00:13.239
+After watching this video, you will be able to describe a regression tree and recognize
+
+3
+00:00:13.239 --> 00:00:15.680
+how it is different from classification.
+
+4
+00:00:15.680 --> 00:00:19.120
+You will also be able to explain how to create a regression tree.
+
+5
+00:00:19.120 --> 00:00:23.260
+A regression tree is analogous to a decision tree that predicts continuous values rather
+
+6
+00:00:23.260 --> 00:00:25.120
+than discrete classes.
+
+7
+00:00:25.120 --> 00:00:29.600
+The distinguishing feature between classification and regression is the characteristic of the
+
+8
+00:00:29.600 --> 00:00:32.000
+target or labeled data.
+
+9
+00:00:32.000 --> 00:00:37.240
+In classification, the target variable is categorical, such as true or false.
+
+10
+00:00:37.240 --> 00:00:42.119
+In regression, the target is a continuous value, such as temperature or salary.
+
+11
+00:00:42.119 --> 00:00:46.840
+When a decision tree is adapted to solve regression problems, it is called a regression tree.
+
+12
+00:00:46.840 --> 00:00:50.919
+Let's compare classification trees with regression trees to understand how they're
+
+13
+00:00:50.919 --> 00:00:51.919
+different.
+
+14
+00:00:51.919 --> 00:00:55.959
+The target of a classification tree is to classify data into discrete sets, whereas
+
+15
+00:00:55.959 --> 00:00:59.720
+a regression tree aims at predicting continuous target variables.
+
+16
+00:00:59.720 --> 00:01:05.480
+Hence, the target variable for a classification tree is categorical but floating for a regression
+
+17
+00:01:05.480 --> 00:01:06.480
+tree.
+
+18
+00:01:06.480 --> 00:01:10.900
+The prediction at leaf nodes for a classification tree is a class-labeled majority vote, whereas
+
+19
+00:01:10.900 --> 00:01:15.000
+for a regression tree, it is the average value of target values.
+
+20
+00:01:15.000 --> 00:01:20.040
+Some used cases of classification trees are spam detection, image classification, medical
+
+21
+00:01:20.040 --> 00:01:21.519
+diagnosis.
+
+22
+00:01:21.519 --> 00:01:26.819
+Regression trees are used for predicting revenue, temperatures, and wildfire risk.
+
+23
+00:01:26.819 --> 00:01:31.440
+Regression trees are created by recursively splitting the dataset into subsets to maximize
+
+24
+00:01:31.440 --> 00:01:33.879
+information gained from data splitting.
+
+25
+00:01:33.879 --> 00:01:38.360
+This process generates a tree-like structure and minimizes the randomness of the classes
+
+26
+00:01:38.360 --> 00:01:39.959
+assigned to the split nodes.
+
+27
+00:01:39.959 --> 00:01:41.959
+Let's consider this example.
+
+28
+00:01:41.959 --> 00:01:46.760
+Given a continuous feature from a dataset and a trial threshold value, alpha, the data
+
+29
+00:01:46.760 --> 00:01:51.739
+in a node is split into two subsets according to whether the data is greater than or less
+
+30
+00:01:51.739 --> 00:01:56.620
+than alpha, and the corresponding points are assigned to the left and right nodes.
+
+31
+00:01:56.620 --> 00:02:00.819
+If the feature is binary, consisting of two classes, then the split is according to the
+
+32
+00:02:00.819 --> 00:02:02.220
+two classes.
+
+33
+00:02:02.220 --> 00:02:06.360
+You make a prediction at each node based either on a class voting scheme as with decision
+
+34
+00:02:06.360 --> 00:02:10.300
+trees or by using the average of the target values in the node.
+
+35
+00:02:10.300 --> 00:02:15.220
+The predicted value, y-hat, for a given node is defined as the average of the actual target
+
+36
+00:02:15.220 --> 00:02:19.240
+values, y, i of the data points in the node.
+
+37
+00:02:19.240 --> 00:02:23.199
+You could use other statistics, like the median value, to assign the prediction.
+
+38
+00:02:23.199 --> 00:02:25.619
+This would be preferable when your data is skewed.
+
+39
+00:02:25.619 --> 00:02:29.800
+For normally distributed data, the median is comparable to the mean, but the median
+
+40
+00:02:29.800 --> 00:02:32.360
+is more expensive to compute.
+
+41
+00:02:32.360 --> 00:02:35.839
+Instead of using the entropy or information gained criteria to measure the quality of
+
+42
+00:02:35.839 --> 00:02:40.759
+a split, as for decision trees, regression trees select features that minimize the error
+
+43
+00:02:40.820 --> 00:02:46.500
+between the actual values, y, i in the resulting nodes, and the predicted value, y-hat.
+
+44
+00:02:46.500 --> 00:02:51.419
+A natural criterion for measuring the split quality of a given feature uses the mean-squared
+
+45
+00:02:51.419 --> 00:02:53.820
+error, or MSE.
+
+46
+00:02:53.820 --> 00:02:57.419
+Notice that this amounts to measuring the variance of the target values within each
+
+47
+00:02:57.419 --> 00:03:00.339
+node, which gauges how spread out the values are.
+
+48
+00:03:00.339 --> 00:03:03.740
+The smaller the variance is, the more closely the values agree.
+
+49
+00:03:03.740 --> 00:03:08.220
+To measure the quality of a split, the weighted average of the MSEs of each split node can
+
+50
+00:03:08.220 --> 00:03:09.339
+be used.
+
+51
+00:03:09.339 --> 00:03:14.320
+The weighted average is calculated as average MSE equals one over the number of observations
+
+52
+00:03:14.320 --> 00:03:19.160
+in the two split nodes, times the sum of the number of observations in the left split times
+
+53
+00:03:19.160 --> 00:03:23.880
+the MSE of the left split, and the number of observations in the right split times the
+
+54
+00:03:23.880 --> 00:03:25.880
+MSE of the right split.
+
+55
+00:03:25.880 --> 00:03:31.119
+The lower this value, the lower the variance, and thus, the higher the quality of the split.
+
+56
+00:03:31.119 --> 00:03:35.919
+During training, the tree finds the feature and threshold that best splits each node.
+
+57
+00:03:35.919 --> 00:03:40.580
+For each potential split of a feature, the tree calculates the MSE for the left and right
+
+58
+00:03:40.580 --> 00:03:41.580
+subsets.
+
+59
+00:03:41.580 --> 00:03:45.699
+The MSE of the split is a weighted average of the MSEs of the subsets.
+
+60
+00:03:45.699 --> 00:03:48.979
+The split with the lowest-weighted MSE is chosen.
+
+61
+00:03:48.979 --> 00:03:53.160
+This process minimizes the variance in the predicted values and improves the accuracy
+
+62
+00:03:53.160 --> 00:03:54.899
+of the regression tree.
+
+63
+00:03:54.899 --> 00:03:59.740
+For a binary feature, instead of using thresholds, the data is simply separated into its two
+
+64
+00:03:59.740 --> 00:04:05.000
+classes, and the split quality is just the weighted average of the class MSEs.
+
+65
+00:04:05.080 --> 00:04:09.960
+The weighted MSE has only one possible result, so it is already optimized.
+
+66
+00:04:09.960 --> 00:04:15.179
+For a multi-class feature, you can use a strategy like one-versus-one or one-versus-all to generate
+
+67
+00:04:15.179 --> 00:04:17.220
+a set of possible binary splits.
+
+68
+00:04:17.220 --> 00:04:22.260
+Then, for each binary split, calculate the weighted average of the MSEs.
+
+69
+00:04:22.260 --> 00:04:27.640
+Select the split that minimizes the weighted MSE, and thus, the lowest prediction variance.
+
+70
+00:04:27.640 --> 00:04:31.579
+How can you choose a set of trial thresholds to split a continuous feature on?
+
+71
+00:04:31.579 --> 00:04:32.579
+There are many ways.
+
+72
+00:04:32.579 --> 00:04:34.420
+Here's one strategy.
+
+73
+00:04:34.420 --> 00:04:39.559
+Start by sorting the feature's values so that Xi is less than or equal to Xj, for all
+
+74
+00:04:39.559 --> 00:04:41.880
+indexes i less than j.
+
+75
+00:04:41.880 --> 00:04:48.320
+Drop any duplicated values so that Xi is strictly less than Xj, for all i less than j.
+
+76
+00:04:48.320 --> 00:04:53.359
+Define your candidate thresholds, αi as the midpoints between each pair of consecutive
+
+77
+00:04:53.359 --> 00:04:59.079
+values, αi is half of Xi, plus Xi plus 1.
+
+78
+00:04:59.079 --> 00:05:03.399
+Choose the threshold that minimizes the weighted MSE for its data split.
+
+79
+00:05:03.399 --> 00:05:07.420
+This is an exhaustive search method that doesn't scale well to big data.
+
+80
+00:05:07.420 --> 00:05:11.799
+For very large datasets, selecting a sparse subset of these thresholds can improve efficiency
+
+81
+00:05:11.799 --> 00:05:14.019
+at the cost of accuracy.
+
+82
+00:05:14.019 --> 00:05:18.440
+The method also assumes the target values, X, are uniformly distributed.
+
+83
+00:05:18.440 --> 00:05:22.880
+For efficiency, you should consider the distribution when sampling the thresholds.
+
+84
+00:05:22.880 --> 00:05:27.160
+In this video, you learned that a regression tree is analogous to a decision tree that
+
+85
+00:05:27.160 --> 00:05:29.040
+predicts continuous values.
+
+86
+00:05:29.040 --> 00:05:33.760
+In classification, the target variable is categorical, and in regression, the target
+
+87
+00:05:33.760 --> 00:05:35.820
+is a continuous value.
+
+88
+00:05:35.820 --> 00:05:40.040
+Regression trees are created by recursively splitting the dataset into subsets to maximize
+
+89
+00:05:40.040 --> 00:05:42.200
+information gained from data splitting.
+
+90
+00:05:42.200 --> 00:05:46.880
+MSE is a natural criterion for measuring the split quality of a given feature.
+
+91
+00:05:46.880 --> 00:05:50.959
+The regression tree finds the feature and threshold that best splits each node during
+
+92
+00:05:50.959 --> 00:05:51.959
+training.
+
+93
+00:05:51.959 --> 00:05:53.440
+The feature can be binary or multi-class.
+
+94
+00:05:53.440 --> 00:05:58.980
+Finally, you learned that you can choose continuous feature trial thresholds in multiple ways
+
+95
+00:05:58.980 --> 00:06:00.380
+depending on data size.

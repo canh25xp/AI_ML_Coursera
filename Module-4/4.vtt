@@ -1,0 +1,401 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:10.960
+Welcome to DBSCAN and HDBSCAN Clustering.
+
+2
+00:00:10.960 --> 00:00:15.800
+After watching this video, you will be able to describe DBSCAN, or density-based spatial
+
+3
+00:00:15.800 --> 00:00:19.920
+clustering of applications with noise clustering, and explain how it works.
+
+4
+00:00:19.920 --> 00:00:25.200
+You will also be able to describe HDBSCAN, or hierarchical density-based spatial clustering
+
+5
+00:00:25.200 --> 00:00:28.920
+of applications with noise cluttering, and explain how it works.
+
+6
+00:00:28.920 --> 00:00:34.119
+DBSCAN is a density-based spatial clustering algorithm that creates clusters with a density
+
+7
+00:00:34.119 --> 00:00:36.439
+value provided by the user.
+
+8
+00:00:36.439 --> 00:00:39.759
+The density value is positioned around a spatial centroid.
+
+9
+00:00:39.759 --> 00:00:43.720
+The area immediately around the centroid is referred to as a neighborhood, and DBSCAN
+
+10
+00:00:43.720 --> 00:00:47.759
+attempts to define neighborhoods of clusters with a specified density.
+
+11
+00:00:47.759 --> 00:00:52.360
+DBSCAN can discover clusters of any shape, size, or density in your data.
+
+12
+00:00:52.360 --> 00:00:55.880
+It can also distinguish between data points that are part of a cluster and those that
+
+13
+00:00:55.880 --> 00:00:58.400
+should be labeled as noise.
+
+14
+00:00:58.400 --> 00:01:01.599
+Density-based clustering is especially useful when working with data sets with noise or
+
+15
+00:01:01.599 --> 00:01:06.440
+outliers, or when the number of clusters in the data set is unknown.
+
+16
+00:01:06.440 --> 00:01:11.480
+Centroid-based clustering algorithms, such as k-means and hierarchical clustering, produce
+
+17
+00:01:11.480 --> 00:01:16.959
+spherical or convex shapes, and can work well for data sets that exhibit such patterns.
+
+18
+00:01:16.959 --> 00:01:20.440
+Centroid-based clustering assigns every point to a cluster, even when it doesn't properly
+
+19
+00:01:20.440 --> 00:01:24.480
+fit into one, like the black outlier assigned to the blue cluster.
+
+20
+00:01:24.480 --> 00:01:27.800
+Unfortunately, real-world data is rarely that simple.
+
+21
+00:01:27.800 --> 00:01:33.000
+Real patterns can have arbitrary shapes, shapes within shapes, and noise.
+
+22
+00:01:33.000 --> 00:01:37.440
+Density-based clustering addresses these complexities by identifying connected regions of relatively
+
+23
+00:01:37.440 --> 00:01:38.440
+high density.
+
+24
+00:01:38.440 --> 00:01:41.680
+Let's look at how the DBSCAN algorithm works.
+
+25
+00:01:41.680 --> 00:01:46.199
+Given a data set of points, you first select two parameters, a desired minimum number of
+
+26
+00:01:46.199 --> 00:01:52.080
+points, n, you want in a neighborhood, and the radius, epsilon, of each neighborhood.
+
+27
+00:01:52.080 --> 00:01:56.919
+Next, working through every point in the data set, you label it as one of the following types.
+
+28
+00:01:56.919 --> 00:02:01.720
+A core point, which is a focal point within a cluster, if it has at least n points, including
+
+29
+00:02:01.720 --> 00:02:05.080
+itself, within its neighborhood or radius epsilon.
+
+30
+00:02:05.080 --> 00:02:08.839
+A border point, if the point falls within the neighborhood of a core point, but doesn't
+
+31
+00:02:08.839 --> 00:02:13.919
+have enough neighbors to be a core point, or a noise point, if it is isolated from all
+
+32
+00:02:13.919 --> 00:02:16.039
+core point neighborhoods.
+
+33
+00:02:16.039 --> 00:02:18.839
+Clusters are grown from core points by including their neighbors.
+
+34
+00:02:18.839 --> 00:02:23.039
+Although border points are assigned to the same cluster as their associated core points,
+
+35
+00:02:23.039 --> 00:02:24.679
+they are not as densely connected.
+
+36
+00:02:25.000 --> 00:02:28.679
+Here, you can see a simulation of how DBSCAN labels points.
+
+37
+00:02:28.679 --> 00:02:32.880
+The data consists of two noisy sets of points created with the half-moons function from
+
+38
+00:02:32.880 --> 00:02:34.479
+scikit-learn.
+
+39
+00:02:34.479 --> 00:02:35.839
+Consider the following.
+
+40
+00:02:35.839 --> 00:02:40.080
+Core points are labeled in blue, and each has at least n equals 4 neighbors with its
+
+41
+00:02:40.080 --> 00:02:41.919
+epsilon radius.
+
+42
+00:02:41.919 --> 00:02:45.800
+Border points, labeled in orange, are points that belong to the neighborhood of their nearest
+
+43
+00:02:45.800 --> 00:02:50.600
+core point, but don't have enough nearby points to qualify as core points.
+
+44
+00:02:50.600 --> 00:02:54.279
+Border points exist in the outer reaches of the core neighborhoods.
+
+45
+00:02:54.279 --> 00:02:56.919
+DBSCAN is not iterative.
+
+46
+00:02:56.919 --> 00:03:01.039
+It grows clusters in one pass without updating them once they are labeled.
+
+47
+00:03:01.039 --> 00:03:04.520
+Any unassigned points remaining are regarded as noise.
+
+48
+00:03:04.520 --> 00:03:08.960
+Illustrated here is a simulation of the steps DBSCAN uses to cluster points.
+
+49
+00:03:08.960 --> 00:03:12.559
+The data consists of two noisy sets of points created with the half-moons function from
+
+50
+00:03:12.559 --> 00:03:14.039
+scikit-learn.
+
+51
+00:03:14.039 --> 00:03:18.960
+The sequence of plots shows how the clusters expand and how noise points are left unlabeled
+
+52
+00:03:18.960 --> 00:03:20.199
+at each step.
+
+53
+00:03:20.199 --> 00:03:24.880
+At first, all points are labeled in black and treated as outliers or noise.
+
+54
+00:03:24.880 --> 00:03:30.240
+In step 2, the algorithm identifies most of one of the half-moons as the blue points,
+
+55
+00:03:30.240 --> 00:03:32.679
+treating the remaining points as possible noise.
+
+56
+00:03:32.679 --> 00:03:37.600
+In step 3, DBSCAN labels most of the other half-moons as the orange points, with a few
+
+57
+00:03:37.600 --> 00:03:40.279
+black points left over as potential noise.
+
+58
+00:03:40.279 --> 00:03:45.160
+Finally, DBSCAN finds a third cluster in green, which is quite isolated from it, as you can
+
+59
+00:03:45.160 --> 00:03:47.240
+see from the enveloping neighborhood.
+
+60
+00:03:47.279 --> 00:03:52.600
+DBSCAN has done a good job of clustering the data and identifying the outlying noisy points.
+
+61
+00:03:52.600 --> 00:03:57.600
+HDBSCAN is a variant of DBSCAN that doesn't require any parameters to be set, making it
+
+62
+00:03:57.600 --> 00:03:59.800
+even more flexible than the original.
+
+63
+00:03:59.800 --> 00:04:03.679
+HDBSCAN is also less sensitive to noise and outliers.
+
+64
+00:04:03.679 --> 00:04:08.440
+It uses cluster stability, which refers to a cluster's ability to not change much when
+
+65
+00:04:08.440 --> 00:04:12.839
+the neighboring size is adjusted within a reasonable range of radii.
+
+66
+00:04:12.839 --> 00:04:17.239
+HDBSCAN measures cluster stability to find locally optimal neighborhood radii.
+
+67
+00:04:17.239 --> 00:04:20.119
+This results in more robust and meaningful clusters.
+
+68
+00:04:20.119 --> 00:04:24.200
+The technical implementation details of HDBSCAN are somewhat complex.
+
+69
+00:04:24.200 --> 00:04:29.279
+It is a combination of agglomerative and density-based clustering.
+
+70
+00:04:29.279 --> 00:04:35.239
+HDBSCAN starts by identifying each point as its own cluster, effectively noise, then progressively
+
+71
+00:04:35.239 --> 00:04:40.480
+agglomerates clusters into a hierarchy by incrementally lowering the density threshold.
+
+72
+00:04:40.480 --> 00:04:45.880
+In this way, a hierarchical tree is constructed, which gets simplified into a condensed tree
+
+73
+00:04:45.880 --> 00:04:50.000
+where only the most stable clusters across different density levels are kept.
+
+74
+00:04:50.000 --> 00:04:55.399
+Illustrated here is the result of running DBSCAN on a portion of the data set from Statistics
+
+75
+00:04:55.399 --> 00:04:59.799
+Canada that contains the latitudes and longitudes of Canadian museums.
+
+76
+00:04:59.799 --> 00:05:04.359
+The DBSCAN parameters chosen were minimum samples in a neighborhood equals 3, with
+
+77
+00:05:04.359 --> 00:05:07.519
+a neighborhood radius of 0.15 scaled units.
+
+78
+00:05:07.559 --> 00:05:11.320
+DBSCAN found around 10 clusters that seem appropriate to the human eye.
+
+79
+00:05:11.320 --> 00:05:16.679
+However, the population density is much higher within the red ellipse, and most of the region
+
+80
+00:05:16.679 --> 00:05:19.000
+has been lumped into a single cluster.
+
+81
+00:05:19.000 --> 00:05:23.760
+HDBSCAN has an advantage over DBSCAN in that it adaptively adjusts the neighborhood size
+
+82
+00:05:23.760 --> 00:05:27.000
+to reflect changes in the local densities of the points.
+
+83
+00:05:27.000 --> 00:05:32.679
+Here, HDBSCAN was run with a minimum number of samples equals 10, and a minimum cluster
+
+84
+00:05:32.679 --> 00:05:34.359
+size of 3 points.
+
+85
+00:05:34.480 --> 00:05:38.760
+Notice how the HDBSCAN result identified more distinct clusters than DBSCAN.
+
+86
+00:05:38.760 --> 00:05:43.640
+Interestingly, in addition to finding larger connected regions of varying density, HDBSCAN
+
+87
+00:05:43.640 --> 00:05:47.320
+tracked and distinguished connected sets of points that lie on curves.
+
+88
+00:05:47.320 --> 00:05:50.100
+The result looks more coherent and less noisy.
+
+89
+00:05:50.100 --> 00:05:54.640
+Of note is the level of detail provided in the relatively dense region in the east.
+
+90
+00:05:54.640 --> 00:05:58.920
+DBSCAN didn't provide the adaptive detail that HDBSCAN did here.
+
+91
+00:05:58.920 --> 00:06:02.779
+By tuning the parameters, you can strike a balance between mitigating outliers, capturing
+
+92
+00:06:02.779 --> 00:06:06.500
+the level of detail, and controlling the overall number of clusters found.
+
+93
+00:06:06.500 --> 00:06:10.940
+In this video, you learned that DBSCAN is a density-based spatial clustering algorithm
+
+94
+00:06:10.940 --> 00:06:14.779
+that creates clusters with a density value provided by the user.
+
+95
+00:06:14.779 --> 00:06:18.660
+Density-based clustering works well with natural patterns by identifying regions of relatively
+
+96
+00:06:18.660 --> 00:06:19.980
+high density.
+
+97
+00:06:19.980 --> 00:06:21.859
+DBSCAN is not iterative.
+
+98
+00:06:21.859 --> 00:06:25.899
+HDBSCAN is a variant of DBSCAN that doesn't require any parameters to be set and uses
+
+99
+00:06:25.899 --> 00:06:27.700
+cluster stability.
+
+100
+00:06:27.700 --> 00:06:32.739
+Cluster stability is defined as the persistence of a cluster over a range of distant thresholds.

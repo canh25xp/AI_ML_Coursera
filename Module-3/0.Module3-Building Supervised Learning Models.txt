@@ -1,0 +1,21 @@
+In this module, you’ll learn about implementing modern supervised machine learning models. You will start by understanding how binary classification works and discover how to construct a multiclass classifier from binary classification components. You’ll learn what decision trees are, how they learn, and how to build them. Decision trees, which are used to solve classification problems, have a natural extension called regression trees, which can handle regression problems. You’ll learn about other supervised learning models, such as KNN and SVM. You’ll learn what bias and variance are in model fitting and the tradeoff between bias and variance inherent to all learning models in various degrees. You’ll learn strategies for mitigating this tradeoff and work with models that do a very good job accomplishing that goal.
+Learning Objectives
+Describe classification
+List classification algorithms
+Explain multiclass predictions
+Explain how to create a regression tree
+Describe classification, its applications, and use cases
+List and explain classification algorithms, including decision trees and k-NN
+Apply the theory behind softmax regression, One-vs-All (One-vs-Rest), and One-vs-One classification approaches
+Discuss multiclass predictions and how decision trees are built and learned
+Develop a classification model using Decision Tree Algorithm
+Differentiate between classification and regression trees, and explain how to create a regression tree
+Perform basic data preprocessing and model a regression task using the Scikit-Learn and Snap ML Python APIs
+Train a Decision Tree Regressor model using Scikit-Learn and Snap ML, run inference, and assess the quality of the trained models
+Perform basic data preprocessing in Python and model a classification task using the Scikit-Learn and Snap ML Python APIs
+Train Support Vector Machine and Decision Tree models using Scikit-Learn and Snap ML, run inference, and assess the quality of the trained models
+Explain how the k-NN algorithm works and how the value of k affects its outcome
+Describe Support Vector Machines (SVM), their applications, and Python tools for implementation
+Analyze the impact of bias and variance on model accuracy and evaluate techniques to mitigate them
+Evaluate the outcomes of bagging and boosting methods and explain the bias-variance tradeoff in model complexity
+Use scikit-learn to implement Random Forest and XGBoost regression models and compare their performances

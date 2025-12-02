@@ -1,0 +1,381 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:10.350
+Welcome to Supervised Learning with SVMs.
+
+2
+00:00:10.350 --> 00:00:14.210
+Support Vector Machines, or SVMs, are used for classification.
+
+3
+00:00:14.210 --> 00:00:17.700
+After watching this video, you will be able to describe SVM,
+
+4
+00:00:17.700 --> 00:00:23.159
+identify Python tools for SVM, and discuss SVM applications.
+
+5
+00:00:23.159 --> 00:00:28.360
+Support Vector Machines, or SVM, is a supervised learning technique for building classification
+
+6
+00:00:28.360 --> 00:00:33.799
+and regression models. It maps each data instance as a point in multidimensional space
+
+7
+00:00:33.799 --> 00:00:37.940
+where the input features are represented as a value for a specific coordinate.
+
+8
+00:00:37.940 --> 00:00:44.479
+SVM classifies input data by identifying the hyperplane, which distinctly differentiates two classes.
+
+9
+00:00:44.479 --> 00:00:49.500
+Thus, these points are fundamental to the dataset. In a classification task comprising
+
+10
+00:00:49.500 --> 00:00:55.479
+two features, the hyperplane is a linear line that segregates and classifies the dataset.
+
+11
+00:00:55.479 --> 00:00:59.880
+Every time new inputs are added to the task, their classification depends on which side
+
+12
+00:00:59.880 --> 00:01:04.760
+of the hyperplane they land. The primary goal of SVM is to create a hyperplane
+
+13
+00:01:04.760 --> 00:01:10.040
+that segregates a dataset into two parts and finds the largest margin. In this example,
+
+14
+00:01:10.040 --> 00:01:15.000
+the dataset comprises a collection of two classes, red triangle and blue square.
+
+15
+00:01:15.000 --> 00:01:19.480
+The larger the margin, the better the model's accuracy on new, unseen data.
+
+16
+00:01:19.480 --> 00:01:26.160
+Data is often noisy and overlapping in real-world scenarios, making perfect separation impossible.
+
+17
+00:01:26.160 --> 00:01:28.450
+SVM can incorporate a soft margin,
+
+18
+00:01:28.450 --> 00:01:32.280
+which allows it to tolerate misclassifications while maximizing the margin.
+
+19
+00:01:32.280 --> 00:01:36.760
+The balance between maximizing the margin and minimizing the number of misclassifications
+
+20
+00:01:36.760 --> 00:01:41.959
+is controlled by a parameter, C. A smaller C allows more misclassifications
+
+21
+00:01:41.959 --> 00:01:47.639
+– softer margin, while a larger C forces a stricter separation – harder margin.
+
+22
+00:01:47.639 --> 00:01:52.050
+Rudimentary SVMs are binary classification machine learning algorithms.
+
+23
+00:01:52.050 --> 00:01:55.980
+Binary SVMs assume that two classes are linearly separable.
+
+24
+00:01:55.980 --> 00:01:59.720
+However, SVMs can also be adapted to solve regression problems.
+
+25
+00:02:00.520 --> 00:02:05.879
+SVMs try to divide data into two classes by finding a decision boundary. For example,
+
+26
+00:02:05.879 --> 00:02:10.580
+this chart shows two classes as red and blue data points based on two features.
+
+27
+00:02:10.580 --> 00:02:14.050
+The decision boundary is a hyperplane that maximizes the margin.
+
+28
+00:02:14.050 --> 00:02:17.960
+In a two-dimensional feature space, the decision boundary is a line.
+
+29
+00:02:17.960 --> 00:02:22.620
+The margin is the distance from the hyperplane to the closest points from each class.
+
+30
+00:02:22.620 --> 00:02:26.520
+These nearest-point representatives from each class are support vectors.
+
+31
+00:02:26.520 --> 00:02:31.630
+Without getting into the details of the mathematics involved in the derivation of the optimization problem,
+
+32
+00:02:31.630 --> 00:02:36.600
+consider this 2D example. Using the training data, and assuming the data has been normalized,
+
+33
+00:02:36.600 --> 00:02:41.780
+the objective is to find a weight vector and a value b, called the bias term, such that
+
+34
+00:02:41.780 --> 00:02:45.240
+A: the inner product of w with itself is minimized,
+
+35
+00:02:45.240 --> 00:02:47.950
+which amounts to minimizing the length of w, and
+
+36
+00:02:47.950 --> 00:02:53.250
+B: For every observation, or data point x, and target value y,
+
+37
+00:02:53.250 --> 00:02:58.830
+the product of y and w transported x plus b is greater than or equal to 1.
+
+38
+00:02:58.830 --> 00:03:03.740
+Therefore, the algorithm's output is the line's values, w and b.
+
+39
+00:03:03.740 --> 00:03:06.940
+You can make classifications using this estimated line.
+
+40
+00:03:06.940 --> 00:03:10.410
+Adding input values into the line equation lets you calculate whether
+
+41
+00:03:10.410 --> 00:03:13.100
+an unknown point is above or below the line.
+
+42
+00:03:13.100 --> 00:03:15.820
+If the equation returns a value greater than 0,
+
+43
+00:03:15.820 --> 00:03:19.800
+the point belongs to the first class, which is above the line, and vice versa.
+
+44
+00:03:20.360 --> 00:03:24.820
+Consider a 2D object of a non-linearly separable pair of classes.
+
+45
+00:03:24.820 --> 00:03:26.583
+As you can see from the 2D chart,
+
+46
+00:03:26.583 --> 00:03:30.820
+there are two non-overlapping classes with concentrically circular shapes.
+
+47
+00:03:30.820 --> 00:03:35.330
+You can imagine these points as analogous to map contours, representing their heights.
+
+48
+00:03:35.330 --> 00:03:38.450
+Clearly, these classes are not linearly separable.
+
+49
+00:03:38.450 --> 00:03:43.000
+Let's transform the features of the 2D object so that it takes on a parabolic shape.
+
+50
+00:03:43.000 --> 00:03:47.640
+Let's create a new 3D object by adding the new feature as thez-axis.
+
+51
+00:03:47.640 --> 00:03:51.230
+It's a bit difficult to interpret 3D objects, but as you can imagine,
+
+52
+00:03:51.230 --> 00:03:54.950
+the two classes are now clearly separated by a horizontal plane.
+
+53
+00:03:54.950 --> 00:03:57.340
+You can use this plane to classify new cases
+
+54
+00:03:57.340 --> 00:04:00.350
+according to whether they lie above or below the plane.
+
+55
+00:04:00.350 --> 00:04:04.900
+Mapping data into a higher-dimensional space like this is called kerneling,
+
+56
+00:04:04.900 --> 00:04:07.960
+where the kernel is a quadratic polynomial in this case.
+
+57
+00:04:07.960 --> 00:04:13.559
+With real-world data, there is no straightforward way to know which kernel function performs best.
+
+58
+00:04:13.559 --> 00:04:17.559
+Scikit-learn provides you with a choice of kernel functions to use with SVM.
+
+59
+00:04:17.559 --> 00:04:21.880
+A linear kernel is the default and corresponds to the usual SVM model.
+
+60
+00:04:21.880 --> 00:04:25.799
+Parabolic embedding is implemented by choosing the polynomial option.
+
+61
+00:04:25.799 --> 00:04:30.679
+Radial basis functions, or RBFs, which score high for points close to each other and an
+
+62
+00:04:30.679 --> 00:04:34.359
+exponentially decreasing score as points become more distant.
+
+63
+00:04:34.359 --> 00:04:37.880
+The sigmoid is the same function used for logistic regression.
+
+64
+00:04:37.880 --> 00:04:42.040
+To see how support vector machines work for regression, consider this chart.
+
+65
+00:04:42.040 --> 00:04:45.399
+It'll help you build some intuition without going into mathematics.
+
+66
+00:04:45.399 --> 00:04:49.480
+The synthetic data depicted by the orange data points represents a noisy,
+
+67
+00:04:49.480 --> 00:04:53.880
+non-linear, continuous target variable as a function of an input feature.
+
+68
+00:04:53.880 --> 00:04:58.679
+The blue curve displays the support vector regression, or SVR model prediction using a
+
+69
+00:04:58.679 --> 00:05:04.200
+radial basis function, or RBF kernel. The shaded light blue region represents
+
+70
+00:05:04.200 --> 00:05:08.839
+the epsilon tube around the prediction. Points falling within the epsilon tube are
+
+71
+00:05:08.839 --> 00:05:14.679
+shaded yellow. Epsilon is a parameter of the SVR learning algorithm that you can select to define
+
+72
+00:05:14.679 --> 00:05:18.600
+a margin around the prediction curve. Points falling outside the margin are
+
+73
+00:05:18.600 --> 00:05:21.810
+interpreted as noise, and points inside as signal.
+
+74
+00:05:21.810 --> 00:05:27.650
+In the first case, epsilon is 0.2, and in the second, epsilon is 0.4.
+
+75
+00:05:27.650 --> 00:05:29.480
+SVM has many advantages.
+
+76
+00:05:29.480 --> 00:05:34.119
+For example, it's effective in high-dimensional spaces, it's robust to overfitting,
+
+77
+00:05:34.119 --> 00:05:37.217
+it excels on linear separable data, and
+
+78
+00:05:37.217 --> 00:05:40.350
+it works with weakly separable data using weak margin option.
+
+79
+00:05:40.350 --> 00:05:46.400
+SVM also has some limitations. For example, it's slow for training on large data sets
+
+80
+00:05:46.400 --> 00:05:50.359
+it's sensitive to noise and overlapping classes, and it's sensitive to
+
+81
+00:05:50.359 --> 00:05:54.839
+the choice of kernel and regularization parameters, which are non-trivial to determine.
+
+82
+00:05:55.640 --> 00:05:59.799
+When should you use SVM? SVM is good for image analysis tasks,
+
+83
+00:05:59.799 --> 00:06:03.317
+such as image classification and handwritten digit recognition.
+
+84
+00:06:03.317 --> 00:06:07.910
+It's also highly effective for parsing, spam detection, and sentiment analysis.
+
+85
+00:06:07.910 --> 00:06:10.679
+SVM can be used for machine learning problems,
+
+86
+00:06:10.679 --> 00:06:15.000
+such as speech recognition, anomaly detection, and noise filtering.
+
+87
+00:06:15.000 --> 00:06:19.160
+In this video, you learned that Support Vector Machines, or SVM,
+
+88
+00:06:19.160 --> 00:06:23.559
+is a supervised learning technique for building classification and regression models.
+
+89
+00:06:23.559 --> 00:06:27.880
+SVMs try to divide data into two classes by finding a decision boundary,
+
+90
+00:06:27.880 --> 00:06:32.920
+which is a hyperplane that maximizes the margin. Scikit-learn provides many kernel functions,
+
+91
+00:06:32.920 --> 00:06:37.880
+such as linear, polynomial, RBF, and sigmoid for using with SVM.
+
+92
+00:06:37.880 --> 00:06:43.079
+SVM has many advantages. It's effective in high-dimensional spaces and robust to overfitting.
+
+93
+00:06:43.079 --> 00:06:48.040
+However, it also has some limitations. It's slow for training on large datasets
+
+94
+00:06:48.040 --> 00:06:53.399
+and sensitive to noise and overlapping classes. You should use SVM for image recognition,
+
+95
+00:06:53.399 --> 00:06:59.399
+spam detection, and machine learning problems.

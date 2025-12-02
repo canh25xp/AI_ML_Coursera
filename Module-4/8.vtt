@@ -1,0 +1,281 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:09.910
+Welcome to Dimension Reduction Algorithms.
+
+2
+00:00:09.910 --> 00:00:14.890
+After watching this video, you will be able to explain what Dimension Reduction Algorithms are.
+
+3
+00:00:14.890 --> 00:00:19.000
+You will also be able to describe the different types of Dimension Reduction Algorithms,
+
+4
+00:00:19.000 --> 00:00:22.440
+namely PCA, t-SNE, and UMAP.
+
+5
+00:00:22.440 --> 00:00:26.550
+Dimensionality Reduction Algorithms reduce the number of dataset features
+
+6
+00:00:26.550 --> 00:00:29.410
+without sacrificing critical dataset information.
+
+7
+00:00:29.410 --> 00:00:33.520
+High-dimensional data is often very difficult to analyze and visualize.
+
+8
+00:00:33.520 --> 00:00:38.640
+Dimensionality Reduction Algorithms simplify the dataset for machine learning models.
+
+9
+00:00:38.640 --> 00:00:41.850
+The Principal Component Analysis (or PCA),
+
+10
+00:00:41.850 --> 00:00:45.470
+T-Distributed Stochastic Neighbor Embedding (or t-SNE),
+
+11
+00:00:45.470 --> 00:00:49.540
+and Uniform Manifold Approximation and Projection (or UMAP)
+
+12
+00:00:49.540 --> 00:00:53.540
+algorithms transform original dimensions to create new features.
+
+13
+00:00:53.540 --> 00:00:59.200
+Principal Component Analysis, or PCA, is a linear dimensionality reduction algorithm
+
+14
+00:00:59.200 --> 00:01:02.599
+that assumes dataset features are linearly correlated.
+
+15
+00:01:02.599 --> 00:01:05.410
+It simplifies data, reduces dimensionality,
+
+16
+00:01:05.410 --> 00:01:08.919
+and reduces noise while minimizing information loss.
+
+17
+00:01:08.919 --> 00:01:12.480
+PCA can transform features into a new set of uncorrelated variables
+
+18
+00:01:12.480 --> 00:01:16.450
+called principal components while retaining as much variance as possible.
+
+19
+00:01:16.450 --> 00:01:20.060
+These principal components are orthogonal to each other
+
+20
+00:01:20.060 --> 00:01:22.860
+and define a new coordinate system for the feature space.
+
+21
+00:01:22.860 --> 00:01:26.480
+The principal components are organized in decreasing order of importance,
+
+22
+00:01:26.480 --> 00:01:29.390
+or how much of the feature space variance they explain.
+
+23
+00:01:29.390 --> 00:01:34.860
+The first few components often contain most of the information, while the rest tend to represent noise.
+
+24
+00:01:34.860 --> 00:01:38.700
+T-Distributed Stochastic Neighbor Embedding, or t-SNE,
+
+25
+00:01:38.700 --> 00:01:42.350
+maps high-dimensional data points to a lower-dimensional space.
+
+26
+00:01:42.350 --> 00:01:46.599
+It is good at finding clusters in complex, high-dimensional data that can be visualized
+
+27
+00:01:46.599 --> 00:01:50.970
+in two or three dimensions and works well with data like images and text.
+
+28
+00:01:50.970 --> 00:01:54.870
+t-SNE focuses on preserving the similarity of points that are close together
+
+29
+00:01:54.870 --> 00:01:56.680
+and less so on distant points.
+
+30
+00:01:56.680 --> 00:02:01.230
+Similarity is measured as proximity, using the distance between pairs of points.
+
+31
+00:02:01.230 --> 00:02:05.650
+Unfortunately, t-SNE doesn't scale well and can be difficult to tune,
+
+32
+00:02:05.650 --> 00:02:08.000
+as it is sensitive to its hyperparameters.
+
+33
+00:02:08.000 --> 00:02:11.950
+Uniform Manifold Approximation and Projection, or UMAP,
+
+34
+00:02:11.950 --> 00:02:17.270
+is also a nonlinear dimensionality reduction algorithm, often used as an alternative to t-SNE.
+
+35
+00:02:17.679 --> 00:02:22.080
+It constructs a high-dimensional graph representation of the data based on manifold theory, which
+
+36
+00:02:22.080 --> 00:02:27.800
+assumes that the data lies on a lower-dimensional manifold embedded in higher-dimensional space.
+
+37
+00:02:27.800 --> 00:02:32.199
+UMAP then optimizes a low-dimensional graph structure that best preserves the relationships
+
+38
+00:02:32.199 --> 00:02:34.320
+between points in the original data.
+
+39
+00:02:34.320 --> 00:02:39.119
+UMAP scales better than t-SNE and, in addition to the lower structure of the data, preserves
+
+40
+00:02:39.119 --> 00:02:43.720
+the global structure, often providing higher clustering performance than t-SNE.
+
+41
+00:02:43.720 --> 00:02:49.160
+Consider the 3D plots showing simulated data using the MakeBlobs function in Scikit-Learn.
+
+42
+00:02:49.160 --> 00:02:52.759
+The plots show the same 3D data from two different perspectives.
+
+43
+00:02:52.759 --> 00:02:55.760
+There is a little bit of overlap between the yellow and purple clusters,
+
+44
+00:02:55.760 --> 00:02:58.880
+while the other two blobs are distinctly separated from all blobs.
+
+45
+00:02:58.880 --> 00:03:04.199
+Let's apply the PCA, t-SNE, and UMAP dimension reduction algorithms to project this dataset
+
+46
+00:03:04.199 --> 00:03:07.039
+onto two dimensions and compare the results.
+
+47
+00:03:07.039 --> 00:03:09.250
+PCA has separated the blobs effectively.
+
+48
+00:03:09.250 --> 00:03:13.370
+The blobs are all normally distributed, and the only differences between them
+
+49
+00:03:13.370 --> 00:03:15.860
+are in their means and variances.
+
+50
+00:03:15.860 --> 00:03:20.619
+This means the blobs are linearly correlated, so it is expected that PCA will perform well
+
+51
+00:03:20.619 --> 00:03:22.419
+on the simulated data.
+
+52
+00:03:22.419 --> 00:03:26.970
+t-SNE has clustered the data into four clusters and mostly separated the blobs well.
+
+53
+00:03:26.970 --> 00:03:32.259
+The algorithm identified four very distinct clusters, with several mislabeled points within
+
+54
+00:03:32.259 --> 00:03:35.380
+the purple cluster from the green and yellow clusters.
+
+55
+00:03:35.380 --> 00:03:39.030
+This mixing is expected, as two of the clusters had a slight overlap.
+
+56
+00:03:39.030 --> 00:03:42.920
+Although UMAP didn't perfectly identify some of the blob points in the blobs,
+
+57
+00:03:42.920 --> 00:03:46.139
+you can see that three of the clusters did not fully separate.
+
+58
+00:03:46.139 --> 00:03:50.630
+In particular, the yellow and green clusters have a slight overlap with the purple cluster.
+
+59
+00:03:50.630 --> 00:03:55.170
+This should be the case for the yellow and purple clusters because these two clusters
+
+60
+00:03:55.170 --> 00:03:58.580
+were not fully separated to begin with in the 3D input data.
+
+61
+00:03:58.580 --> 00:04:04.570
+UMAP performed slightly better than t-SNE in this regard, since t-SNE identified four very distinct clusters.
+
+62
+00:04:04.570 --> 00:04:09.320
+In this video, you learned that dimensionality reduction algorithms reduce the number of
+
+63
+00:04:09.320 --> 00:04:13.639
+dataset features without sacrificing critical dataset information.
+
+64
+00:04:13.639 --> 00:04:19.200
+There are different types of dimensionality reduction algorithms, namely, PCA, t-SNE,
+
+65
+00:04:19.200 --> 00:04:20.200
+and UMAP.
+
+66
+00:04:20.200 --> 00:04:25.720
+PCA is a linear dimensionality reduction algorithm that simplifies data, reduces dimensionality,
+
+67
+00:04:25.720 --> 00:04:28.640
+and reduces noise while minimizing information loss.
+
+68
+00:04:28.640 --> 00:04:32.600
+t-SNE maps high-dimensional data points to a lower-dimensional space.
+
+69
+00:04:32.600 --> 00:04:37.279
+UMAP creates a low-dimensional representation of data by approximating the manifold on
+
+70
+00:04:37.279 --> 00:04:38.359
+which the data lies.

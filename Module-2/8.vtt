@@ -1,0 +1,385 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:10.060
+Welcome to Introduction to Logistic Regression.
+
+2
+00:00:10.060 --> 00:00:13.779
+After watching this video, you will be able to describe the machine learning method of
+
+3
+00:00:13.779 --> 00:00:17.100
+logistic regression and explain how it is used.
+
+4
+00:00:17.100 --> 00:00:20.819
+Logistic regression is a statistical modeling technique that predicts the probability of
+
+5
+00:00:20.819 --> 00:00:26.420
+an observation belonging to one or two classes, such as true or false.
+
+6
+00:00:26.420 --> 00:00:31.180
+In machine learning, logistic regression refers to a binary classifier based on statistical
+
+7
+00:00:31.180 --> 00:00:32.659
+logistic regression.
+
+8
+00:00:32.659 --> 00:00:37.799
+By choosing a threshold probability, the probability predictor becomes a binary classifier simply
+
+9
+00:00:37.799 --> 00:00:42.919
+by assigning each observation to one class if its probability is greater than the threshold
+
+10
+00:00:42.919 --> 00:00:47.099
+and to the other class if its probability is less than the threshold.
+
+11
+00:00:47.099 --> 00:00:49.819
+Let's understand when logistic regression is a good choice.
+
+12
+00:00:49.819 --> 00:00:54.819
+First, when the target in your data is binary, indicated as 0 or 1.
+
+13
+00:00:54.819 --> 00:00:58.860
+Second, when you need the probability of an outcome, like the probability of a customer
+
+14
+00:00:58.860 --> 00:01:00.319
+buying a product.
+
+15
+00:01:00.319 --> 00:01:05.900
+If the data is linearly separable, the decision boundary of logistic regression is a line,
+
+16
+00:01:05.900 --> 00:01:08.019
+a plane, or a hyperplane.
+
+17
+00:01:08.019 --> 00:01:14.900
+Example, theta 0 plus theta 1 x 1 plus theta 2 x 2 is greater than 0.
+
+18
+00:01:14.900 --> 00:01:19.139
+Third, when you want to understand the impact of an independent feature, it allows you to
+
+19
+00:01:19.139 --> 00:01:24.459
+select the best features based on the size of their model coefficients or weights.
+
+20
+00:01:25.099 --> 00:01:28.319
+Logistic regression is both a probability predictor and a binary classifier.
+
+21
+00:01:28.319 --> 00:01:32.459
+For example, you can use it to predict the probability that a person will have a heart
+
+22
+00:01:32.459 --> 00:01:36.739
+attack within a specified time period based on knowledge of the person's age, sex, and
+
+23
+00:01:36.739 --> 00:01:43.180
+body mass index, chance that a specific condition or disease, such as diabetes, might appear
+
+24
+00:01:43.180 --> 00:01:48.339
+based on observed characteristics of that patient, such as weight, height, blood pressure,
+
+25
+00:01:48.339 --> 00:01:53.580
+and results of various blood tests, and so on, likelihood that a customer of a subscription-based
+
+26
+00:01:53.580 --> 00:01:59.300
+service will halt its subscription, probability of failure of a given process, system, or
+
+27
+00:01:59.300 --> 00:02:04.459
+product, and likelihood of a homeowner defaulting on a mortgage.
+
+28
+00:02:04.459 --> 00:02:08.240
+Consider a telecommunication dataset that you'd like to analyze to predict which customers
+
+29
+00:02:08.240 --> 00:02:10.000
+might leave next month.
+
+30
+00:02:10.000 --> 00:02:15.339
+The dataset comprises historical customer data, where each row represents one customer.
+
+31
+00:02:15.339 --> 00:02:20.179
+The data includes information about services that each customer has signed up for, customer
+
+32
+00:02:20.179 --> 00:02:25.380
+account information, demographic information like gender and age range, and customers who've
+
+33
+00:02:25.380 --> 00:02:27.820
+churned or left within the last month.
+
+34
+00:02:27.820 --> 00:02:31.500
+Here, the dependent variable column is called churn.
+
+35
+00:02:31.500 --> 00:02:35.500
+In logistics regression, you can use one or more of these features to predict whether
+
+36
+00:02:35.500 --> 00:02:38.020
+customers will churn.
+
+37
+00:02:38.020 --> 00:02:41.940
+Logistic regression can predict the class, y-hat, of each customer by considering the
+
+38
+00:02:41.940 --> 00:02:45.419
+predicted probability, p-hat, that the customer will churn.
+
+39
+00:02:45.539 --> 00:02:51.419
+Here, p-hat is the predicted probability that the class, y is 1, given the data, x.
+
+40
+00:02:51.419 --> 00:02:54.960
+Suppose the goal is to predict customer churn based on their age.
+
+41
+00:02:54.960 --> 00:03:00.139
+You have a feature, age, denoted as x, and a binary target, variable churn, denoted as
+
+42
+00:03:00.139 --> 00:03:05.860
+y, with two classes, yes and no, represented by binary values 1 and 0.
+
+43
+00:03:05.860 --> 00:03:10.300
+Graphically, you can represent the data with a scatterplot, where class 0 is denoted in
+
+44
+00:03:10.300 --> 00:03:13.220
+red and class 1 in blue.
+
+45
+00:03:13.220 --> 00:03:17.500
+With linear regression, you can fit a line through the data represented as y-hat equals
+
+46
+00:03:17.500 --> 00:03:20.779
+theta 0 plus theta 1 x 1.
+
+47
+00:03:20.779 --> 00:03:25.940
+This line has two parameters, where theta 0 is the y-intercept of the line, and theta
+
+48
+00:03:25.940 --> 00:03:27.619
+1 is its slope.
+
+49
+00:03:27.619 --> 00:03:32.059
+Theta 1 is also called the weight vector, or confidence of the equation.
+
+50
+00:03:32.059 --> 00:03:36.740
+One problem is that the prediction's value y-hat increases indefinitely with age, because
+
+51
+00:03:36.740 --> 00:03:38.500
+the line goes on forever.
+
+52
+00:03:38.500 --> 00:03:42.419
+Obviously, you cannot use linear regression directly to predict churn.
+
+53
+00:03:42.619 --> 00:03:47.059
+Somehow, the predicted values need to be contained within the range 0 to 1.
+
+54
+00:03:47.059 --> 00:03:50.899
+One way to keep the predicted values within the range of 0 to 1 is to use a threshold,
+
+55
+00:03:50.899 --> 00:03:54.220
+like 0.5, to differentiate the classes.
+
+56
+00:03:54.220 --> 00:03:58.259
+You can write a rule to allow you to separate class 0 from class 1.
+
+57
+00:03:58.259 --> 00:04:04.500
+If the value of y-hat is less than 0.5, then the class is 0, otherwise the class is 1.
+
+58
+00:04:04.500 --> 00:04:08.339
+Notice that in the step function, no matter how big the value is, as long as it's greater
+
+59
+00:04:08.339 --> 00:04:12.020
+than 0.5, it simply equals 1.
+
+60
+00:04:12.020 --> 00:04:16.619
+And regardless of how negative the value y-hat is, the output is 0 if it is less than
+
+61
+00:04:16.619 --> 00:04:17.779
+0.5.
+
+62
+00:04:17.779 --> 00:04:22.660
+In other words, there is no difference between a customer 20 years old and 100 years old.
+
+63
+00:04:22.660 --> 00:04:23.980
+The outcome would be 1.
+
+64
+00:04:23.980 --> 00:04:28.179
+Wouldn't it be nice to use a smoother line that would project these values between 0
+
+65
+00:04:28.179 --> 00:04:29.179
+and 1?
+
+66
+00:04:29.179 --> 00:04:33.059
+Indeed, the existing method doesn't provide the probability of a customer belonging to
+
+67
+00:04:33.059 --> 00:04:35.299
+a class, which is the goal.
+
+68
+00:04:35.299 --> 00:04:40.739
+Consider the sigmoid function, sigma of x, also known as the logit function, defined
+
+69
+00:04:40.739 --> 00:04:44.299
+as 1 over the sum of 1 and e to the minus x.
+
+70
+00:04:44.299 --> 00:04:49.100
+This graph shows that for x equals 0, the sigmoid function is 0.5.
+
+71
+00:04:49.100 --> 00:04:54.140
+As x grows, the sigmoid function approaches 1, and as x becomes more negative, the sigmoid
+
+72
+00:04:54.140 --> 00:04:55.700
+approaches 0.
+
+73
+00:04:55.700 --> 00:05:00.140
+This means that the sigmoid function can take any continuous function of x and continuously
+
+74
+00:05:00.140 --> 00:05:04.100
+compress it within the range 0, 1.
+
+75
+00:05:04.100 --> 00:05:05.660
+It defines a probability.
+
+76
+00:05:06.140 --> 00:05:11.779
+Now the model is sigma of y hat, which represents the probability p hat, and that the output
+
+77
+00:05:11.779 --> 00:05:13.500
+is 1 given x.
+
+78
+00:05:13.500 --> 00:05:17.820
+Thus you can determine the chance that an observation belongs to either class.
+
+79
+00:05:17.820 --> 00:05:22.420
+To assign the class to the observation, simply define a threshold like 0.5 and assign the
+
+80
+00:05:22.420 --> 00:05:27.540
+observation to 1 if its probability is greater than 0.5 and 0 otherwise.
+
+81
+00:05:27.540 --> 00:05:30.859
+This threshold is known as a decision boundary.
+
+82
+00:05:30.859 --> 00:05:34.980
+What is the output of the customer churn model when we use the sigmoid function?
+
+83
+00:05:34.980 --> 00:05:40.660
+The churn probability is denoted as the probability that y is 1 given the data x.
+
+84
+00:05:40.660 --> 00:05:45.179
+Notice that the probability that the customer won't churn is 1 minus the churn probability,
+
+85
+00:05:45.179 --> 00:05:47.700
+as the two probabilities must add to 1.
+
+86
+00:05:47.700 --> 00:05:51.779
+For example, suppose the probability of a customer staying with the company can be shown
+
+87
+00:05:51.779 --> 00:05:56.339
+as the probability of churn given a customer's income and age, which could be 0.8.
+
+88
+00:05:56.339 --> 00:06:02.540
+Then, the probability of the same customer staying is 1 minus 0.8, which is 0.2.
+
+89
+00:06:02.540 --> 00:06:06.700
+In this video, you learned that in machine learning, logistic regression refers to a
+
+90
+00:06:06.700 --> 00:06:12.619
+binary classifier based on statistical logistic regression, or probability predictor.
+
+91
+00:06:12.619 --> 00:06:16.700
+Logistic regression is a good choice for a binary target, probabilistic results, and
+
+92
+00:06:16.700 --> 00:06:18.980
+understanding the impact of a feature.
+
+93
+00:06:18.980 --> 00:06:22.899
+You also learned that logistics regression is both a probability predictor and a binary
+
+94
+00:06:22.899 --> 00:06:24.179
+classifier.
+
+95
+00:06:24.179 --> 00:06:27.880
+The goal of logistic regression is to build a model to predict the class by considering
+
+96
+00:06:27.880 --> 00:06:29.260
+the predicted probability.

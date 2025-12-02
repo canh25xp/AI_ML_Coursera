@@ -1,0 +1,413 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:11.640
+Welcome to the IBM Professional Certificate (PC) Overview video,
+
+2
+00:00:11.640 --> 00:00:15.319
+which introduces the two PCs this course is a part of.
+
+3
+00:00:15.319 --> 00:00:21.520
+This course is part of both the IBM AI Engineering PC and the IBM Data Science PC.
+
+4
+00:00:21.520 --> 00:00:24.200
+Each program offers a unique focus.
+
+5
+00:00:24.200 --> 00:00:29.159
+The Data Science PC focuses on skills for data science careers, covering data cleaning,
+
+6
+00:00:29.159 --> 00:00:35.919
+analysis, and predictive modeling with tools such as Python, SQL, Pandas, and NumPy to
+
+7
+00:00:35.919 --> 00:00:38.360
+help you build a job-ready portfolio.
+
+8
+00:00:38.360 --> 00:00:43.639
+The AI Engineering PC prepares data scientists, machine learning engineers, and software engineers
+
+9
+00:00:43.639 --> 00:00:45.439
+for AI engineering.
+
+10
+00:00:45.439 --> 00:00:51.439
+You'll learn to build, train, and deploy models, including large language models (LLMs), using
+
+11
+00:00:51.439 --> 00:00:56.799
+Python and libraries like SciPy, Keras, PyTorch, and TensorFlow.
+
+12
+00:00:56.799 --> 00:01:02.240
+If you're completing the IBM Data Science PC, the AI Engineering PC is an excellent
+
+13
+00:01:02.240 --> 00:01:05.559
+next step to expand your AI expertise.
+
+14
+00:01:05.559 --> 00:01:09.160
+Both programs emphasize hands-on learning with projects and labs,
+
+15
+00:01:09.160 --> 00:01:11.319
+building real-world experience.
+
+16
+00:01:11.319 --> 00:01:17.279
+These certifications with comprehensive curricula prepare you for a career in AI or data science.
+
+17
+00:01:17.279 --> 00:01:22.239
+The IBM Data Science PC is suited for beginners, has no prerequisites, and is designed for
+
+18
+00:01:22.239 --> 00:01:27.160
+anyone interested in data analysis, ML, and statistical modeling.
+
+19
+00:01:27.160 --> 00:01:32.879
+The IBM AI Engineering PC is ideal for learners with knowledge of Python, data analysis, and
+
+20
+00:01:32.879 --> 00:01:38.239
+generative AI basics, as well as experience with data science, machine learning (ML),
+
+21
+00:01:38.239 --> 00:01:40.019
+or software engineering.
+
+22
+00:01:40.019 --> 00:01:45.440
+The IBM AI Engineering PC covers topics and skills needed for an entry-level AI engineering
+
+23
+00:01:45.440 --> 00:01:51.839
+role, including Introduction to AI and Deep Learning, ML and Deep Learning Frameworks,
+
+24
+00:01:51.839 --> 00:01:56.230
+Supervised and Unsupervised Learning, Neural Networks, Convolutional Networks,
+
+25
+00:01:56.230 --> 00:02:02.839
+and Recurrent Networks, Generative AI Models and LLMs, and working with Python libraries like SciPy,
+
+26
+00:02:02.839 --> 00:02:07.000
+Scikit-learn, Keras, PyTorch, and TensorFlow.
+
+27
+00:02:07.000 --> 00:02:11.580
+Each topic corresponds to a self-paced online course comprising 2-6 modules.
+
+28
+00:02:11.580 --> 00:02:14.460
+Completing these courses and the required projects
+
+29
+00:02:14.460 --> 00:02:18.020
+will help you get the IBM AI Engineering Professional Certificate.
+
+30
+00:02:18.020 --> 00:02:21.070
+This Professional Certificate journey will introduce you
+
+31
+00:02:21.070 --> 00:02:23.919
+to the fundamentals of machine learning using Python.
+
+32
+00:02:23.919 --> 00:02:29.360
+You'll learn how to implement algorithms such as linear regression, logistic regression,
+
+33
+00:02:29.360 --> 00:02:33.039
+decision trees, and more to build predictive models.
+
+34
+00:02:33.039 --> 00:02:37.600
+By the end, you'll understand the key concepts of supervised learning and be able to apply
+
+35
+00:02:37.600 --> 00:02:40.360
+these models to solve real-world problems.
+
+36
+00:02:40.360 --> 00:02:45.759
+Deep learning basics and neural network architecture are essential for any AI professional.
+
+37
+00:02:45.759 --> 00:02:50.500
+You will study unsupervised deep learning models such as autoencoders and restricted
+
+38
+00:02:50.500 --> 00:02:55.720
+Boltzmann machines while also learning about convolutional and recurrent networks and building
+
+39
+00:02:55.720 --> 00:02:59.960
+deep learning models and networks using the Keras library.
+
+40
+00:02:59.960 --> 00:03:04.759
+Explore advanced deep learning techniques with Keras and TensorFlow 2.x, where you'll
+
+41
+00:03:04.759 --> 00:03:10.460
+create custom layers and models and integrate Keras with TensorFlow for enhanced functionality.
+
+42
+00:03:10.460 --> 00:03:15.839
+Develop convolutional neural networks (CNNs) and transformer models for sequential and
+
+43
+00:03:15.839 --> 00:03:17.460
+time series data.
+
+44
+00:03:17.460 --> 00:03:22.960
+The course also delves into unsupervised learning for model optimization, custom training loops,
+
+45
+00:03:22.960 --> 00:03:28.160
+deep Q-networks (DQNs) for reinforcement learning, and an introduction to generative modeling
+
+46
+00:03:28.160 --> 00:03:30.880
+and reinforcement learning principles.
+
+47
+00:03:30.880 --> 00:03:36.399
+Develop essential skills in PyTorch for designing, training, and optimizing neural networks.
+
+48
+00:03:36.399 --> 00:03:41.960
+You'll explore 2D tensors, derivatives, linear regression, and loss calculation, along with
+
+49
+00:03:41.960 --> 00:03:47.440
+batch processing, gradient descent, and logistic regression, key techniques for building models
+
+50
+00:03:47.440 --> 00:03:50.960
+in areas like image recognition and predictive analytics.
+
+51
+00:03:50.960 --> 00:03:56.199
+Next, you will advance to complex deep learning techniques with PyTorch, covering Softmax
+
+52
+00:03:56.199 --> 00:04:01.559
+regression, multi-class neural networks, and specialized architectures such as CNNs.
+
+53
+00:04:01.559 --> 00:04:06.919
+You'll tackle overfitting, backpropagation, and vanishing gradient, and apply activation
+
+54
+00:04:06.919 --> 00:04:11.479
+functions such as sigmoid, tanh, and ReLU.
+
+55
+00:04:11.479 --> 00:04:14.480
+Hands-on projects and exercises will build expertise
+
+56
+00:04:14.480 --> 00:04:18.000
+in creating robust models for real-world applications.
+
+57
+00:04:18.000 --> 00:04:23.359
+The capstone project challenges you to apply deep learning expertise to a real-world problem.
+
+58
+00:04:23.359 --> 00:04:29.190
+Choose a library, preprocess data, build and test a model, and validate its performance.
+
+59
+00:04:29.190 --> 00:04:32.350
+A project report will showcase your model's effectiveness
+
+60
+00:04:32.350 --> 00:04:35.359
+and your deep learning proficiency for your portfolio.
+
+61
+00:04:35.359 --> 00:04:43.000
+Next, you will explore the types and applications of generative AI models, including RNNs, transformers,
+
+62
+00:04:43.000 --> 00:04:47.079
+GANs, VAEs, and diffusion models.
+
+63
+00:04:47.079 --> 00:04:52.920
+Understand key differences in training methods, tokenization techniques, and data preparation processes.
+
+64
+00:04:53.320 --> 00:04:59.160
+Gain skills to work with large-language models, LLMs, like GPT and BERT.
+
+65
+00:04:59.160 --> 00:05:02.600
+And learn to use tokenizers and data loaders, preparing you for
+
+66
+00:05:02.600 --> 00:05:06.519
+implementing generative AI with libraries like Hugging Face.
+
+67
+00:05:06.519 --> 00:05:13.679
+Delve into foundational NLP models, exploring one-hot encoding, embeddings, and Word2Vec
+
+68
+00:05:13.679 --> 00:05:15.600
+for text representation.
+
+69
+00:05:15.600 --> 00:05:20.399
+Build and optimize neural networks for tasks like document categorization and text generation
+
+70
+00:05:20.399 --> 00:05:23.559
+using PyTorch and TorchText.
+
+71
+00:05:23.559 --> 00:05:29.040
+Apply N-gram and sequence-to-sequence models for applications such as language translation
+
+72
+00:05:29.040 --> 00:05:33.440
+and evaluate generated text quality with BLEU metrics.
+
+73
+00:05:33.440 --> 00:05:39.720
+Gain expertise in transformer-based models like GPT and BERT, focusing on text classification,
+
+74
+00:05:39.720 --> 00:05:45.720
+positional encoding, word embeddings, and attention mechanisms for contextual understanding.
+
+75
+00:05:45.880 --> 00:05:50.150
+Dive into multi-head attention and apply GPT for language translation
+
+76
+00:05:50.150 --> 00:05:52.260
+using decoder-based modeling.
+
+77
+00:05:52.260 --> 00:05:55.300
+Explore BERT's bidirectional encoding with techniques
+
+78
+00:05:55.300 --> 00:06:00.340
+like Massed Language Modeling (MLM) and Next Sentence Prediction (NSP),
+
+79
+00:06:00.340 --> 00:06:05.170
+and implement these models in PyTorch for sophisticated language tasks.
+
+80
+00:06:05.170 --> 00:06:08.510
+Explore advanced fine-tuning techniques for transformers
+
+81
+00:06:08.510 --> 00:06:11.840
+using frameworks like Hugging Face and PyTorch.
+
+82
+00:06:11.840 --> 00:06:15.990
+Learn to optimize large-language models (LLMs) with methods such as
+
+83
+00:06:16.493 --> 00:06:22.165
+Parameter-Efficient Fine-Tuning (PEFT), Low-Rank Adaptation (LORA),
+
+84
+00:06:22.165 --> 00:06:26.200
+Quantized Low-Rank Adaptation (QLORA), and Prompting.
+
+85
+00:06:26.200 --> 00:06:31.600
+Gain hands-on experience in online labs, including loading, pre-training, and fine-tuning models
+
+86
+00:06:31.600 --> 00:06:34.440
+to enhance performance for specific tasks.
+
+87
+00:06:34.440 --> 00:06:38.980
+Refine your skills in fine-tuning LLMs with human feedback and direct preference.
+
+88
+00:06:38.980 --> 00:06:42.840
+Explore instruction tuning with Hugging Face, reward modeling,
+
+89
+00:06:44.040 --> 00:06:47.480
+and reinforcement learning techniques like RLHF and PPO.
+
+90
+00:06:47.480 --> 00:06:53.079
+Gain hands-on experience in online labs focused on reward modeling, PPO, and DPO to optimize
+
+91
+00:06:53.079 --> 00:06:56.380
+LLM performance for task-specific applications.
+
+92
+00:06:56.380 --> 00:07:03.119
+Explore Retrieval Augmented Generation (RAG), Prompt Engineering, and LangChain concepts.
+
+93
+00:07:03.119 --> 00:07:07.880
+Learn how RAG integrates external data and tokenizers for dynamic responses.
+
+94
+00:07:07.880 --> 00:07:14.120
+Gain hands-on experience with LangChain tools, components, and LLMs to develop real-world applications.
+
+95
+00:07:14.120 --> 00:07:19.920
+Apply these skills in online labs and a final project for practical, interview-ready experience.
+
+96
+00:07:19.920 --> 00:07:22.358
+Finally, in the Applied Project-Based course,
+
+97
+00:07:22.358 --> 00:07:27.363
+you'll enhance your knowledge of LangChain document loaders, apply text-splitting strategies,
+
+98
+00:07:27.363 --> 00:07:31.710
+and use watsonx and vector databases to store and retrieve documents.
+
+99
+00:07:31.710 --> 00:07:37.030
+Develop a QA bot with RAG and create a Gradio interface for model interaction.
+
+100
+00:07:37.030 --> 00:07:41.530
+By the end, you'll have a project showcasing your generative AI skills for interviews.
+
+101
+00:07:41.530 --> 00:07:45.850
+As you progress, quizzes and projects assess your understanding of the material,
+
+102
+00:07:45.850 --> 00:07:50.279
+contributing to your completion of the course and earning a professional certificate.
+
+103
+00:07:50.279 --> 00:07:52.180
+Wishing you the best on this journey!

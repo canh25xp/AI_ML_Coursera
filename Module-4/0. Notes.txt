@@ -1,0 +1,27 @@
+In this module, you'll explore unsupervised learning, a machine-learning approach that doesn't require labeled data. Instead of using correct answers, these algorithms identify patterns in data based on similarity. These patterns form clusters in an N-dimensional feature space, where data points that are close together can be considered clusters. Clusters may have a hierarchical structure, similar to natural systems such as galaxies or biological taxonomies. You'll learn about clustering algorithms and how unsupervised learning can reduce features for other modeling tasks, using Python to implement various clustering and dimensionality reduction techniques.
+Learning Objectives
+Apply t-SNE and UMAP for feature space dimensionality reduction and use PCA as a baseline to evaluate their results
+Discuss how dimension reduction is applied in face recognition and how clustering aids in feature selection
+Analyze dimension reduction techniques, including PCA, t-SNE, and UMAP, and their role in simplifying data structures and improving outcomes
+Explain how clustering, dimension reduction, and feature engineering work together to enhance model performance
+Apply scikit-learn to implement DBScan and HDBScan clustering models to real data and compare performance
+Discuss the importance of determining k in k-means clustering and methods to select it
+Explain DBSCAN and HDBSCAN clustering, detailing how each works
+Utilize scikit-learn's K-Means Clustering to cluster data
+Describe the different types of clustering: partition, density, and hierarchical, and analyze agglomerative and divisive approaches to grouping data points
+Apply k-means clustering to segment customers based on characteristics and explain how the algorithm works
+Explain the different types of clustering, including partition, density, and hierarchical
+Describe different types of dimension reduction algorithms: PCA, t-SNE, and UMAP
+Explain dimension reduction algorithms
+Analyze how clustering can be used for feature selection
+Analyze how dimension reduction is used in face recognition
+Explain dimension reduction and how it is used for simplifying data structure and improving outcomes
+Explain clustering, dimension reduction, and feature engineering and how they work well together to improve model performance
+Describe HDBSCAN clustering and explain how it works
+Describe DBSCAN clustering and explain how it works
+Discuss how to determine k
+Explain how the k-means algorithm works
+Describe k-means clustering
+Analyze agglomerative and divisive hierarchical clustering, along with their approaches to grouping data points
+Apply k-means clustering to segment customers based on characteristics
+Explain the concept of clustering and its applications

@@ -1,0 +1,409 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:09.359
+Congratulations on completing the course.
+
+2
+00:00:09.359 --> 00:00:12.920
+Now that you have explored the theoretical concepts and practical applications of machine
+
+3
+00:00:12.920 --> 00:00:17.479
+learning, you will find plenty of opportunities to continue learning and applying your skills.
+
+4
+00:00:17.479 --> 00:00:21.159
+Now let's review some key aspects of what you learned throughout the course.
+
+5
+00:00:21.159 --> 00:00:26.040
+Machine learning, ML, is a subset of artificial intelligence, or AI, that involves using data
+
+6
+00:00:26.040 --> 00:00:31.159
+and algorithms to allow computers to imitate how humans learn and make decisions, gradually
+
+7
+00:00:31.159 --> 00:00:32.639
+improving their accuracy.
+
+8
+00:00:32.639 --> 00:00:35.479
+ML has many applications in the modern world.
+
+9
+00:00:35.479 --> 00:00:39.159
+In healthcare, doctors use machine learning to prescribe the correct medicine to their
+
+10
+00:00:39.159 --> 00:00:40.159
+patients.
+
+11
+00:00:40.159 --> 00:00:44.240
+Bankers use machine learning to decide whether to approve or reject a loan application.
+
+12
+00:00:44.240 --> 00:00:49.400
+E-commerce businesses use machine learning to generate customer recommendations.
+
+13
+00:00:49.400 --> 00:00:54.919
+Machine learning models learn using supervised, unsupervised, semi-supervised, and reinforcement learning methods.
+
+14
+00:00:55.919 --> 00:01:00.080
+Selecting a machine learning technique depends on several factors, such as the problem you're
+
+15
+00:01:00.080 --> 00:01:06.239
+trying to solve, the type of data you have, the available resources, and the desired outcome.
+
+16
+00:01:06.239 --> 00:01:10.160
+Machine learning tools provide functionalities for machine learning pipelines, which include
+
+17
+00:01:10.160 --> 00:01:15.800
+modules for data preprocessing and building, evaluating, optimizing, and implementing machine
+
+18
+00:01:15.800 --> 00:01:17.160
+learning models.
+
+19
+00:01:17.160 --> 00:01:22.160
+These tools use algorithms to simplify complex tasks, such as handling big data, conducting
+
+20
+00:01:22.160 --> 00:01:26.080
+statistical analyses, and making predictions.
+
+21
+00:01:26.080 --> 00:01:28.459
+Regression is a type of supervised learning model.
+
+22
+00:01:28.459 --> 00:01:33.639
+It models a relationship between a continuous target variable and explanatory features.
+
+23
+00:01:33.639 --> 00:01:37.959
+Simple regression is when a single independent variable estimates a dependent variable.
+
+24
+00:01:37.959 --> 00:01:40.699
+This regression can be linear or nonlinear.
+
+25
+00:01:40.699 --> 00:01:46.199
+When more than one independent variable is present, the process is called multiple regression.
+
+26
+00:01:46.199 --> 00:01:50.199
+Multiple linear regression is an extension of the simple linear regression model.
+
+27
+00:01:50.239 --> 00:01:54.360
+It uses two or more independent variables to estimate a dependent variable.
+
+28
+00:01:54.360 --> 00:01:58.239
+In logistical regression training, you look for the best parameters that map the input
+
+29
+00:01:58.239 --> 00:02:00.279
+features to the target outcomes.
+
+30
+00:02:00.279 --> 00:02:04.279
+The objective is to predict classes with minimal error.
+
+31
+00:02:04.279 --> 00:02:09.039
+Classification is a supervised machine learning, or ML, method that uses fully trained models
+
+32
+00:02:09.039 --> 00:02:11.000
+to predict labels on new data.
+
+33
+00:02:11.000 --> 00:02:16.500
+The labels in classification form a categorical variable with discrete values.
+
+34
+00:02:16.500 --> 00:02:20.039
+Classification has several applications in a wide variety of industries.
+
+35
+00:02:20.039 --> 00:02:24.520
+It can be used to build applications for email filtering, speech-to-text, handwriting
+
+36
+00:02:24.520 --> 00:02:30.000
+recognition, biometric identification, document classification, and much more.
+
+37
+00:02:30.000 --> 00:02:35.259
+K-Nearest Neighbors, or KNN, is a supervised machine learning algorithm that takes a group
+
+38
+00:02:35.259 --> 00:02:39.720
+of labeled data points and then uses them to learn to label other data points.
+
+39
+00:02:39.720 --> 00:02:43.559
+KNN is used for both classification and regression.
+
+40
+00:02:43.559 --> 00:02:48.360
+Support Vector Machines, or SVM, is a supervised learning technique for building classification
+
+41
+00:02:48.360 --> 00:02:49.960
+and regression models.
+
+42
+00:02:49.960 --> 00:02:54.779
+It maps each data instance as a point in multidimensional space, where the input features
+
+43
+00:02:54.779 --> 00:02:57.880
+are represented as a value for a specific coordinate.
+
+44
+00:02:57.880 --> 00:03:03.360
+SVM is good for machine learning problems, such as speech recognition, anomaly detection,
+
+45
+00:03:03.360 --> 00:03:04.800
+and noise filtering.
+
+46
+00:03:04.800 --> 00:03:08.639
+A decision tree is an algorithm for classifying data points.
+
+47
+00:03:08.639 --> 00:03:12.720
+In a decision tree, each internal node corresponds to a test.
+
+48
+00:03:12.720 --> 00:03:17.880
+Each branch corresponds to the result of the test, and each terminal, or leaf node, assigns
+
+49
+00:03:17.880 --> 00:03:19.919
+its data to a class.
+
+50
+00:03:19.919 --> 00:03:24.679
+Regression trees are built by considering the features of a data set, one by one.
+
+51
+00:03:24.679 --> 00:03:29.360
+A regression tree is analogous to a decision tree that predicts continuous values rather
+
+52
+00:03:29.360 --> 00:03:30.960
+than discrete classes.
+
+53
+00:03:30.960 --> 00:03:35.399
+The distinguishing feature between classification and regression is the characteristic of the
+
+54
+00:03:35.399 --> 00:03:37.960
+target, or labeled data.
+
+55
+00:03:37.960 --> 00:03:42.720
+Regression trees are created by recursively splitting the data set into subsets to maximize
+
+56
+00:03:42.720 --> 00:03:45.039
+information gained from data splitting.
+
+57
+00:03:45.039 --> 00:03:49.679
+This process generates a tree-like structure and minimizes the randomness of the classes
+
+58
+00:03:49.679 --> 00:03:51.600
+assigned to the split nodes.
+
+59
+00:03:51.600 --> 00:03:56.320
+Clustering, dimension reduction, and feature engineering are complementary techniques in
+
+60
+00:03:56.320 --> 00:03:58.399
+machine learning and data science.
+
+61
+00:03:58.399 --> 00:04:03.360
+They work well together to improve model performance, quality, and interpretability.
+
+62
+00:04:03.360 --> 00:04:08.119
+Clustering automatically groups data points into clusters based on similarities.
+
+63
+00:04:08.119 --> 00:04:13.440
+It can be applied in various scenarios, such as identifying music genres, segmenting user
+
+64
+00:04:13.440 --> 00:04:16.480
+groups, or analyzing market segments.
+
+65
+00:04:16.480 --> 00:04:21.040
+Dimension reduction simplifies the visualization of high-dimensional clustering, aiding feature
+
+66
+00:04:21.040 --> 00:04:23.720
+engineering and improving model quality.
+
+67
+00:04:23.720 --> 00:04:28.140
+It also reduces the number of features required for a data model.
+
+68
+00:04:28.140 --> 00:04:32.200
+Dimensionality reduction algorithms reduce the number of data set features without sacrificing
+
+69
+00:04:32.200 --> 00:04:35.040
+critical data set information.
+
+70
+00:04:35.040 --> 00:04:39.119
+High-dimensional data is often very difficult to analyze and visualize.
+
+71
+00:04:39.119 --> 00:04:44.279
+Dimensionality reduction algorithms simplify the data set for machine learning models.
+
+72
+00:04:44.279 --> 00:04:48.279
+Supervised learning evaluation establishes how well a machine learning model can predict
+
+73
+00:04:48.279 --> 00:04:50.119
+the outcome for unseen data.
+
+74
+00:04:50.119 --> 00:04:54.720
+It is essential for understanding model effectiveness and involves comparing model predictions to
+
+75
+00:04:54.720 --> 00:04:56.559
+ground-truth labels.
+
+76
+00:04:56.559 --> 00:05:01.640
+Common metrics for evaluating classification models include accuracy, confusion matrix,
+
+77
+00:05:01.640 --> 00:05:04.079
+precision, and recall.
+
+78
+00:05:04.079 --> 00:05:05.760
+Regression models are not foolproof.
+
+79
+00:05:05.760 --> 00:05:08.119
+They often make prediction errors.
+
+80
+00:05:08.119 --> 00:05:12.679
+Evaluating a regression model involves determining how accurately the model can predict continuous
+
+81
+00:05:12.679 --> 00:05:15.760
+numerical values, such as exam grades.
+
+82
+00:05:15.760 --> 00:05:20.559
+Unsupervised techniques, such as clustering and dimensionality reduction, aim to discover
+
+83
+00:05:20.559 --> 00:05:23.239
+hidden patterns and structures in data.
+
+84
+00:05:23.239 --> 00:05:27.839
+Therefore, evaluation methods assess the quality of these patterns and how effectively the
+
+85
+00:05:27.839 --> 00:05:31.000
+model groups similar data points.
+
+86
+00:05:31.000 --> 00:05:35.600
+Model validation is a method to optimize your ML model without jeopardizing its ability
+
+87
+00:05:35.600 --> 00:05:37.899
+to predict well on unseen data.
+
+88
+00:05:37.899 --> 00:05:42.600
+It helps you prevent overfitting when selecting the best model configuration by tuning hyperparameters
+
+89
+00:05:43.519 --> 00:05:47.679
+Checking performance on the test data before you are done optimizing your model is called
+
+90
+00:05:47.679 --> 00:05:51.399
+data snooping, a form of data leakage.
+
+91
+00:05:51.399 --> 00:05:55.320
+Validation means tuning your model on the training data but only testing it on unseen
+
+92
+00:05:55.320 --> 00:05:58.079
+test data once you are satisfied that it is well trained.
+
+93
+00:05:58.079 --> 00:06:00.239
+There is no snooping involved.
+
+94
+00:06:00.239 --> 00:06:04.019
+Now that you've reviewed some of the fundamental ideas presented in this course, remember that
+
+95
+00:06:04.019 --> 00:06:06.559
+each module has a summary and a glossary.
+
+96
+00:06:06.559 --> 00:06:09.619
+You can use them to quickly reference much of what you have learned.
+
+97
+00:06:09.619 --> 00:06:13.440
+To strengthen your learning from this course, actively participate in and complete the practice
+
+98
+00:06:13.440 --> 00:06:17.820
+assessment at the end of each lesson and the graded assessment at the end of each module
+
+99
+00:06:17.820 --> 00:06:19.540
+offered across the course.
+
+100
+00:06:19.540 --> 00:06:23.619
+The course contains multiple hands-on labs and a final project to help you gain practical
+
+101
+00:06:23.619 --> 00:06:27.019
+exposure to the tools and technologies you learned.
+
+102
+00:06:27.019 --> 00:06:31.220
+Congratulations on completing this course and good luck on your journey with machine learning.

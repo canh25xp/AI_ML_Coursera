@@ -1,0 +1,605 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:10.000
+Welcome to Decision Trees for Machine Learning.
+
+2
+00:00:10.000 --> 00:00:12.600
+After watching this video, you will be able to
+
+3
+00:00:12.600 --> 00:00:14.199
+Define Decision Trees
+
+4
+00:00:14.199 --> 00:00:16.100
+Describe how to build Decision Trees
+
+5
+00:00:16.100 --> 00:00:18.200
+Explain how Decision Trees learn
+
+6
+00:00:18.200 --> 00:00:22.000
+A Decision Tree is an algorithm that can be visualized as a flowchart
+
+7
+00:00:22.000 --> 00:00:24.200
+for classifying data points.
+
+8
+00:00:24.200 --> 00:00:25.799
+In a Decision Tree,
+
+9
+00:00:25.799 --> 00:00:28.600
+each internal node corresponds to a test,
+
+10
+00:00:28.600 --> 00:00:31.200
+each branch corresponds to the result of the test,
+
+11
+00:00:31.200 --> 00:00:35.299
+and each terminal or leaf node assigns its data to a class.
+
+12
+00:00:35.299 --> 00:00:39.500
+A Decision Tree can be built by considering the features of a dataset one by one.
+
+13
+00:00:39.500 --> 00:00:43.000
+Imagine that you are a researcher compiling data for a medical study.
+
+14
+00:00:43.000 --> 00:00:47.200
+You would already have collected data about a set of patients who suffered from the same illness.
+
+15
+00:00:47.200 --> 00:00:51.700
+During their course of treatment, each patient responded to one of two medications.
+
+16
+00:00:51.700 --> 00:00:54.000
+Let's call them drug A and drug B.
+
+17
+00:00:54.000 --> 00:00:59.400
+Suppose you want to build a model to predict which drug might be appropriate for a future patient with the same illness.
+
+18
+00:00:59.400 --> 00:01:01.599
+The features of this dataset are age,
+
+19
+00:01:01.599 --> 00:01:02.400
+gender,
+
+20
+00:01:02.400 --> 00:01:03.299
+blood pressure,
+
+21
+00:01:03.299 --> 00:01:05.900
+and cholesterol of our group of patients,
+
+22
+00:01:05.900 --> 00:01:09.500
+and the target is the drug that each patient responded to.
+
+23
+00:01:09.500 --> 00:01:12.800
+You would use the training part of the dataset to build a Decision Tree
+
+24
+00:01:12.800 --> 00:01:15.800
+and then use it to predict the class of an unknown patient.
+
+25
+00:01:15.800 --> 00:01:20.400
+In essence, to produce a decision on which drug the patient is likely to respond to.
+
+26
+00:01:20.400 --> 00:01:27.800
+The decision to prescribe drug A or B will be based on historical data for a large set of patients diagnosed with the same disease.
+
+27
+00:01:27.800 --> 00:01:31.599
+The tree starts by assigning a diagnosed patient to their age category,
+
+28
+00:01:31.599 --> 00:01:32.599
+which can be young,
+
+29
+00:01:32.599 --> 00:01:33.400
+middle-aged,
+
+30
+00:01:33.400 --> 00:01:34.500
+or senior.
+
+31
+00:01:34.500 --> 00:01:36.199
+If the patient is middle-aged,
+
+32
+00:01:36.199 --> 00:01:38.300
+the Decision Tree suggests drug B.
+
+33
+00:01:38.300 --> 00:01:41.699
+It also suggests drug B if the patient is young and male,
+
+34
+00:01:41.699 --> 00:01:43.900
+or a senior with normal cholesterol.
+
+35
+00:01:43.900 --> 00:01:45.099
+On the other hand,
+
+36
+00:01:45.099 --> 00:01:48.500
+if the patient is a young female or a senior with high cholesterol,
+
+37
+00:01:48.599 --> 00:01:51.900
+the tree's branches lead to a prescription for drug A.
+
+38
+00:01:51.900 --> 00:01:55.000
+A Decision Tree is trained by growing it as follows.
+
+39
+00:01:55.000 --> 00:01:57.699
+Start with a seed node and labeled training data.
+
+40
+00:01:57.699 --> 00:02:03.300
+Train the node on its assigned data by finding the feature that best splits the data into its pre-labeled classes,
+
+41
+00:02:03.300 --> 00:02:06.000
+according to a pre-selected splitting criterion.
+
+42
+00:02:06.000 --> 00:02:08.800
+Each such split partitions the node's input data,
+
+43
+00:02:08.800 --> 00:02:12.500
+and each partition is passed along its branch to a new node.
+
+44
+00:02:12.500 --> 00:02:14.500
+Repeat the process for each new node,
+
+45
+00:02:14.500 --> 00:02:16.699
+using each feature only once.
+
+46
+00:02:16.699 --> 00:02:20.100
+The tree grows until all nodes contain a single class each,
+
+47
+00:02:20.100 --> 00:02:22.000
+or you run out of features to select,
+
+48
+00:02:22.000 --> 00:02:25.300
+or a pre-selected stopping criterion is met.
+
+49
+00:02:25.300 --> 00:02:28.899
+A Decision Tree stops growing when a stopping criterion is met.
+
+50
+00:02:28.899 --> 00:02:31.800
+This is also known as pre-emptive tree pruning.
+
+51
+00:02:31.800 --> 00:02:32.800
+For instance,
+
+52
+00:02:32.800 --> 00:02:37.100
+you can set stopping criteria for your model when the following criterion is met.
+
+53
+00:02:37.100 --> 00:02:39.500
+Maximum tree depth is reached.
+
+54
+00:02:39.500 --> 00:02:42.699
+Minimum number of data points in a node have been exceeded.
+
+55
+00:02:42.699 --> 00:02:45.500
+Minimum number of samples in a leaf have been exceeded.
+
+56
+00:02:45.500 --> 00:02:48.800
+Decision Tree has reached the maximum number of leaf nodes.
+
+57
+00:02:48.800 --> 00:02:49.800
+Alternatively,
+
+58
+00:02:49.800 --> 00:02:55.500
+you can also stop a tree from growing by cutting branches that don't significantly improve system performance.
+
+59
+00:02:55.500 --> 00:02:58.600
+There are several reasons why you might want to prune a Decision Tree.
+
+60
+00:02:58.600 --> 00:03:00.199
+If the tree is too complex,
+
+61
+00:03:00.199 --> 00:03:02.500
+you might be overfitting it to the training data.
+
+62
+00:03:02.500 --> 00:03:04.600
+If you have too many classes and features,
+
+63
+00:03:04.600 --> 00:03:07.800
+the tree might be capturing noise and irrelevant details.
+
+64
+00:03:07.800 --> 00:03:10.199
+Pruning simplifies your Decision Tree model
+
+65
+00:03:10.199 --> 00:03:12.600
+and makes it amenable to generalization.
+
+66
+00:03:12.600 --> 00:03:16.100
+A pruned tree is more concise and easier to understand.
+
+67
+00:03:16.100 --> 00:03:19.000
+Pruning also results in better predictive accuracy.
+
+68
+00:03:19.000 --> 00:03:23.500
+Decision Trees are built using recursive partitioning to classify the data.
+
+69
+00:03:23.500 --> 00:03:28.699
+The Decision Tree algorithm must select a feature that best splits the data at each node to train a tree.
+
+70
+00:03:28.699 --> 00:03:29.600
+To do this,
+
+71
+00:03:29.600 --> 00:03:34.300
+you must select a splitting criterion to measure the split quality for determining the best split.
+
+72
+00:03:34.300 --> 00:03:36.199
+Two common split measures are
+
+73
+00:03:36.199 --> 00:03:37.199
+information gain,
+
+74
+00:03:37.199 --> 00:03:39.399
+which is also called entropy reduction,
+
+75
+00:03:39.399 --> 00:03:41.199
+and Gini impurity.
+
+76
+00:03:41.199 --> 00:03:43.699
+Consider the 14 patients in our data set.
+
+77
+00:03:43.699 --> 00:03:47.399
+The Decision Tree algorithm chooses the most predictive feature to split the data on,
+
+78
+00:03:47.399 --> 00:03:48.399
+for example,
+
+79
+00:03:48.399 --> 00:03:51.699
+the feature that best distinguishes the patient classes it assigns.
+
+80
+00:03:51.699 --> 00:03:55.800
+Suppose it starts by testing cholesterol as the first feature to split on.
+
+81
+00:03:55.800 --> 00:03:58.000
+The tree assigns patients to two nodes,
+
+82
+00:03:58.000 --> 00:03:59.500
+high and normal.
+
+83
+00:03:59.500 --> 00:04:00.600
+As you can see,
+
+84
+00:04:00.600 --> 00:04:02.300
+if the patient has high cholesterol,
+
+85
+00:04:02.300 --> 00:04:05.800
+we cannot say with high confidence that drug B might be suitable for him.
+
+86
+00:04:05.800 --> 00:04:08.399
+Also, even if the patient's cholesterol is normal,
+
+87
+00:04:08.399 --> 00:04:14.100
+we still don't have sufficient evidence or information to determine whether either drug A or drug B is suitable.
+
+88
+00:04:14.100 --> 00:04:17.299
+Cholesterol might not be the best attribute to split on.
+
+89
+00:04:17.299 --> 00:04:21.200
+We're looking for the best feature to decrease impurity of patients in the leaves,
+
+90
+00:04:21.200 --> 00:04:22.899
+so let's try another feature.
+
+91
+00:04:22.899 --> 00:04:26.100
+This time, we pick the sex feature of patients.
+
+92
+00:04:26.100 --> 00:04:29.000
+The Decision Tree splits patients into two branches,
+
+93
+00:04:29.000 --> 00:04:30.299
+male and female.
+
+94
+00:04:30.299 --> 00:04:31.299
+For females,
+
+95
+00:04:31.299 --> 00:04:34.399
+the sex split classifies most patients as drug B.
+
+96
+00:04:34.399 --> 00:04:35.299
+For males,
+
+97
+00:04:35.399 --> 00:04:39.299
+the distinction between drug A and B diagnoses is less clear.
+
+98
+00:04:39.299 --> 00:04:43.600
+Further splitting the male node using the cholesterol feature results in two pure nodes:
+
+99
+00:04:43.600 --> 00:04:48.000
+the terminal leaves in which all patients fall into a single class or prescription.
+
+100
+00:04:48.000 --> 00:04:51.799
+The algorithm continues branching until it reaches a stopping criterion.
+
+101
+00:04:51.799 --> 00:04:54.299
+Entropy is the measure of information disorder,
+
+102
+00:04:54.299 --> 00:04:56.200
+or randomness in a data set.
+
+103
+00:04:56.200 --> 00:04:58.799
+It measures how random the classes in a node are,
+
+104
+00:04:58.799 --> 00:05:01.600
+or how uncertain the feature split result is.
+
+105
+00:05:01.600 --> 00:05:02.899
+In Decision Trees,
+
+106
+00:05:02.899 --> 00:05:06.000
+you look for trees that have the smallest entropy in their nodes.
+
+107
+00:05:06.000 --> 00:05:09.399
+You can calculate the entropy of a node using the entropy formula,
+
+108
+00:05:09.399 --> 00:05:12.799
+where pA and pB are, respectively.
+
+109
+00:05:12.799 --> 00:05:16.100
+The proportions of drug A and drug B patients in the node.
+
+110
+00:05:16.100 --> 00:05:18.200
+If the classes are completely homogenous,
+
+111
+00:05:18.200 --> 00:05:19.500
+the entropy is 0,
+
+112
+00:05:19.500 --> 00:05:21.000
+and if they are equally divided,
+
+113
+00:05:21.000 --> 00:05:22.200
+the entropy is 1.
+
+114
+00:05:22.200 --> 00:05:23.100
+For example,
+
+115
+00:05:23.100 --> 00:05:25.799
+if pA equals pB equals 1 half,
+
+116
+00:05:25.799 --> 00:05:29.200
+then the formula yields 1 half times negative 1,
+
+117
+00:05:29.200 --> 00:05:32.799
+minus 1 half times negative 1 equals 1.
+
+118
+00:05:32.799 --> 00:05:34.700
+You don't need to calculate these, of course,
+
+119
+00:05:34.700 --> 00:05:38.200
+as it's calculated by the libraries or packages that you use.
+
+120
+00:05:38.200 --> 00:05:40.399
+Information gain is the entropy of a tree
+
+121
+00:05:40.399 --> 00:05:44.299
+before the split minus the weighted entropy after the split by a feature.
+
+122
+00:05:44.299 --> 00:05:45.299
+For example,
+
+123
+00:05:45.299 --> 00:05:48.700
+using cholesterol as the feature to split on for all patients
+
+124
+00:05:48.700 --> 00:05:52.399
+yields an information gain of 0.042.
+
+125
+00:05:52.399 --> 00:05:55.799
+You can consider information gain and entropy as opposites.
+
+126
+00:05:55.799 --> 00:05:57.200
+As entropy decreases,
+
+127
+00:05:57.200 --> 00:06:00.500
+the information gain, or amount of certainty, increases.
+
+128
+00:06:00.500 --> 00:06:03.100
+Constructing a decision tree is all about finding features
+
+129
+00:06:03.100 --> 00:06:05.500
+that return the highest information gain.
+
+130
+00:06:05.500 --> 00:06:07.899
+Decision trees are advantageous because
+
+131
+00:06:07.899 --> 00:06:09.200
+they can be visualized.
+
+132
+00:06:09.200 --> 00:06:12.000
+This means you can see exactly how it makes decisions,
+
+133
+00:06:12.000 --> 00:06:14.299
+which makes them highly interpretable.
+
+134
+00:06:14.299 --> 00:06:18.100
+Since the tree grows by gradually selecting the next best feature to split on,
+
+135
+00:06:18.100 --> 00:06:21.899
+you can gain insights about how important or predictive each feature is.
+
+136
+00:06:21.899 --> 00:06:25.700
+A decision tree is an algorithm for classifying data points.
+
+137
+00:06:25.700 --> 00:06:29.899
+Decision trees are built by considering the features of a dataset one by one.
+
+138
+00:06:29.899 --> 00:06:31.200
+In a decision tree,
+
+139
+00:06:31.200 --> 00:06:34.100
+each internal node corresponds to a test.
+
+140
+00:06:34.100 --> 00:06:36.600
+Each branch corresponds to the result of the test,
+
+141
+00:06:36.600 --> 00:06:38.500
+and each terminal, or leaf node,
+
+142
+00:06:38.500 --> 00:06:40.500
+assigns its data to a class.
+
+143
+00:06:40.500 --> 00:06:41.600
+In this video,
+
+144
+00:06:41.600 --> 00:06:43.799
+you learned how to train a decision tree,
+
+145
+00:06:43.799 --> 00:06:45.299
+how to prune a decision tree,
+
+146
+00:06:45.299 --> 00:06:48.399
+and how to select the features that best splits the data at each node
+
+147
+00:06:48.399 --> 00:06:49.799
+when you're training a tree.
+
+148
+00:06:49.799 --> 00:06:51.899
+You also learned about the information gain
+
+149
+00:06:51.899 --> 00:06:54.000
+and Gini impurity split measures.
+
+150
+00:06:54.000 --> 00:06:56.600
+Decision trees help in visualizing a data model
+
+151
+00:06:56.600 --> 00:06:59.899
+and predicting outcomes based on the information in a dataset.

@@ -1,0 +1,421 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:10.880
+Welcome to Bias, Variance, and Ensemble Models.
+
+2
+00:00:10.880 --> 00:00:14.619
+After watching this video, you'll be able to analyze the impact of bias and variance
+
+3
+00:00:14.619 --> 00:00:16.280
+on accuracy and precision.
+
+4
+00:00:16.280 --> 00:00:21.399
+You'll also be able to explain the bias-variance tradeoff in model complexity, evaluate techniques
+
+5
+00:00:21.399 --> 00:00:26.239
+to mitigate bias and variance, and analyze the outcomes of bagging and boosting methods.
+
+6
+00:00:26.639 --> 00:00:30.799
+Let's understand bias and variance with the four dart boards shown in the image.
+
+7
+00:00:30.799 --> 00:00:35.840
+Closely grouping the darts near the center of the board indicates high accuracy and low bias.
+
+8
+00:00:35.840 --> 00:00:39.720
+The top two boards demonstrate low bias, meaning they are more accurate, while the bottom two
+
+9
+00:00:39.720 --> 00:00:43.040
+show higher bias, making them less accurate.
+
+10
+00:00:43.040 --> 00:00:47.599
+Think of bias as how on-target or off-target the darts are.
+
+11
+00:00:47.599 --> 00:00:51.840
+Variance measures how spread out the darts are, representing precision.
+
+12
+00:00:51.840 --> 00:00:55.959
+The dart boards on the right display higher variance, meaning the darts are more spread
+
+13
+00:00:55.959 --> 00:01:00.919
+out, while the boards on the left show lower variance, with the darts grouped closer together.
+
+14
+00:01:00.919 --> 00:01:05.519
+As shown on the top left board, achieving a high score requires both low bias for accuracy
+
+15
+00:01:05.519 --> 00:01:08.480
+and low variance for precision.
+
+16
+00:01:08.480 --> 00:01:11.319
+Prediction bias refers to how precise a model's predictions are.
+
+17
+00:01:11.319 --> 00:01:15.019
+It's measured by the average difference between what the model predicts and the actual
+
+18
+00:01:15.019 --> 00:01:16.800
+target values in the data.
+
+19
+00:01:16.800 --> 00:01:19.440
+A perfect predictor has zero bias.
+
+20
+00:01:19.440 --> 00:01:21.760
+This chart illustrates prediction bias.
+
+21
+00:01:21.760 --> 00:01:26.599
+The blue line represents the linear ordinary least squares fit for the blue data points.
+
+22
+00:01:26.599 --> 00:01:28.720
+It has a bias of 0.22.
+
+23
+00:01:28.720 --> 00:01:32.080
+The red line depicts the same model shifted down by 4 units.
+
+24
+00:01:32.080 --> 00:01:35.319
+It has a much higher bias of 4.22.
+
+25
+00:01:35.319 --> 00:01:39.080
+Prediction variance measures how much a model's predictions fluctuate when trained on different
+
+26
+00:01:39.080 --> 00:01:41.080
+subsets of the same dataset.
+
+27
+00:01:41.080 --> 00:01:44.959
+When a model exhibits high prediction variance, it becomes extremely sensitive to changes
+
+28
+00:01:44.959 --> 00:01:46.940
+in the selected training data.
+
+29
+00:01:46.940 --> 00:01:51.279
+High variance causes the model to overfit the training data and track noise or outliers
+
+30
+00:01:51.279 --> 00:01:53.160
+present in the training data.
+
+31
+00:01:53.160 --> 00:01:58.080
+In contrast, models that generalize well to unseen data are necessarily less sensitive
+
+32
+00:01:58.080 --> 00:01:59.080
+to noise.
+
+33
+00:01:59.080 --> 00:02:01.360
+They have low prediction variance.
+
+34
+00:02:01.360 --> 00:02:05.139
+This chart displays orange data points that follow a nonlinear pattern.
+
+35
+00:02:05.139 --> 00:02:08.720
+Each model is fitted using a randomly sampled training dataset.
+
+36
+00:02:08.720 --> 00:02:12.440
+The curves would align almost perfectly if their prediction variance were near zero.
+
+37
+00:02:12.440 --> 00:02:16.360
+However, you can observe differences between the curves, especially at the beginning and
+
+38
+00:02:16.360 --> 00:02:17.600
+end of the data.
+
+39
+00:02:17.600 --> 00:02:23.639
+This variation indicates some prediction variance, reflecting instability in the model's predictions.
+
+40
+00:02:23.639 --> 00:02:27.759
+This plot illustrates how bias and variance change as your model becomes more complex
+
+41
+00:02:27.759 --> 00:02:30.440
+and better at predicting the data it's trained on.
+
+42
+00:02:30.440 --> 00:02:35.919
+As model complexity increases, bias, represented by the blue curve, tends to decline, while
+
+43
+00:02:35.919 --> 00:02:38.979
+variance, shown by the green curve, rises.
+
+44
+00:02:38.979 --> 00:02:44.600
+When model complexity is low, bias is high, leading to poor predictions even on training data.
+
+45
+00:02:44.600 --> 00:02:46.399
+This is known as underfitting.
+
+46
+00:02:46.399 --> 00:02:50.720
+Conversely, high model complexity results in high variance, meaning the model becomes
+
+47
+00:02:50.720 --> 00:02:55.320
+overly sensitive to the training data and performs poorly on unseen data, resulting
+
+48
+00:02:55.320 --> 00:02:56.320
+in overfitting.
+
+49
+00:02:56.320 --> 00:03:00.559
+However, there's a crossover point marked by the vertical dashed line where the model's
+
+50
+00:03:00.559 --> 00:03:02.679
+complexity is just right.
+
+51
+00:03:02.679 --> 00:03:07.360
+As the plot indicates, there will always be some generalization error that cannot be eliminated,
+
+52
+00:03:07.360 --> 00:03:09.759
+such as random noise in the data.
+
+53
+00:03:09.759 --> 00:03:12.119
+A weak learner is a supervised machine learning model
+
+54
+00:03:12.119 --> 00:03:15.720
+that performs only slightly better than random guessing.
+
+55
+00:03:15.720 --> 00:03:20.800
+These models are characterized by high bias and low variance, which often leads to underfitting.
+
+56
+00:03:20.800 --> 00:03:24.839
+In contrast, strong learners exhibit low bias and high variance,
+
+57
+00:03:24.839 --> 00:03:27.440
+resulting in a tendency to overfit the data.
+
+58
+00:03:27.440 --> 00:03:30.099
+Bagging and boosting are well-known ensemble methods that
+
+59
+00:03:30.099 --> 00:03:32.399
+effectively balance bias and variance.
+
+60
+00:03:32.399 --> 00:03:37.119
+Decision or regression trees are commonly chosen as base learners in ensemble learning
+
+61
+00:03:37.119 --> 00:03:41.899
+because their bias and variance can be easily adjusted by altering their depth.
+
+62
+00:03:41.899 --> 00:03:46.119
+The model predictions shown here utilize the same modeling algorithm repeatedly trained
+
+63
+00:03:46.119 --> 00:03:48.300
+on bootstrapped subsets of data.
+
+64
+00:03:48.300 --> 00:03:51.580
+You can observe the variance at both ends of the family of curves.
+
+65
+00:03:51.580 --> 00:03:57.059
+Now, imagine if you were to perform this process multiple times and then average the predictions.
+
+66
+00:03:57.059 --> 00:04:00.740
+This technique is known as bagging or bootstrap aggregating.
+
+67
+00:04:00.740 --> 00:04:05.300
+As illustrated by the dashed curve, averaging the models across numerous iterations significantly
+
+68
+00:04:05.300 --> 00:04:09.699
+reduces prediction variance while also lowering the risk of overfitting.
+
+69
+00:04:09.699 --> 00:04:14.679
+Random forests is a bagging method that trains multiple decision trees on bootstrap datasets.
+
+70
+00:04:14.679 --> 00:04:16.660
+These trees don't need to be very deep.
+
+71
+00:04:16.660 --> 00:04:20.260
+Instead, the focus should be on minimizing prediction bias.
+
+72
+00:04:20.260 --> 00:04:23.980
+Shallow trees have high prediction variance, and aggregation significantly reduces this
+
+73
+00:04:23.980 --> 00:04:27.380
+variance while only slightly increasing bias.
+
+74
+00:04:27.380 --> 00:04:31.380
+Boosting is an ensemble modeling technique that builds a series of weak learners, each
+
+75
+00:04:31.380 --> 00:04:33.859
+aimed at correcting the errors of the previous one.
+
+76
+00:04:33.859 --> 00:04:38.700
+By systematically reducing prediction error, boosting helps lower prediction bias.
+
+77
+00:04:38.700 --> 00:04:41.920
+The final model is formed as a weighted sum of these weak learners.
+
+78
+00:04:41.920 --> 00:04:46.019
+In each iteration of the process, the weights of misclassified data from the previous model
+
+79
+00:04:46.019 --> 00:04:50.260
+are increased, while the weights of correctly classified data are decreased.
+
+80
+00:04:50.260 --> 00:04:53.940
+This reweighting helps the algorithm focus on correcting the mistakes.
+
+81
+00:04:53.940 --> 00:04:58.260
+The model's weights are updated based on the performance of each weak learner.
+
+82
+00:04:58.260 --> 00:05:04.579
+Popular boosting algorithms include Gradient Boosting, XGBoost, and AdaBoost.
+
+83
+00:05:04.579 --> 00:05:09.260
+This graph demonstrates how bagging and boosting can help mitigate the bias-variance tradeoff
+
+84
+00:05:09.260 --> 00:05:12.660
+by strategically adjusting model complexity.
+
+85
+00:05:12.660 --> 00:05:15.579
+Boosting increases model complexity and decreases bias.
+
+86
+00:05:15.579 --> 00:05:19.000
+In contrast, bagging increases variance.
+
+87
+00:05:19.000 --> 00:05:24.059
+This table illustrates how ensemble methods can be used to address common issues in machine learning.
+
+88
+00:05:24.059 --> 00:05:28.260
+Bagging aims to mitigate overfitting by combining multiple base learnings that are high variance
+
+89
+00:05:28.260 --> 00:05:29.839
+and low bias.
+
+90
+00:05:29.839 --> 00:05:34.160
+These base learners are trained in parallel on bootstrap data samples.
+
+91
+00:05:34.160 --> 00:05:36.239
+Bagging helps reduce variance.
+
+92
+00:05:36.239 --> 00:05:39.839
+Boosting aims to mitigate underfitting by sequentially training base learners that are
+
+93
+00:05:39.839 --> 00:05:42.000
+low variance and high bias.
+
+94
+00:05:42.000 --> 00:05:46.480
+Each subsequent base learner builds on the previous result, gradually reducing bias.
+
+95
+00:05:46.480 --> 00:05:50.600
+In this video, you learned to analyze bias and variance and how they impact accuracy
+
+96
+00:05:50.600 --> 00:05:52.160
+and precision.
+
+97
+00:05:52.160 --> 00:05:55.799
+Explain prediction bias and how it measures the accuracy of predictions.
+
+98
+00:05:55.799 --> 00:05:59.739
+Analyze prediction variance to measure how much a model's predictions fluctuate.
+
+99
+00:05:59.739 --> 00:06:03.519
+Explain the bias-variance tradeoff and how bias and variance change as your model becomes
+
+100
+00:06:03.519 --> 00:06:05.119
+more complex.
+
+101
+00:06:05.119 --> 00:06:09.559
+Explain mitigating bias and variance and the concept of weak and strong learners.
+
+102
+00:06:09.559 --> 00:06:13.239
+Analyze bagging or bootstrap aggregating to observe variance at both ends of a family
+
+103
+00:06:13.239 --> 00:06:14.559
+of curves.
+
+104
+00:06:14.559 --> 00:06:18.600
+Explain random forests to train multiple decision trees on bootstrap data sets.
+
+105
+00:06:18.600 --> 00:06:22.679
+And finally, analyze bagging and boosting outcomes to manage bias and variance.

@@ -1,0 +1,269 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:11.260
+Chào mừng bạn đến với Hệ sinh thái học máy Scikit-Learn.
+
+2
+00:00:11.260 --> 00:00:15.779
+Sau khi xem video này, bạn sẽ có thể mô tả hệ sinh thái học máy.
+
+3
+00:00:15.779 --> 00:00:22.100
+Bạn cũng sẽ có thể giải thích các tính năng của thư viện Scikit-learn và cách nó hoạt động.
+
+4
+00:00:22.100 --> 00:00:26.540
+Hãy tưởng tượng bạn đã phát triển một ứng dụng phát nhạc trực tuyến cho phép người dùng phát và tải nhạc,
+
+5
+00:00:26.540 --> 00:00:29.340
+chia sẻ tệp nhạc và tạo danh sách phát.
+
+6
+00:00:29.340 --> 00:00:33.939
+Để tăng cơ sở người dùng của ứng dụng, bạn thu thập thông tin về thói quen nghe của người dùng,
+
+7
+00:00:33.939 --> 00:00:38.659
+chẳng hạn như bài hát nào họ phát, thời gian họ nghe bài hát và bài hát nào họ bỏ qua.
+
+8
+00:00:38.659 --> 00:00:42.380
+Khi bạn đã thu thập thông tin, bạn muốn bình thường hóa thông tin bằng cách tìm
+
+9
+00:00:42.380 --> 00:00:45.659
+dữ liệu không nhất quán, các giá trị bị thiếu và ngoại lệ. Các
+
+10
+00:00:45.659 --> 00:00:48.540
+công cụ học máy có thể tạo ra loại thông tin này.
+
+11
+00:00:48.540 --> 00:00:55.180
+Chúng hữu ích cho việc thu thập dữ liệu, tiền xử lý, đào tạo mô hình, đánh giá mô hình, triển khai mô hình
+
+12
+00:00:55.180 --> 00:00:56.740
+và giám sát.
+
+13
+00:00:56.740 --> 00:01:02.139
+Học máy, hay hệ sinh thái ML, đề cập đến các công cụ, khung, thư viện
+
+14
+00:01:02.139 --> 00:01:08.580
+, nền tảng và quy trình được kết nối với nhau hỗ trợ phát triển, triển khai và quản lý các mô hình học máy.
+
+15
+00:01:08.580 --> 00:01:12.540
+Python cung cấp một loạt các công cụ và thư viện cho học máy.
+
+16
+00:01:12.540 --> 00:01:16.819
+Một số thư viện Python mã nguồn mở bao gồm một trong những hệ sinh thái được sử dụng rộng rãi nhất cho
+
+17
+00:01:16.819 --> 00:01:18.139
+học máy.
+
+18
+00:01:18.139 --> 00:01:23.220
+NumPy cung cấp hỗ trợ học máy cơ bản với các tính toán số hiệu quả
+
+19
+00:01:23.300 --> 00:01:25.779
+trên các mảng dữ liệu đa chiều lớn.
+
+20
+00:01:25.779 --> 00:01:32.019
+Pandas, được xây dựng trên NumPy và Matplotlib, được sử dụng để phân tích dữ liệu, trực quan hóa, làm sạch
+
+21
+00:01:32.019 --> 00:01:33.900
+và chuẩn bị dữ liệu cho máy học.
+
+22
+00:01:33.900 --> 00:01:37.900
+Pandas sử dụng các mảng đa năng được gọi là khung dữ liệu để xử lý dữ liệu.
+
+23
+00:01:37.900 --> 00:01:43.180
+SciPy, được xây dựng trên NumPy, được sử dụng cho tính toán khoa học và có các mô-đun để tối ưu hóa,
+
+24
+00:01:43.180 --> 00:01:45.900
+tích hợp, hồi quy tuyến tính và hơn thế nữa.
+
+25
+00:01:45.900 --> 00:01:51.580
+Matplotlib được xây dựng trên NumPy và có một bộ công cụ trực quan mở rộng, có thể tùy chỉnh cao.
+
+26
+00:01:57.059 --> 00:01:58.059
+Scikit-learn, được xây dựng trên NumPy, SciPy và Matplotlib, được sử dụng để xây dựng các mô hình học máy cổ điển. Chúng
+
+27
+00:01:58.059 --> 00:02:01.180
+ta hãy xem xét kỹ hơn về scikit-learn.
+
+28
+00:02:01.180 --> 00:02:05.059
+Scikit-learn là một thư viện máy học miễn phí cho ngôn ngữ lập trình Python.
+
+29
+00:02:05.059 --> 00:02:11.059
+Nó có nhiều lựa chọn cập nhật về các thuật toán phân loại, hồi quy, phân cụm và
+
+30
+00:02:11.059 --> 00:02:12.380
+giảm kích thước.
+
+31
+00:02:12.380 --> 00:02:18.139
+Nó được thiết kế để làm việc với các thư viện số và khoa học Python NumPy và SciPy.
+
+32
+00:02:18.699 --> 00:02:22.419
+Nó có tài liệu tuyệt vời và một mạng lưới hỗ trợ cộng đồng lớn.
+
+33
+00:02:22.419 --> 00:02:27.259
+Scikit-learn không ngừng phát triển với sự đóng góp từ một cộng đồng hàng ngàn người và
+
+34
+00:02:27.259 --> 00:02:29.139
+chỉ bị vượt qua bởi Pandas.
+
+35
+00:02:32.779 --> 00:02:34.619
+Triển khai các mô hình học máy với scikit-learn rất dễ dàng, chỉ với một vài dòng mã Python.
+
+36
+00:02:38.300 --> 00:02:43.740
+Hầu hết các tác vụ cần được thực hiện trong một đường ống học máy đã được triển khai
+
+37
+00:02:43.860 --> 00:02:49.580
+trong scikit-learn, bao gồm các tác vụ xử lý trước dữ liệu như dọn dẹp dữ liệu, mở rộng quy mô,
+
+38
+00:02:49.580 --> 00:02:54.619
+lựa chọn tính năng và trích xuất tính năng, đào tạo hoặc phân tách thử, thiết lập và lắp mô hình,
+
+39
+00:02:54.619 --> 00:02:55.619
+điều chỉnh siêu tham số với xác thực chênh lệch, dự đoán, đánh giá và xuất mô hình để sử dụng trong sản xuất.
+
+40
+00:02:55.619 --> 00:03:01.460
+Dưới đây là một ví dụ về quy trình làm việc học máy cơ bản sử dụng thư viện scikit-learn.
+
+41
+00:03:01.460 --> 00:03:07.259
+Hãy xem xét một tập dữ liệu X và một biến đích Y, cả hai đều được lưu trữ dưới dạng mảng NumPy. G@@
+
+42
+00:03:07.259 --> 00:03:11.500
+ói tiền xử lý của Scikit-learn cung cấp một số chức năng tiện ích phổ biến và
+
+43
+00:03:11.539 --> 00:03:14.539
+các lớp biến áp để giúp bạn chuẩn bị dữ liệu cho mô hình hóa.
+
+44
+00:03:14.539 --> 00:03:19.139
+Ví dụ, khối mã đầu tiên này mở rộng quy mô dữ liệu của bạn bằng cách chuẩn hóa nó.
+
+45
+00:03:19.139 --> 00:03:23.679
+Trong học tập có giám sát, bạn muốn chia tập dữ liệu của mình thành các bộ đào tạo và kiểm tra để đào tạo
+
+46
+00:03:23.679 --> 00:03:27.220
+mô hình của mình và sau đó kiểm tra độ chính xác của mô hình một cách riêng biệt.
+
+47
+00:03:31.259 --> 00:03:32.860
+Scikit-learn có thể chia các mảng và ma trận thành các tập hợp con ngẫu nhiên và kiểm tra cho bạn trong một dòng mã.
+
+48
+00:03:32.860 --> 00:03:36.460
+Ở đây, 33% dữ liệu được dành riêng cho thử nghiệm.
+
+49
+00:03:36.460 --> 00:03:42.259
+Tiếp theo, bạn có thể khởi tạo mô hình phân loại bằng thuật toán phân loại vectơ hỗ trợ. D@@
+
+50
+00:03:42.259 --> 00:03:47.300
+òng mã này tạo ra một đối tượng mô hình phân loại, được gọi là clf, và khởi tạo các tham
+
+51
+00:03:47.300 --> 00:03:49.940
+số của nó, gamma và C.
+
+52
+00:03:49.940 --> 00:03:54.619
+Sau khi khởi tạo mô hình clf của bạn, bạn có thể đào tạo mô hình của mình trên dữ liệu đào tạo.
+
+53
+00:03:54.619 --> 00:03:58.339
+Mô hình clf học cách dự đoán các lớp cho các trường hợp không xác định bằng cách chuyển
+
+54
+00:03:58.339 --> 00:04:00.539
+bộ đào tạo sang phương pháp phù hợp.
+
+55
+00:04:00.539 --> 00:04:03.160
+Sau đó, bạn có thể sử dụng dữ liệu thử nghiệm để tạo dự đoán.
+
+56
+00:04:03.160 --> 00:04:07.300
+Kết quả cho bạn biết lớp dự đoán cho mỗi quan sát trong bộ thử nghiệm.
+
+57
+00:04:07.300 --> 00:04:12.800
+Bạn cũng có thể sử dụng các số liệu khác nhau để đánh giá độ chính xác của mô hình của mình, chẳng hạn như ma trận nhầm lẫn
+
+58
+00:04:12.800 --> 00:04:16.239
+để so sánh các nhãn dự đoán và thực tế cho bộ thử nghiệm.
+
+59
+00:04:16.239 --> 00:04:21.480
+Và cuối cùng, bạn có thể lưu mô hình của mình dưới dạng tệp dưa chua và truy xuất nó bất cứ khi nào bạn muốn.
+
+60
+00:04:21.480 --> 00:04:26.160
+Trong video này, bạn đã học được rằng hệ sinh thái học máy đề cập đến các
+
+61
+00:04:26.160 --> 00:04:32.540
+công cụ, khung, thư viện, nền tảng và quy trình được kết nối với nhau hỗ trợ phát triển, triển khai
+
+62
+00:04:32.540 --> 00:04:34.739
+và quản lý các mô hình học máy.
+
+63
+00:04:41.179 --> 00:04:42.179
+Nó sử dụng một số công cụ và thư viện Python, chẳng hạn như NumPy, Pandas, SciPy, Matplotlib và scikit-learn.
+
+64
+00:04:42.179 --> 00:04:48.140
+Scikit-learn là một thư viện máy học miễn phí cho Python sử dụng các thuật toán phân loại, hồi quy, phân
+
+65
+00:04:48.140 --> 00:04:51.579
+cụm và giảm kích thước.
+
+66
+00:04:51.579 --> 00:04:55.459
+Hầu hết các bài kiểm tra được yêu cầu trong một đường ống học máy đã được triển khai trong scikit-learn.
+
+67
+00:04:55.459 --> 00:05:00.540
+Cuối cùng, bạn đã học quy trình làm việc học máy cơ bản bằng cách sử dụng thư viện scikit-learn.

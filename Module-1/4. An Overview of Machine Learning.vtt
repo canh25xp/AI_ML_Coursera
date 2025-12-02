@@ -1,0 +1,487 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:11.819
+Welcome to Machine Learning Techniques and Applications.
+
+2
+00:00:11.819 --> 00:00:16.760
+After watching this video, you will be able to explain machine learning, identify machine
+
+3
+00:00:16.760 --> 00:00:22.299
+learning techniques, and describe applications of machine learning.
+
+4
+00:00:22.299 --> 00:00:26.860
+Artificial intelligence, or AI, makes computers appear intelligent by simulating the cognitive
+
+5
+00:00:26.860 --> 00:00:28.260
+abilities of humans.
+
+6
+00:00:28.520 --> 00:00:31.260
+AI is a general field with a broad scope.
+
+7
+00:00:31.260 --> 00:00:36.659
+It comprises computer vision, natural language processing, generative AI, machine learning,
+
+8
+00:00:36.659 --> 00:00:39.860
+and deep learning.
+
+9
+00:00:39.860 --> 00:00:44.720
+Machine learning, or ML, is the subset of AI that uses algorithms and requires feature
+
+10
+00:00:44.720 --> 00:00:47.139
+engineering by practitioners.
+
+11
+00:00:47.139 --> 00:00:51.180
+Deep learning distinguishes itself from traditional machine learning by using many-layered neural
+
+12
+00:00:51.180 --> 00:00:58.220
+networks that automatically extract features from highly complex, unstructured big data.
+
+13
+00:00:58.220 --> 00:01:03.180
+Machine learning teaches computers to learn from data, identify patterns, and make decisions
+
+14
+00:01:03.180 --> 00:01:06.540
+without receiving any explicit instructions from a human being.
+
+15
+00:01:06.540 --> 00:01:11.459
+ML algorithms use computational methods to learn information directly from data without
+
+16
+00:01:11.459 --> 00:01:15.260
+depending on any fixed algorithm.
+
+17
+00:01:15.260 --> 00:01:17.540
+Machine learning models differ in how they learn.
+
+18
+00:01:17.540 --> 00:01:23.300
+For example, supervised learning models train on labeled data to learn how to make inferences
+
+19
+00:01:23.300 --> 00:01:27.379
+on new data, enabling them to predict otherwise unknown labels.
+
+20
+00:01:27.379 --> 00:01:31.660
+Unsupervised learning works without labels by finding patterns in data.
+
+21
+00:01:31.660 --> 00:01:36.500
+Semi-supervised learning trains on a relatively small subset of data that is already labeled,
+
+22
+00:01:36.500 --> 00:01:40.739
+and iteratively retrains itself by adding new labels that it generates with reasonably
+
+23
+00:01:40.739 --> 00:01:42.459
+high confidence.
+
+24
+00:01:42.459 --> 00:01:47.459
+Reinforcement learning simulates an artificially intelligent agent interacting with its environment
+
+25
+00:01:47.459 --> 00:01:52.459
+and learns how to make decisions based on feedback from its environment.
+
+26
+00:01:52.459 --> 00:01:56.139
+Selecting a machine learning technique depends on several factors, such as the problem you're
+
+27
+00:01:56.139 --> 00:02:02.180
+trying to solve, the type of data you have, the available resources, and the desired outcome.
+
+28
+00:02:02.180 --> 00:02:06.860
+A classification technique is used to predict the class or category of a case, such as whether
+
+29
+00:02:06.860 --> 00:02:11.199
+a cell is benign or malignant or whether a customer will churn.
+
+30
+00:02:11.199 --> 00:02:15.539
+The regression-slash-estimation technique is used to predict continuous values, such
+
+31
+00:02:15.539 --> 00:02:20.860
+as the price of a house based on its characteristics or the CO2 emissions from a car's engine.
+
+32
+00:02:20.860 --> 00:02:25.800
+Clustering groups of similar cases, for example, can find similar patients or can be used for
+
+33
+00:02:25.800 --> 00:02:28.559
+customer segmentation in the banking field.
+
+34
+00:02:28.559 --> 00:02:32.699
+The association technique is used to find items or events that often co-occur, such
+
+35
+00:02:32.699 --> 00:02:39.160
+as grocery items usually bought together by a particular customer or market segment.
+
+36
+00:02:39.160 --> 00:02:42.880
+Anomaly detection is used to discover abnormal and unusual cases.
+
+37
+00:02:42.880 --> 00:02:46.880
+For example, it's used for credit card fraud detection.
+
+38
+00:02:46.880 --> 00:02:49.320
+Sequence mining is used to predict the next event.
+
+39
+00:02:49.320 --> 00:02:52.679
+For instance, the clickstream analytics in websites.
+
+40
+00:02:52.679 --> 00:02:57.440
+Classification reduction is used to reduce data size,
+particularly the number of features needed.
+
+41
+00:02:57.440 --> 00:03:00.320
+And finally, recommendation systems.
+
+42
+00:03:00.320 --> 00:03:04.000
+This associates people's preferences with others who have similar tastes
+
+43
+00:03:04.000 --> 00:03:07.119
+and recommends new items to them, such as books or movies.
+
+44
+00:03:07.119 --> 00:03:10.240
+We'll cover some of these techniques in the next videos.
+
+45
+00:03:10.240 --> 00:03:13.000
+To train your machine learning model on supervised data,
+
+46
+00:03:13.000 --> 00:03:16.560
+you can select between the classification or regression technique.
+
+47
+00:03:16.560 --> 00:03:21.360
+Classification categorizes input data into one of several predefined categories or classes,
+
+48
+00:03:21.360 --> 00:03:25.639
+and then makes predictions about the class membership of new observations.
+
+49
+00:03:25.639 --> 00:03:27.520
+Regression is different from classification.
+
+50
+00:03:27.520 --> 00:03:31.720
+It does not make predictions about the class membership of new input data.
+
+51
+00:03:31.720 --> 00:03:36.479
+Regression predicts continuous numerical values from input data.
+
+52
+00:03:36.479 --> 00:03:40.679
+Clustering is one of many unsupervised machine learning techniques for data modeling.
+
+53
+00:03:40.679 --> 00:03:44.100
+It's used to group data points or objects that are somehow similar.
+
+54
+00:03:44.100 --> 00:03:49.160
+For example, in this chart, we use a clustering algorithm to represent data points in green,
+
+55
+00:03:49.160 --> 00:03:51.160
+red, and blue color.
+
+56
+00:03:51.160 --> 00:03:55.520
+The uncategorized data points represented in black color are considered noise.
+
+57
+00:03:55.520 --> 00:03:59.000
+Let's look at some applications of machine learning now.
+
+58
+00:04:00.759 --> 00:04:03.759
+This is a human cell sample extracted from a patient.
+
+59
+00:04:03.759 --> 00:04:05.360
+It has some unique characteristics.
+
+60
+00:04:05.360 --> 00:04:10.800
+For example, its clump thickness is 6, its uniformity of cell size is 1, its marginal
+
+61
+00:04:10.800 --> 00:04:13.399
+adhesion is 1, and so on.
+
+62
+00:04:13.399 --> 00:04:19.000
+An interesting question we can ask by looking at this chart is,
+is this a benign or malignant cell?
+
+63
+00:04:19.000 --> 00:04:23.000
+Compared to a benign cell, a malignant cell invades its surrounding tissue
+
+64
+00:04:23.000 --> 00:04:24.799
+and spreads around the body.
+
+65
+00:04:24.799 --> 00:04:28.100
+Identifying the cell type early can be the key to the patient's survival.
+
+66
+00:04:28.100 --> 00:04:31.760
+One could easily presume that only a doctor with years of experience could identify the
+
+67
+00:04:31.760 --> 00:04:36.600
+cell and confirm if the patient is developing a cancer or not.
+
+68
+00:04:36.600 --> 00:04:40.279
+Imagine you've obtained a dataset containing characteristics of thousands of human cell
+
+69
+00:04:40.279 --> 00:04:44.799
+samples extracted from patients believed to be at risk of developing cancer.
+
+70
+00:04:44.799 --> 00:04:48.859
+Analysis of the original data showed that many of the characteristics differed significantly
+
+71
+00:04:48.980 --> 00:04:51.299
+between benign and malignant samples.
+
+72
+00:04:51.299 --> 00:04:55.619
+You can use the values of these cell characteristics in samples from other patients to indicate
+
+73
+00:04:55.619 --> 00:04:58.660
+whether a new sample might be benign or malignant.
+
+74
+00:04:58.660 --> 00:05:03.100
+You should clean your data, select a proper algorithm for building a prediction model,
+
+75
+00:05:03.100 --> 00:05:07.859
+and train your model to understand patterns of benign or malignant cells within the data.
+
+76
+00:05:07.859 --> 00:05:11.799
+Once the model has been trained by going through data iteratively, it can be used to predict
+
+77
+00:05:11.799 --> 00:05:15.059
+your new or unknown cell with a rather high accuracy.
+
+78
+00:05:15.059 --> 00:05:17.839
+This is the power of machine learning.
+
+79
+00:05:17.839 --> 00:05:20.600
+Machine learning impacts society in a very meaningful way.
+
+80
+00:05:20.600 --> 00:05:24.239
+How do Amazon and Netflix recommend content and products for their users?
+
+81
+00:05:24.239 --> 00:05:25.959
+They use machine learning.
+
+82
+00:05:25.959 --> 00:05:29.359
+This is similar to how your friends might recommend a television show to you based on
+
+83
+00:05:29.359 --> 00:05:32.519
+their knowledge of the types of shows you like to watch.
+
+84
+00:05:32.519 --> 00:05:35.399
+How do you think banks make a decision when approving a loan application?
+
+85
+00:05:35.399 --> 00:05:39.679
+They use machine learning to predict each applicant's default probability and then
+
+86
+00:05:39.679 --> 00:05:44.859
+augment their decision to approve or deny the loan application based on that probability.
+
+87
+00:05:44.859 --> 00:05:48.420
+How do telecommunication companies find how many of their customers will churn?
+
+88
+00:05:48.420 --> 00:05:52.579
+They use demographic data to segment their customers and predict whether a customer will
+
+89
+00:05:52.579 --> 00:05:55.779
+unsubscribe within the next month.
+
+90
+00:05:55.779 --> 00:05:59.179
+Let's use computer vision as an example of how machine learning works.
+
+91
+00:05:59.179 --> 00:06:03.540
+Assume you have a large collection of images of cats and dogs.
+
+92
+00:06:03.540 --> 00:06:07.239
+You want to develop a software application to differentiate cats from dogs.
+
+93
+00:06:07.239 --> 00:06:11.820
+The first thing you must do here is interpret the images as a progression of features.
+
+94
+00:06:11.820 --> 00:06:14.859
+For example, does the image show the animal's eyes?
+
+95
+00:06:14.859 --> 00:06:16.540
+If so, what is their size?
+
+96
+00:06:16.540 --> 00:06:17.619
+Does it have ears?
+
+97
+00:06:17.619 --> 00:06:18.660
+What about a tail?
+
+98
+00:06:18.660 --> 00:06:19.660
+How many legs?
+
+99
+00:06:19.660 --> 00:06:22.540
+Does it have wings?
+
+100
+00:06:22.540 --> 00:06:27.339
+For machine learning, we had to painstakingly create rules to get computers to appear intelligent
+
+101
+00:06:27.339 --> 00:06:30.320
+and detect the animals, but it was a failure.
+
+102
+00:06:30.320 --> 00:06:34.839
+It needed a lot of rules, was too dependent on the current dataset, and therefore unable
+
+103
+00:06:34.839 --> 00:06:38.079
+to characterize unseen cases.
+
+104
+00:06:38.079 --> 00:06:41.359
+Machine learning algorithms for computer vision have evolved to be able to identify
+
+105
+00:06:41.359 --> 00:06:43.739
+dogs and cats in images.
+
+106
+00:06:43.739 --> 00:06:47.679
+With machine learning, you can build a model that learns a set of distinguishing animal
+
+107
+00:06:47.679 --> 00:06:53.239
+features from known examples and use them to infer the animal type automatically.
+
+108
+00:06:53.239 --> 00:06:57.200
+Although machine learning applications in the modern world are increasing, humans are
+
+109
+00:06:57.200 --> 00:06:59.279
+still in the mix.
+
+110
+00:06:59.279 --> 00:07:05.200
+If an ML algorithm refuses a loan application, a banker wants to know why and initiates a follow-up.
+
+111
+00:07:05.200 --> 00:07:10.000
+There are many other applications of machine learning that we see every day, such as virtual
+
+112
+00:07:10.000 --> 00:07:14.540
+assistants like chatbots logging into our phones using face recognition or even playing
+
+113
+00:07:14.540 --> 00:07:16.440
+computer games like chess.
+
+114
+00:07:16.440 --> 00:07:20.959
+Each of these use different machine learning techniques and algorithms.
+
+115
+00:07:20.959 --> 00:07:26.160
+In this video, you learned that machine learning is the subset of AI that uses algorithms and
+
+116
+00:07:26.160 --> 00:07:29.200
+requires feature engineering by practitioners.
+
+117
+00:07:29.200 --> 00:07:36.519
+Machine learning models learn using supervised, unsupervised, semi-supervised, and reinforcement learning.
+
+118
+00:07:36.519 --> 00:07:42.000
+Machine learning consists of several techniques, namely classification, regression, clustering,
+
+119
+00:07:42.000 --> 00:07:48.279
+association, anomaly detection, sequence mining, dimension reduction, and recommendation systems.
+
+120
+00:07:48.279 --> 00:07:52.880
+Finally, you learned how machine learning is applied to predict diseases, analyze consumer
+
+121
+00:07:52.880 --> 00:07:55.119
+behavior, and recognize images.
