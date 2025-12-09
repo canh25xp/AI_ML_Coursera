@@ -1,0 +1,1249 @@
+WEBVTT
+
+1
+00:00:02.420 --> 00:00:04.575
+Vì vậy, cảm ơn rất nhiều, Pieter,
+
+2
+00:00:04.575 --> 00:00:06.690
+vì đã tham gia cùng tôi hôm nay.
+
+3
+00:00:06.690 --> 00:00:08.560
+Tôi nghĩ rằng rất nhiều người biết bạn là
+
+4
+00:00:08.560 --> 00:00:12.150
+một nhà nghiên cứu máy học, học sâu và robot nổi tiếng.
+
+5
+00:00:12.150 --> 00:00:15.550
+Tôi muốn mọi người nghe một chút về câu chuyện của bạn.
+
+6
+00:00:15.550 --> 00:00:18.220
+Bạn đã làm được công việc mà bạn đã làm như thế nào?
+
+7
+00:00:18.220 --> 00:00:22.300
+Đó là một câu hỏi hay và thực sự nếu bạn hỏi tôi khi còn 14 tuổi, những
+
+8
+00:00:22.300 --> 00:00:24.775
+gì tôi mong muốn làm,
+
+9
+00:00:24.775 --> 00:00:26.775
+có lẽ nó sẽ không phải là điều này.
+
+10
+00:00:26.775 --> 00:00:28.285
+Trên thực tế, vào thời điểm đó,
+
+11
+00:00:28.285 --> 00:00:32.565
+tôi nghĩ trở thành một cầu thủ bóng rổ chuyên nghiệp sẽ là con đường đúng đắn.
+
+12
+00:00:32.565 --> 00:00:34.680
+Tôi không nghĩ rằng tôi đã có thể đạt được nó.
+
+13
+00:00:34.680 --> 00:00:36.430
+Tôi cảm thấy máy học đã may mắn,
+
+14
+00:00:36.430 --> 00:00:38.250
+rằng việc chơi bóng rổ đã không thành công.
+
+15
+00:00:38.250 --> 00:00:39.510
+Vâng, điều đó không thành công.
+
+16
+00:00:39.510 --> 00:00:41.890
+Chơi bóng rổ rất thú vị nhưng không thành công
+
+17
+00:00:41.890 --> 00:00:44.885
+khi cố gắng biến nó thành sự nghiệp.
+
+18
+00:00:44.885 --> 00:00:48.530
+Vì vậy, những gì tôi thực sự thích ở trường là vật lý và toán học.
+
+19
+00:00:48.530 --> 00:00:50.005
+Và vì vậy, từ đó, có
+
+20
+00:00:50.005 --> 00:00:52.120
+vẻ khá tự nhiên khi nghiên cứu kỹ thuật
+
+21
+00:00:52.120 --> 00:00:55.735
+đang áp dụng vật lý và toán học trong thế giới thực.
+
+22
+00:00:55.735 --> 00:00:58.150
+Và thực sự sau đó, sau khi tốt nghiệp ngành kỹ thuật điện,
+
+23
+00:00:58.150 --> 00:01:00.355
+tôi thực sự không chắc chắn phải làm gì vì, theo nghĩa
+
+24
+00:01:00.355 --> 00:01:03.981
+đen, bất cứ thứ gì kỹ thuật đều có vẻ thú vị đối với tôi.
+
+25
+00:01:03.981 --> 00:01:07.680
+Hiểu cách mọi thứ hoạt động có vẻ thú vị.
+
+26
+00:01:07.680 --> 00:01:09.595
+Cố gắng xây dựng bất cứ điều gì là thú vị.
+
+27
+00:01:09.595 --> 00:01:11.470
+Và theo một nghĩa nào đó,
+
+28
+00:01:11.470 --> 00:01:13.690
+trí tuệ nhân tạo đã chiến thắng vì có vẻ như bằng cách nào đó nó
+
+29
+00:01:13.690 --> 00:01:18.280
+có thể giúp ích cho tất cả các ngành theo một cách nào đó.
+
+30
+00:01:18.280 --> 00:01:22.370
+Và ngoài ra, bằng cách nào đó nó dường như là cốt lõi của mọi thứ hơn một chút.
+
+31
+00:01:22.370 --> 00:01:24.575
+Bạn nghĩ về cách một cỗ máy có thể suy nghĩ,
+
+32
+00:01:24.575 --> 00:01:30.160
+thì có lẽ đó là cốt lõi của mọi thứ khác hơn là chọn bất kỳ ngành học cụ thể nào.
+
+33
+00:01:30.160 --> 00:01:33.260
+Tôi đã từng nói AI là nguồn điện mới, nghe có
+
+34
+00:01:33.260 --> 00:01:35.020
+vẻ giống như phiên bản 14 tuổi của bạn;
+
+35
+00:01:35.020 --> 00:01:37.923
+thậm chí còn có một phiên bản trước đó của nó.
+
+36
+00:01:37.923 --> 00:01:44.465
+Bạn biết đấy, trong vài năm qua, bạn đã làm rất nhiều công việc trong việc học tăng cường sâu.
+
+37
+00:01:44.465 --> 00:01:49.315
+Chuyện gì đang xảy ra? Tại sao việc học củng cố sâu đột nhiên cất cánh?
+
+38
+00:01:49.315 --> 00:01:51.030
+Trước khi tôi làm việc trong lĩnh vực học củng cố sâu,
+
+39
+00:01:51.030 --> 00:01:52.765
+tôi đã làm việc rất nhiều trong việc học tăng cường;
+
+40
+00:01:52.765 --> 00:01:56.115
+thực ra là với bạn và Durant ở Stanford, tất nhiên.
+
+41
+00:01:56.115 --> 00:01:59.863
+Và vì vậy, chúng tôi làm việc trên máy bay trực thăng tự
+
+42
+00:01:59.863 --> 00:02:02.440
+động, sau đó ở Berkeley với một số sinh viên của tôi, những người
+
+43
+00:02:02.440 --> 00:02:05.440
+đã làm việc để kiếm một robot để học cách gấp đồ giặt.
+
+44
+00:02:05.440 --> 00:02:09.340
+Và đặc điểm của công việc là sự kết hợp
+
+45
+00:02:09.340 --> 00:02:13.015
+của việc học tập cho phép những điều không thể thực hiện được nếu không học,
+
+46
+00:02:13.015 --> 00:02:18.120
+nhưng cũng có rất nhiều chuyên môn về lĩnh vực kết hợp với việc học để làm cho điều này hoạt động.
+
+47
+00:02:18.120 --> 00:02:20.975
+Và nó rất
+
+48
+00:02:20.975 --> 00:02:22.600
+thú vị vì bạn cần kiến thức chuyên môn về lĩnh vực mà rất
+
+49
+00:02:22.600 --> 00:02:24.310
+thú vị để có được nhưng đồng thời,
+
+50
+00:02:24.310 --> 00:02:28.234
+rất tốn thời gian cho mọi ứng dụng mới mà bạn muốn thành công;
+
+51
+00:02:28.234 --> 00:02:31.060
+bạn cần chuyên môn về lĩnh vực cộng với chuyên môn học máy.
+
+52
+00:02:31.060 --> 00:02:34.240
+Và đối với tôi, đó là vào năm 2012 với
+
+53
+00:02:34.240 --> 00:02:39.910
+kết quả đột phá ImageNet từ nhóm của Geoff Hinton ở Toronto,
+
+54
+00:02:39.910 --> 00:02:42.880
+AlexNet cho thấy việc học có giám sát, đột nhiên,
+
+55
+00:02:42.880 --> 00:02:48.220
+có thể được thực hiện với ít kỹ thuật hơn cho lĩnh vực hiện tại.
+
+56
+00:02:48.220 --> 00:02:50.410
+Có rất ít kỹ thuật bằng tầm nhìn trong AlexNet.
+
+57
+00:02:50.410 --> 00:02:53.075
+Nó khiến tôi nghĩ rằng chúng ta thực sự nên xem xét lại
+
+58
+00:02:53.075 --> 00:02:57.610
+việc học tăng cường dưới cùng một quan điểm và xem liệu chúng ta có thể chuyển hướng
+
+59
+00:02:57.610 --> 00:03:01.075
+học củng cố hoạt động và làm
+
+60
+00:03:01.075 --> 00:03:05.950
+những điều thú vị không kém như vừa xảy ra trong quá trình học có giám sát hay không.
+
+61
+00:03:05.950 --> 00:03:08.565
+Có vẻ như bạn đã thấy sớm hơn
+
+62
+00:03:08.565 --> 00:03:12.250
+hầu hết mọi người tiềm năng của việc học tăng cường sâu.
+
+63
+00:03:12.250 --> 00:03:14.365
+Vì vậy, bây giờ nhìn về tương lai,
+
+64
+00:03:14.365 --> 00:03:16.180
+bạn sẽ thấy gì tiếp theo? Dự
+
+65
+00:03:16.180 --> 00:03:17.260
+đoán của bạn về
+
+66
+00:03:17.260 --> 00:03:20.440
+một số cách tiếp theo để học tăng cường sâu là gì?
+
+67
+00:03:20.440 --> 00:03:23.270
+Vì vậy, tôi nghĩ điều thú vị về học tăng cường sâu là,
+
+68
+00:03:23.270 --> 00:03:26.795
+theo một nghĩa nào đó, có nhiều câu hỏi hơn là học có giám sát.
+
+69
+00:03:26.795 --> 00:03:29.817
+Trong học tập có giám sát, đó là về việc học bản đồ đầu ra đầu vào.
+
+70
+00:03:29.817 --> 00:03:34.505
+Trong học tăng cường có khái niệm: Dữ liệu thậm chí đến từ đâu?
+
+71
+00:03:34.505 --> 00:03:36.580
+Vì vậy, đó là vấn đề thăm dò.
+
+72
+00:03:36.580 --> 00:03:38.470
+Khi bạn có dữ liệu, bạn thực hiện chuyển nhượng tín dụng như thế nào?
+
+73
+00:03:38.470 --> 00:03:43.315
+Làm thế nào để bạn hiểu những hành động bạn đã thực hiện sớm đã mang lại cho bạn phần thưởng sau này?
+
+74
+00:03:43.315 --> 00:03:44.830
+Và sau đó, có những vấn đề về an toàn.
+
+75
+00:03:44.830 --> 00:03:47.335
+Khi bạn có một hệ thống tự động thu thập dữ liệu,
+
+76
+00:03:47.335 --> 00:03:50.140
+nó thực sự khá nguy hiểm trong hầu hết các tình huống.
+
+77
+00:03:50.140 --> 00:03:51.880
+Hãy tưởng tượng một công ty xe hơi tự lái nói rằng,
+
+78
+00:03:51.880 --> 00:03:53.825
+chúng ta sẽ chỉ chạy đào tạo tăng cường sâu.
+
+79
+00:03:53.825 --> 00:03:55.690
+Rất có khả năng xe hơi sẽ gặp phải rất nhiều
+
+80
+00:03:55.690 --> 00:03:57.985
+tai nạn trước khi nó làm bất cứ điều gì hữu ích.
+
+81
+00:03:57.985 --> 00:03:59.650
+Bạn cần những ví dụ tiêu cực về điều đó, phải không?
+
+82
+00:03:59.650 --> 00:04:02.000
+Bạn cần một số ví dụ tiêu cực bằng cách nào đó, vâng;
+
+83
+00:04:02.000 --> 00:04:04.930
+và những ví dụ tích cực, hy vọng.
+
+84
+00:04:04.930 --> 00:04:07.540
+Vì vậy, tôi nghĩ vẫn còn rất nhiều thách thức trong
+
+85
+00:04:09.760 --> 00:04:12.635
+việc học tăng cường sâu về mặt tìm ra một số chi tiết cụ thể về cách làm cho những điều này hoạt động.
+
+86
+00:04:12.635 --> 00:04:14.520
+Vì vậy, phần sâu sắc là sự thể hiện,
+
+87
+00:04:14.520 --> 00:04:18.455
+nhưng sau đó bản thân việc học củng cố vẫn còn rất nhiều câu hỏi.
+
+88
+00:04:18.455 --> 00:04:20.485
+Và những gì tôi cảm thấy là,
+
+89
+00:04:20.485 --> 00:04:22.810
+với những tiến bộ trong học sâu, bằng
+
+90
+00:04:22.810 --> 00:04:27.430
+cách nào đó, một phần của câu đố trong học tập củng cố đã được giải quyết phần lớn,
+
+91
+00:04:27.430 --> 00:04:29.075
+đó là phần biểu diễn.
+
+92
+00:04:29.075 --> 00:04:31.540
+Vì vậy, nếu có một mô hình, chúng ta có
+
+93
+00:04:31.540 --> 00:04:34.795
+thể biểu diễn nó bằng một mạng lưới sâu và nắm bắt mô hình đó.
+
+94
+00:04:34.795 --> 00:04:39.400
+Và làm thế nào để phân biệt mô hình vẫn là một thách thức lớn trong việc học tăng cường.
+
+95
+00:04:39.400 --> 00:04:41.740
+Vì vậy, tôi nghĩ những thách thức lớn là,
+
+96
+00:04:41.740 --> 00:04:45.695
+làm thế nào để các hệ thống lý luận trong một khoảng thời gian dài.
+
+97
+00:04:45.695 --> 00:04:47.770
+Vì vậy, ngay bây giờ, rất nhiều thành công
+
+98
+00:04:47.770 --> 00:04:50.650
+trong việc học tăng cường sâu chỉ là một chân trời rất ngắn.
+
+99
+00:04:50.650 --> 00:04:52.000
+Có những vấn đề trong đó,
+
+100
+00:04:52.000 --> 00:04:54.445
+nếu bạn hành động tốt trong khoảng thời gian 5 giây,
+
+101
+00:04:54.445 --> 00:04:57.815
+bạn sẽ hành động tốt trong toàn bộ vấn đề.
+
+102
+00:04:57.815 --> 00:05:02.599
+Và vì vậy, thang đo năm giây là một cái gì đó rất khác với thang đo kéo dài một ngày,
+
+103
+00:05:02.599 --> 00:05:06.930
+hoặc khả năng sống một cuộc sống như một robot hoặc một tác nhân phần mềm nào đó.
+
+104
+00:05:06.930 --> 00:05:09.240
+Vì vậy, tôi nghĩ có rất nhiều thách thức ở đó.
+
+105
+00:05:09.240 --> 00:05:12.790
+Tôi nghĩ rằng an toàn có rất nhiều thách thức về mặt,
+
+106
+00:05:12.790 --> 00:05:14.920
+làm thế nào để bạn học một cách an toàn và làm thế nào
+
+107
+00:05:14.920 --> 00:05:17.785
+để bạn tiếp tục học một khi bạn đã khá giỏi?
+
+108
+00:05:17.785 --> 00:05:20.305
+Vì vậy, để đưa ra một ví dụ
+
+109
+00:05:20.305 --> 00:05:23.070
+một lần nữa rằng rất nhiều người sẽ quen thuộc với ô tô tự lái,
+
+110
+00:05:23.070 --> 00:05:26.375
+để một chiếc xe tự lái tốt hơn một người lái xe, nếu người lái xe
+
+111
+00:05:26.375 --> 00:05:31.990
+có thể gặp tai nạn tồi tệ cứ sau ba triệu dặm hay gì đó.
+
+112
+00:05:31.990 --> 00:05:35.763
+Và vì vậy, phải mất một thời gian dài để nhìn thấy dữ liệu tiêu cực;
+
+113
+00:05:35.763 --> 00:05:37.510
+một khi bạn đã giỏi như một người lái xe.
+
+114
+00:05:37.510 --> 00:05:40.835
+Nhưng bạn muốn chiếc xe tự lái của bạn tốt hơn một người lái xe con người.
+
+115
+00:05:40.835 --> 00:05:43.930
+Và vì vậy, tại thời điểm đó, việc thu thập dữ liệu trở nên thực sự khó khăn để có được
+
+116
+00:05:43.930 --> 00:05:48.175
+dữ liệu thú vị khiến hệ thống của bạn được cải thiện.
+
+117
+00:05:48.175 --> 00:05:52.420
+Vì vậy, có rất nhiều thách thức liên quan đến khám phá, gắn liền với điều đó.
+
+118
+00:05:52.420 --> 00:05:57.190
+Nhưng một trong những điều tôi thực sự hào hứng nhất ngay bây giờ là
+
+119
+00:05:57.190 --> 00:06:02.720
+xem liệu chúng ta có thực sự có thể lùi lại một bước và cũng học thuật toán học tăng cường hay không.
+
+120
+00:06:02.720 --> 00:06:05.030
+Vì vậy, củng cố rất phức tạp,
+
+121
+00:06:05.030 --> 00:06:07.450
+chuyển nhượng tín dụng rất phức tạp, thăm dò rất phức tạp.
+
+122
+00:06:07.450 --> 00:06:08.905
+Và vì vậy có lẽ, giống như việc
+
+123
+00:06:08.905 --> 00:06:13.795
+học sâu để học có giám sát có thể thay thế rất nhiều chuyên môn trong lĩnh vực, có
+
+124
+00:06:13.795 --> 00:06:17.320
+lẽ chúng ta có thể có các chương trình học được,
+
+125
+00:06:17.320 --> 00:06:20.140
+đó là các chương trình học tập tăng cường thực hiện tất cả những điều này,
+
+126
+00:06:20.140 --> 00:06:22.510
+thay vì chúng ta thiết kế các chi tiết.
+
+127
+00:06:22.510 --> 00:06:25.560
+Trong suốt chức năng khen thưởng hay trong toàn bộ chương trình?
+
+128
+00:06:25.560 --> 00:06:28.150
+Vì vậy, đây sẽ là học toàn bộ chương trình học tăng cường.
+
+129
+00:06:28.150 --> 00:06:30.430
+Vì vậy, hãy tưởng tượng,
+
+130
+00:06:30.430 --> 00:06:34.255
+bạn có một chương trình học tăng cường, bất kể nó là gì,
+
+131
+00:06:34.255 --> 00:06:38.320
+và bạn vứt nó ra một số vấn đề và sau đó bạn thấy mất bao lâu để học.
+
+132
+00:06:38.320 --> 00:06:41.020
+Và sau đó bạn nói, tốt, điều đó mất một thời gian.
+
+133
+00:06:41.020 --> 00:06:44.950
+Bây giờ, hãy để một chương trình khác sửa đổi chương trình học tăng cường này.
+
+134
+00:06:44.950 --> 00:06:48.045
+Sau khi sửa đổi, xem nó học nhanh như thế nào.
+
+135
+00:06:48.045 --> 00:06:49.641
+Nếu nó học nhanh hơn,
+
+136
+00:06:49.641 --> 00:06:54.380
+đó là một sửa đổi tốt và có thể giữ nó và cải thiện từ đó.
+
+137
+00:06:54.380 --> 00:06:57.630
+Vâng, tôi hiểu rồi. Vâng, và đi theo hướng đi.
+
+138
+00:06:57.630 --> 00:06:59.290
+Tôi nghĩ nó có liên quan nhiều đến, có lẽ,
+
+139
+00:06:59.290 --> 00:07:01.510
+số lượng máy tính đang có sẵn.
+
+140
+00:07:01.510 --> 00:07:05.860
+Vì vậy, điều này sẽ chạy học tăng cường trong vòng lặp bên trong.
+
+141
+00:07:05.860 --> 00:07:08.975
+Đối với chúng tôi ngay bây giờ, chúng tôi chạy học tăng cường như là điều cuối cùng.
+
+142
+00:07:08.975 --> 00:07:11.260
+Và vì vậy, chúng ta càng nhận được nhiều tính toán,
+
+143
+00:07:11.260 --> 00:07:14.545
+càng có thể chạy một cái gì đó
+
+144
+00:07:14.545 --> 00:07:19.160
+giống như học tăng cường trong vòng lặp bên trong của một thuật toán lớn hơn.
+
+145
+00:07:19.160 --> 00:07:22.080
+Bắt đầu từ khi 14 tuổi,
+
+146
+00:07:22.080 --> 00:07:25.355
+bạn đã làm việc trong lĩnh vực AI hơn 20 năm nay.
+
+147
+00:07:25.355 --> 00:07:32.795
+Vì vậy, hãy cho tôi biết một chút về sự hiểu biết của bạn về AI đã phát triển như thế nào trong thời gian này.
+
+148
+00:07:32.795 --> 00:07:35.280
+Khi tôi bắt đầu nhìn vào AI,
+
+149
+00:07:35.280 --> 00:07:38.230
+nó rất thú vị vì nó thực sự
+
+150
+00:07:38.230 --> 00:07:41.445
+trùng hợp với việc đến Stanford để học thạc sĩ ở đó,
+
+151
+00:07:41.445 --> 00:07:46.998
+và có một số biểu tượng ở đó như John McCarthy, người mà tôi
+
+152
+00:07:46.998 --> 00:07:49.300
+đã nói chuyện với, nhưng người có cách tiếp cận rất khác,
+
+153
+00:07:49.300 --> 00:07:50.460
+và vào năm 2000, về những
+
+154
+00:07:50.460 --> 00:07:52.115
+gì hầu hết mọi người đang làm vào thời điểm đó.
+
+155
+00:07:52.115 --> 00:07:54.958
+Và cũng nói chuyện với Daphne Koller.
+
+156
+00:07:54.958 --> 00:07:59.320
+Và tôi nghĩ rất nhiều suy nghĩ ban đầu của tôi về AI được định hình bởi suy nghĩ của Daphne. Lớp
+
+157
+00:07:59.320 --> 00:08:04.300
+AI của cô ấy, lớp mô hình đồ họa xác suất của cô ấy
+
+158
+00:08:04.300 --> 00:08:06.820
+và thực sự bị hấp dẫn bởi sự
+
+159
+00:08:06.820 --> 00:08:11.450
+phân phối đơn giản của nhiều biến ngẫu nhiên của cô ấy và sau đó có thể điều kiện
+
+160
+00:08:11.450 --> 00:08:14.950
+trên một số biến tập hợp con và rút ra kết luận về những biến khác
+
+161
+00:08:14.950 --> 00:08:19.015
+thực sự có thể mang lại cho bạn rất nhiều nếu bạn có thể bằng cách nào đó làm cho nó trở nên hấp dẫn về mặt tính toán,
+
+162
+00:08:19.015 --> 00:08:23.170
+đó chắc chắn là thách thức để làm cho nó có thể tính toán được.
+
+163
+00:08:23.170 --> 00:08:25.090
+Và sau đó,
+
+164
+00:08:25.090 --> 00:08:28.335
+khi tôi bắt đầu tiến sĩ và bạn đến Stanford,
+
+165
+00:08:28.335 --> 00:08:30.910
+và tôi nghĩ bạn cho tôi một cuộc kiểm tra thực tế thực sự rất tốt,
+
+166
+00:08:30.910 --> 00:08:35.350
+rằng đó không phải là thước đo phù hợp để đánh giá công việc của bạn,
+
+167
+00:08:35.350 --> 00:08:38.470
+và để thực sự cố gắng xem mối liên hệ từ những gì
+
+168
+00:08:38.470 --> 00:08:41.710
+bạn đang làm đến những tác động
+
+169
+00:08:41.710 --> 00:08:46.660
+của chúng thực sự có thể có, những thay đổi mà nó có thể tạo ra thay vì toán học tình cờ xảy ra trong công việc của bạn.
+
+170
+00:08:46.660 --> 00:08:48.425
+Đúng. Điều đó thật tuyệt vời.
+
+171
+00:08:48.425 --> 00:08:50.685
+Tôi không nhận ra, tôi đã quên điều đó.
+
+172
+00:08:50.685 --> 00:08:54.267
+Vâng, đó thực sự là một trong những điều, ngoài việc mọi người thường hỏi,
+
+173
+00:08:54.267 --> 00:09:01.090
+nếu bạn chỉ trích dẫn một điều gắn liền với bạn từ lời khuyên của Andrew, đó
+
+174
+00:09:01.090 --> 00:09:05.995
+là đảm bảo bạn có thể thấy mối liên hệ với nơi nó thực sự sẽ làm điều gì đó.
+
+175
+00:09:05.995 --> 00:09:11.332
+Bạn đã có và bạn đang tiếp tục có một sự nghiệp tuyệt vời trong AI.
+
+176
+00:09:11.332 --> 00:09:14.750
+Vì vậy, đối với một số người đang nghe bạn trên video bây giờ,
+
+177
+00:09:14.750 --> 00:09:18.815
+nếu họ cũng muốn tham gia hoặc theo đuổi sự nghiệp trong AI,
+
+178
+00:09:18.815 --> 00:09:20.985
+bạn có lời khuyên nào cho họ?
+
+179
+00:09:20.985 --> 00:09:25.185
+Tôi nghĩ rằng đây là thời điểm thực sự tốt để đi vào trí tuệ nhân tạo.
+
+180
+00:09:25.185 --> 00:09:28.965
+Nếu bạn nhìn vào nhu cầu về con người, nó rất cao,
+
+181
+00:09:28.965 --> 00:09:30.741
+có rất nhiều cơ hội việc làm,
+
+182
+00:09:30.741 --> 00:09:32.365
+rất nhiều điều bạn có thể làm, nghiên cứu,
+
+183
+00:09:32.365 --> 00:09:34.735
+xây dựng công ty mới, v.v.
+
+184
+00:09:34.735 --> 00:09:39.240
+Vì vậy, tôi sẽ nói có, đó chắc chắn là một quyết định thông minh về mặt thực sự bắt đầu.
+
+185
+00:09:39.240 --> 00:09:41.140
+Rất nhiều, bạn có thể tự học, cho
+
+186
+00:09:41.140 --> 00:09:42.635
+dù bạn đang đi học hay không.
+
+187
+00:09:42.635 --> 00:09:44.150
+Có rất nhiều khóa học trực tuyến, ví dụ,
+
+188
+00:09:44.150 --> 00:09:45.585
+khóa học máy học của bạn,
+
+189
+00:09:45.585 --> 00:09:48.400
+cũng có, ví dụ,
+
+190
+00:09:48.400 --> 00:09:52.030
+khóa học học sâu của Andrej Karpathy có video trực tuyến,
+
+191
+00:09:52.030 --> 00:09:54.280
+đó là một cách tuyệt vời để bắt đầu,
+
+192
+00:09:54.280 --> 00:09:57.460
+Berkeley, người có một khóa học học tăng cường sâu
+
+193
+00:09:57.460 --> 00:09:59.260
+có tất cả các bài giảng trực tuyến.
+
+194
+00:09:59.260 --> 00:10:01.235
+Vì vậy, đó là tất cả những nơi tốt để bắt đầu.
+
+195
+00:10:01.235 --> 00:10:06.470
+Tôi nghĩ một phần quan trọng của điều quan trọng là đảm bảo rằng bạn tự mình thử mọi thứ.
+
+196
+00:10:06.470 --> 00:10:10.055
+Vì vậy, không chỉ đọc mọi thứ hoặc xem video mà hãy thử mọi thứ.
+
+197
+00:10:10.055 --> 00:10:14.347
+Với các framework như TensorFlow,
+
+198
+00:10:14.347 --> 00:10:16.040
+Chainer, Theano, PyTorch, v.v., ý
+
+199
+00:10:16.040 --> 00:10:17.350
+tôi là bất cứ thứ gì bạn yêu thích,
+
+200
+00:10:17.350 --> 00:10:21.980
+thật dễ dàng để bắt đầu và chạy một cái gì đó rất nhanh chóng.
+
+201
+00:10:21.980 --> 00:10:24.669
+Để tự luyện tập, phải không?
+
+202
+00:10:24.669 --> 00:10:27.105
+Với việc thực hiện và xem những gì làm và xem những gì không hoạt động.
+
+203
+00:10:27.105 --> 00:10:29.360
+Vì vậy, tuần trước đã có một bài báo trên
+
+204
+00:10:29.360 --> 00:10:31.715
+Mashable về một cậu bé 16 tuổi ở Vương quốc Anh, một trong những
+
+205
+00:10:31.715 --> 00:10:34.580
+người dẫn đầu trong các cuộc thi Kaggle.
+
+206
+00:10:34.580 --> 00:10:36.690
+Và nó chỉ nói,
+
+207
+00:10:36.690 --> 00:10:39.290
+anh ấy chỉ ra ngoài và học mọi thứ,
+
+208
+00:10:39.290 --> 00:10:41.510
+tìm mọi thứ trên mạng, tự học mọi thứ và
+
+209
+00:10:41.510 --> 00:10:44.915
+không bao giờ thực sự tham gia bất kỳ khóa học chính thức nào.
+
+210
+00:10:44.915 --> 00:10:49.180
+Và có một cậu bé 16 tuổi đang rất cạnh tranh trong cuộc thi Kaggle, vì
+
+211
+00:10:49.180 --> 00:10:50.990
+vậy điều đó chắc chắn là có thể.
+
+212
+00:10:50.990 --> 00:10:53.120
+Chúng ta sống trong thời kỳ tốt đẹp.
+
+213
+00:10:53.120 --> 00:10:54.560
+Nếu mọi người muốn học.
+
+214
+00:10:54.560 --> 00:10:55.940
+Chắc chắn rồi.
+
+215
+00:10:55.940 --> 00:10:57.980
+Một câu hỏi mà tôi cá
+
+216
+00:10:57.980 --> 00:11:00.160
+là đôi khi bạn nhận được tất cả là nếu ai đó muốn tham gia học máy học AI và học sâu,
+
+217
+00:11:00.160 --> 00:11:06.885
+họ nên nộp đơn vào chương trình tiến sĩ hay họ nên nhận công việc với một công ty lớn?
+
+218
+00:11:06.885 --> 00:11:12.395
+Tôi nghĩ rằng rất nhiều điều liên quan đến việc bạn có thể nhận được bao nhiêu lời khuyên.
+
+219
+00:11:12.395 --> 00:11:14.780
+Vì vậy, trong một chương trình tiến sĩ,
+
+220
+00:11:14.780 --> 00:11:16.400
+bạn được đảm bảo như vậy,
+
+221
+00:11:16.400 --> 00:11:17.787
+công việc của giáo sư,
+
+222
+00:11:17.787 --> 00:11:18.830
+người là cố vấn của bạn,
+
+223
+00:11:18.830 --> 00:11:20.800
+là chăm sóc bạn.
+
+224
+00:11:20.800 --> 00:11:21.950
+Cố gắng làm mọi thứ có thể để
+
+225
+00:11:21.950 --> 00:11:23.565
+định hình bạn,
+
+226
+00:11:23.565 --> 00:11:28.720
+giúp bạn trở nên mạnh mẽ hơn trong bất cứ điều gì bạn muốn làm, ví dụ như AI.
+
+227
+00:11:28.720 --> 00:11:32.060
+Và vì vậy, có một người tận tâm rất rõ ràng, đôi khi bạn có hai cố vấn.
+
+228
+00:11:32.060 --> 00:11:34.955
+Và đó thực sự là công việc của họ và đó là lý do tại sao họ là giáo sư,
+
+229
+00:11:34.955 --> 00:11:37.755
+hầu hết những gì họ thích khi trở thành giáo sư thường là giúp định
+
+230
+00:11:37.755 --> 00:11:41.200
+hình sinh viên trở nên có khả năng hơn trong mọi việc.
+
+231
+00:11:41.200 --> 00:11:43.250
+Bây giờ, điều đó không có nghĩa là điều đó không thể xảy ra tại các công
+
+232
+00:11:43.250 --> 00:11:46.730
+ty, và nhiều công ty có những người cố vấn thực sự tốt và có những
+
+233
+00:11:46.730 --> 00:11:51.110
+người thích giúp giáo dục những người đến và củng cố họ, v.v.
+
+234
+00:11:51.110 --> 00:11:55.515
+Chỉ là, nó có thể không đảm bảo nhiều và chắc chắn,
+
+235
+00:11:55.515 --> 00:12:00.540
+so với việc thực sự ghi danh vào một chương trình tiến sĩ hoặc đó là kẻ lừa đảo của
+
+236
+00:12:00.540 --> 00:12:06.020
+chương trình là bạn sẽ học và ai đó ở đó để giúp bạn học.
+
+237
+00:12:06.020 --> 00:12:09.675
+Vì vậy, nó thực sự phụ thuộc vào công ty và phụ thuộc vào chương trình tiến sĩ.
+
+238
+00:12:09.675 --> 00:12:14.130
+Chắc chắn, vâng. Nhưng tôi nghĩ rằng điều quan trọng là bạn có thể tự học được rất nhiều.
+
+239
+00:12:14.130 --> 00:12:17.910
+Nhưng tôi nghĩ bạn có thể học nhanh hơn rất nhiều nếu bạn có ai đó có nhiều kinh nghiệm hơn,
+
+240
+00:12:17.910 --> 00:12:20.469
+người thực sự coi đó là
+
+241
+00:12:20.469 --> 00:12:24.945
+trách nhiệm của họ là dành thời gian cho bạn và giúp đẩy nhanh tiến trình của bạn.
+
+242
+00:12:24.945 --> 00:12:28.780
+Vì vậy, bạn đã là một trong những nhà lãnh đạo rõ ràng nhất trong việc học tăng cường sâu.
+
+243
+00:12:28.780 --> 00:12:30.720
+Vậy, những điều mà việc
+
+244
+00:12:30.720 --> 00:12:32.930
+học tăng cường sâu đã hoạt động thực sự tốt là gì?
+
+245
+00:12:32.930 --> 00:12:37.450
+Tôi nghĩ, nếu bạn nhìn vào một số thành công trong học tập củng cố sâu,
+
+246
+00:12:37.450 --> 00:12:39.000
+nó rất, rất hấp dẫn.
+
+247
+00:12:39.000 --> 00:12:42.810
+Ví dụ, học chơi trò chơi Atari từ pixel,
+
+248
+00:12:42.810 --> 00:12:45.540
+xử lý các pixel này chỉ là những con số đang được
+
+249
+00:12:45.540 --> 00:12:49.150
+xử lý bằng cách nào đó và biến thành thao tác cần điều khiển.
+
+250
+00:12:49.150 --> 00:12:52.605
+Sau đó, ví dụ, một số công việc chúng tôi đã làm ở Berkeley là,
+
+251
+00:12:52.605 --> 00:12:57.105
+chúng tôi có một robot mô phỏng phát minh ra việc đi bộ và phần thưởng
+
+252
+00:12:57.105 --> 00:12:59.340
+mà nó được trao là đơn giản như bạn càng đi xa về phía bắc càng
+
+253
+00:12:59.340 --> 00:13:02.170
+tốt và bạn càng ít tác động với mặt đất càng tốt.
+
+254
+00:13:02.170 --> 00:13:06.949
+Và bằng cách nào đó, nó quyết định rằng chạy bằng chém là thứ cần phát minh ra trong khi,
+
+255
+00:13:06.949 --> 00:13:10.095
+không ai cho nó thấy, đi bộ hoặc chạy là gì.
+
+256
+00:13:10.095 --> 00:13:14.220
+Hoặc robot chơi với những câu chuyện của trẻ em và học cách ghép chúng lại với nhau,
+
+257
+00:13:14.220 --> 00:13:16.935
+đặt một khối vào lỗ mở phù hợp, v.v.
+
+258
+00:13:16.935 --> 00:13:20.280
+Và vì vậy, tôi nghĩ điều thực sự thú vị là trong tất cả những điều này, có thể học hỏi
+
+259
+00:13:20.280 --> 00:13:24.510
+từ đầu vào cảm giác thô đến các điều khiển thô,
+
+260
+00:13:24.510 --> 00:13:27.990
+ví dụ, mô-men xoắn ở động cơ.
+
+261
+00:13:27.990 --> 00:13:29.225
+Nhưng đồng thời.
+
+262
+00:13:29.225 --> 00:13:32.460
+Vì vậy, điều rất thú vị là bạn có thể có một thuật toán duy nhất.
+
+263
+00:13:32.460 --> 00:13:35.310
+Ví dụ, bạn biết lực đẩy là bốc đồng và bạn có thể học,
+
+264
+00:13:35.310 --> 00:13:36.745
+có thể cho một robot học cách chạy,
+
+265
+00:13:36.745 --> 00:13:38.135
+có thể cho một robot học cách đứng lên,
+
+266
+00:13:38.135 --> 00:13:40.395
+có thể thay vì một robot hai chân,
+
+267
+00:13:40.395 --> 00:13:42.445
+bây giờ bạn đang hoán đổi một robot bốn chân.
+
+268
+00:13:42.445 --> 00:13:46.465
+Bạn chạy cùng một thuật toán tăng cường và nó vẫn học cách chạy.
+
+269
+00:13:46.465 --> 00:13:49.280
+Và vì vậy, không có thay đổi trong thuật toán gia cố.
+
+270
+00:13:49.280 --> 00:13:51.615
+Nó rất, rất chung chung. Tương tự với các trò chơi Atari.
+
+271
+00:13:51.615 --> 00:13:54.565
+DQN là DQN giống nhau cho mọi trò chơi.
+
+272
+00:13:54.565 --> 00:13:56.640
+Nhưng sau đó, khi nó thực sự bắt đầu
+
+273
+00:13:56.640 --> 00:14:00.060
+vượt qua biên giới của những gì chưa thể thực hiện được,
+
+274
+00:14:00.060 --> 00:14:03.490
+thật tuyệt khi nó học từ đầu cho từng
+
+275
+00:14:03.490 --> 00:14:07.405
+nhiệm vụ này nhưng sẽ còn tốt hơn nếu nó có thể tái sử dụng những điều đã học trong quá khứ;
+
+276
+00:14:07.405 --> 00:14:09.640
+để học nhanh hơn nữa cho nhiệm vụ tiếp theo.
+
+277
+00:14:09.640 --> 00:14:13.100
+Và đó là điều vẫn còn ở biên giới và chưa thể thực hiện được. Về
+
+278
+00:14:13.100 --> 00:14:16.490
+cơ bản, nó luôn bắt đầu từ đầu.
+
+279
+00:14:16.490 --> 00:14:19.390
+Bạn có nghĩ rằng, bạn có thể thấy việc
+
+280
+00:14:19.390 --> 00:14:22.420
+học tăng cường sâu được triển khai nhanh chóng trong các robot xung quanh chúng ta,
+
+281
+00:14:22.420 --> 00:14:25.935
+những robot mà chúng đang triển khai trên thế giới ngày nay.
+
+282
+00:14:25.935 --> 00:14:29.380
+Tôi nghĩ trong thực tế, kịch bản thực tế là một kịch bản
+
+283
+00:14:29.380 --> 00:14:32.770
+bắt đầu với việc học tập có giám sát,
+
+284
+00:14:32.770 --> 00:14:35.960
+nhân bản hành vi; con người làm công việc.
+
+285
+00:14:35.960 --> 00:14:38.530
+Và tôi nghĩ rằng rất nhiều doanh nghiệp sẽ được xây dựng
+
+286
+00:14:38.530 --> 00:14:41.790
+theo cách đó mà một con người đứng sau hậu trường làm rất nhiều công việc.
+
+287
+00:14:41.790 --> 00:14:44.980
+Hãy tưởng tượng trợ lý Facebook Messenger.
+
+288
+00:14:44.980 --> 00:14:47.980
+Trợ lý như vậy có thể được xây dựng với một con người đứng sau
+
+289
+00:14:47.980 --> 00:14:51.310
+rèm cửa làm rất nhiều công việc; máy học,
+
+290
+00:14:51.310 --> 00:14:54.380
+phù hợp với những gì con người làm và bắt đầu đưa ra đề xuất cho
+
+291
+00:14:54.380 --> 00:14:58.130
+con người để con người có một số lượng nhỏ tùy chọn mà chúng ta có thể chỉ cần nhấp và chọn.
+
+292
+00:14:58.130 --> 00:14:59.640
+Và sau đó theo thời gian,
+
+293
+00:14:59.640 --> 00:15:01.130
+khi nó trở nên khá tốt,
+
+294
+00:15:01.130 --> 00:15:04.465
+bạn bắt đầu kết hợp một số học tập tăng cường
+
+295
+00:15:09.040 --> 00:15:14.110
+để đưa ra những mục tiêu thực tế, không chỉ phù hợp với con người đằng sau màn cửa mà còn đưa ra các mục tiêu thành tích như, có lẽ, hai người này có thể lên kế hoạch cho cuộc họp của họ nhanh đến mức nào?
+
+296
+00:15:14.110 --> 00:15:16.385
+Hoặc họ có thể đặt chuyến bay nhanh đến mức nào?
+
+297
+00:15:16.385 --> 00:15:18.340
+Hoặc những thứ như thế. Mất bao lâu rồi?
+
+298
+00:15:18.340 --> 00:15:20.065
+Họ hạnh phúc như thế nào với nó?
+
+299
+00:15:20.065 --> 00:15:22.815
+Nhưng có lẽ nó sẽ phải là khởi động của rất nhiều
+
+300
+00:15:22.815 --> 00:15:27.605
+hành vi nhân bản hành vi của con người cho thấy điều này có thể được thực hiện như thế nào.
+
+301
+00:15:27.605 --> 00:15:30.690
+Vì vậy, nghe có vẻ nhân bản hành vi chỉ giám sát việc học bắt
+
+302
+00:15:30.690 --> 00:15:33.580
+chước bất cứ điều gì người đó đang làm và sau đó dần dần,
+
+303
+00:15:33.580 --> 00:15:37.434
+học củng cố để khiến nó suy nghĩ về thời gian dài hơn?
+
+304
+00:15:37.434 --> 00:15:38.500
+Đó có phải là một bản tóm tắt công bằng?
+
+305
+00:15:38.500 --> 00:15:39.715
+Tôi sẽ nói như vậy, vâng.
+
+306
+00:15:39.715 --> 00:15:43.540
+Chỉ vì việc học củng cố thẳng lên từ đầu thực sự rất thú vị để xem.
+
+307
+00:15:43.540 --> 00:15:46.780
+Nó siêu hấp dẫn và rất ít thứ thú vị hơn là
+
+308
+00:15:46.780 --> 00:15:50.440
+một robot học tập tăng cường bắt đầu từ hư không và phát minh ra mọi thứ.
+
+309
+00:15:50.440 --> 00:15:54.280
+Nhưng nó chỉ tốn thời gian và không phải lúc nào cũng an toàn.
+
+310
+00:15:54.280 --> 00:15:56.200
+Cảm ơn bạn rất nhiều. Điều đó thật hấp dẫn.
+
+311
+00:15:56.200 --> 00:15:58.005
+Tôi thực sự rất vui vì chúng tôi đã có cơ hội trò chuyện.
+
+312
+00:15:58.005 --> 00:16:02.670
+Andrew, cảm ơn vì đã đón tôi. Rất đánh giá cao nó.

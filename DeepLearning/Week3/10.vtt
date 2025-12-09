@@ -1,0 +1,1109 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.620
+Trong video cuối cùng, bạn đã thấy
+
+2
+00:00:01.620 --> 00:00:03.705
+các phương trình để truyền ngược.
+
+3
+00:00:03.705 --> 00:00:06.930
+Trong video này, chúng ta hãy xem xét một số trực giác bằng cách sử dụng
+
+4
+00:00:06.930 --> 00:00:08.610
+biểu đồ tính toán để biết
+
+5
+00:00:08.610 --> 00:00:10.500
+cách các phương trình đó được suy ra.
+
+6
+00:00:10.500 --> 00:00:12.390
+Video này hoàn toàn tùy chọn
+
+7
+00:00:12.390 --> 00:00:14.130
+vì vậy hãy thoải mái xem nó hay không.
+
+8
+00:00:14.130 --> 00:00:16.275
+Bạn sẽ có thể làm toàn bộ công việc theo cách nào.
+
+9
+00:00:16.275 --> 00:00:19.470
+Nhớ lại rằng khi chúng ta nói về hồi quy logistic,
+
+10
+00:00:19.470 --> 00:00:24.840
+chúng ta đã có lần chuyển tiếp này trong đó chúng ta tính toán z, sau đó A,
+
+11
+00:00:24.840 --> 00:00:27.630
+và sau đó mất A và để lấy các đạo hàm, chúng ta
+
+12
+00:00:27.630 --> 00:00:30.240
+có lần
+
+13
+00:00:30.240 --> 00:00:35.490
+đi ngược này mà trước tiên chúng ta có thể tính toán da và sau đó tiếp tục tính dz,
+
+14
+00:00:35.490 --> 00:00:40.875
+và sau đó tiếp tục tính dw và db.
+
+15
+00:00:40.875 --> 00:00:48.560
+Định nghĩa cho tổn thất là L của dấu phẩy y bằng
+
+16
+00:00:48.560 --> 00:00:57.225
+âm y log A trừ đi 1 trừ y nhân log 1 trừ A.
+
+17
+00:00:57.225 --> 00:00:59.720
+Nếu bạn quen thuộc với phép
+
+18
+00:00:59.720 --> 00:01:01.910
+tính và bạn lấy đạo hàm của
+
+19
+00:01:03.800 --> 00:01:06.185
+điều này đối với A sẽ cung cấp cho bạn công thức cho da.
+
+20
+00:01:06.185 --> 00:01:08.875
+Vì vậy, da tương đương với điều đó.
+
+21
+00:01:08.875 --> 00:01:11.300
+Nếu bạn thực sự tìm ra giải tích,
+
+22
+00:01:11.300 --> 00:01:13.550
+bạn có thể chỉ ra rằng đây là
+
+23
+00:01:13.550 --> 00:01:19.040
+âm y trên A cộng 1 trừ y trên một trừ A.
+
+24
+00:01:19.040 --> 00:01:20.540
+Chỉ cần suy ra điều đó từ
+
+25
+00:01:20.540 --> 00:01:22.855
+tính toán bằng cách lấy các đạo hàm của điều này. H@@
+
+26
+00:01:22.855 --> 00:01:24.500
+óa ra khi bạn l
+
+27
+00:01:24.500 --> 00:01:26.465
+ùi lại một bước nữa để
+
+28
+00:01:32.389 --> 00:01:36.310
+tính dz, sau đó chúng ta tính ra rằng dz bằng A trừ y. Trước đây tôi không giải thích tại sao, nhưng hóa ra từ quy tắc chuỗi của giải tích,
+
+29
+00:01:36.310 --> 00:01:44.970
+dz bằng da nhân g số nguyên tố của z. Trong đó
+
+30
+00:01:44.970 --> 00:01:49.890
+ở đây g của z bằng sigmoid của z là
+
+31
+00:01:49.890 --> 00:01:52.790
+hàm kích hoạt của chúng ta
+
+32
+00:01:52.790 --> 00:01:55.885
+cho đơn vị đầu ra này trong hồi quy logistic.
+
+33
+00:01:55.885 --> 00:01:59.225
+Chỉ cần nhớ, đây vẫn là hồi quy logistic,
+
+34
+00:01:59.225 --> 00:02:00.665
+sẽ có X_1, X_2,
+
+35
+00:02:00.665 --> 00:02:03.800
+X_3, và sau đó chỉ có một đơn vị sigmoid, và sau đó
+
+36
+00:02:03.800 --> 00:02:07.410
+cho chúng ta a, cho chúng ta y hat.
+
+37
+00:02:07.410 --> 00:02:11.620
+Ở đây chức năng kích hoạt là chức năng sigmoid.
+
+38
+00:02:11.620 --> 00:02:14.470
+Ngoài ra, chỉ dành cho những bạn quen thuộc
+
+39
+00:02:14.470 --> 00:02:17.200
+với quy tắc chuỗi của giải tích.
+
+40
+00:02:17.200 --> 00:02:18.610
+Lý do cho điều này
+
+41
+00:02:18.610 --> 00:02:22.330
+là do a bằng sigmoid của z,
+
+42
+00:02:22.330 --> 00:02:25.960
+và do đó một phần của L đối
+
+43
+00:02:25.960 --> 00:02:29.320
+với z bằng
+
+44
+00:02:29.320 --> 00:02:36.605
+một phần của L đối với a nhân da, dz.
+
+45
+00:02:36.605 --> 00:02:39.740
+Vì A bằng sigmoid của z. Điều
+
+46
+00:02:39.740 --> 00:02:41.840
+này bằng d,
+
+47
+00:02:41.840 --> 00:02:45.000
+dz g của z,
+
+48
+00:02:45.140 --> 00:02:48.915
+bằng g số nguyên tố của z.
+
+49
+00:02:48.915 --> 00:02:51.329
+Đó là lý do tại sao biểu thức này,
+
+50
+00:02:51.329 --> 00:02:55.075
+là dz trong mã của chúng ta bằng biểu thức này,
+
+51
+00:02:55.075 --> 00:02:59.650
+đó là da trong mã của chúng ta nhân g số nguyên tố của z
+
+52
+00:02:59.650 --> 00:03:05.670
+và vì vậy đây chỉ là điều đó.
+
+53
+00:03:05.670 --> 00:03:09.850
+Sự dẫn xuất cuối cùng đó sẽ chỉ có ý nghĩa nếu bạn
+
+54
+00:03:09.850 --> 00:03:11.320
+quen thuộc với giải tích và
+
+55
+00:03:11.320 --> 00:03:13.525
+cụ thể là quy tắc chuỗi từ giải tích.
+
+56
+00:03:13.525 --> 00:03:15.310
+Nhưng nếu không, đừng lo lắng về điều đó,
+
+57
+00:03:15.310 --> 00:03:18.855
+tôi sẽ cố gắng giải thích trực giác bất cứ nơi nào cần thiết.
+
+58
+00:03:18.855 --> 00:03:22.330
+Sau đó, cuối cùng, sau khi tính toán dz cho hồi quy logistic,
+
+59
+00:03:22.330 --> 00:03:24.770
+chúng ta sẽ tính toán dw,
+
+60
+00:03:24.770 --> 00:03:27.630
+hóa ra là dz lần x và
+
+61
+00:03:27.630 --> 00:03:29.175
+db chỉ là dz trong đó
+
+62
+00:03:29.175 --> 00:03:31.350
+bạn có một ví dụ đào tạo duy nhất.
+
+63
+00:03:31.350 --> 00:03:33.675
+Đó là hồi quy logistic.
+
+64
+00:03:33.675 --> 00:03:36.460
+Những gì chúng ta sẽ làm khi tính toán truyền ngược
+
+65
+00:03:36.460 --> 00:03:38.410
+cho một mạng nơ-ron
+
+66
+00:03:38.410 --> 00:03:40.630
+là một phép tính tương tự như thế này,
+
+67
+00:03:40.630 --> 00:03:42.720
+nhưng chỉ chúng ta sẽ làm điều đó hai lần.
+
+68
+00:03:42.720 --> 00:03:47.010
+Bởi vì bây giờ chúng ta không phải x đi đến một đơn vị đầu ra,
+
+69
+00:03:47.010 --> 00:03:49.065
+mà x đi đến một lớp ẩn
+
+70
+00:03:49.065 --> 00:03:51.165
+và sau đó đi đến một đơn vị đầu ra.
+
+71
+00:03:51.165 --> 00:03:54.990
+Thay vì tính toán này là
+
+72
+00:03:54.990 --> 00:03:58.030
+một bước như chúng ta có ở đây,
+
+73
+00:03:58.030 --> 00:04:00.475
+chúng ta sẽ có hai bước ở đây
+
+74
+00:04:00.475 --> 00:04:04.415
+trong mạng nơ-ron này với hai lớp.
+
+75
+00:04:04.415 --> 00:04:07.315
+Trong mạng nơ-ron hai lớp này,
+
+76
+00:04:07.315 --> 00:04:08.635
+đó là với lớp đầu vào
+
+77
+00:04:08.635 --> 00:04:10.180
+, lớp ẩn và lớp đầu ra.
+
+78
+00:04:10.180 --> 00:04:12.055
+Ghi nhớ các bước của một phép tính.
+
+79
+00:04:12.055 --> 00:04:15.425
+Đầu tiên, bạn tính z_1
+
+80
+00:04:15.425 --> 00:04:19.530
+bằng phương trình này và sau đó tính a_1,
+
+81
+00:04:19.530 --> 00:04:21.675
+và sau đó bạn tính z_2.
+
+82
+00:04:21.675 --> 00:04:25.630
+Lưu ý z_2 cũng phụ thuộc vào các tham số W_2 và b_2,
+
+83
+00:04:25.630 --> 00:04:28.700
+và sau đó dựa trên z_2 bạn tính a_2.
+
+84
+00:04:28.700 --> 00:04:32.490
+Cuối cùng, điều đó mang lại cho bạn sự mất mát.
+
+85
+00:04:32.500 --> 00:04:37.510
+Việc truyền ngược làm là nó sẽ đi ngược lại để tính toán
+
+86
+00:04:37.510 --> 00:04:42.425
+da_2 và sau đó dz_2, sau
+
+87
+00:04:42.425 --> 00:04:48.810
+đó quay trở lại tính toán DW_2 và db_2.
+
+88
+00:04:48.810 --> 00:04:52.360
+Quay lại tính toán da_1,
+
+89
+00:04:53.960 --> 00:04:57.070
+dz_1, v.v.
+
+90
+00:04:57.100 --> 00:04:59.270
+Chúng ta không cần phải lấy các đạo hàm đối
+
+91
+00:04:59.270 --> 00:05:00.980
+với đầu vào x,
+
+92
+00:05:00.980 --> 00:05:04.010
+vì đầu vào x cho học có giám sát bởi vì
+
+93
+00:05:04.010 --> 00:05:05.450
+Chúng tôi không cố gắng tối ưu hóa x, vì
+
+94
+00:05:05.450 --> 00:05:07.880
+vậy chúng tôi sẽ không bận tâm đến việc lấy các đạo hàm,
+
+95
+00:05:07.880 --> 00:05:10.190
+ít nhất là đối với việc học có giám sát đối với
+
+96
+00:05:10.190 --> 00:05:16.020
+x. tôi sẽ bỏ qua tính toán da một cách rõ ràng.
+
+97
+00:05:16.020 --> 00:05:18.725
+Nếu bạn muốn, bạn thực sự có thể tính toán da^2,
+
+98
+00:05:18.725 --> 00:05:20.455
+và sau đó sử dụng nó để tính toán dz^2.
+
+99
+00:05:20.455 --> 00:05:22.390
+Nhưng trong thực tế, bạn có thể thu gọn cả hai
+
+100
+00:05:22.390 --> 00:05:25.375
+bước này thành một bước.
+
+101
+00:05:25.375 --> 00:05:30.305
+Bạn kết thúc rằng dz^2 bằng a^2 trừ y,
+
+102
+00:05:30.305 --> 00:05:34.180
+giống như trước đây, và bạn cũng sẽ
+
+103
+00:05:34.180 --> 00:05:38.615
+viết dw^2 và db ^ 2 dưới đây.
+
+104
+00:05:47.795 --> 00:05:51.955
+Bạn có rằng dw^2 bằng dz^2 lần chuyển vị a^1 và db^2 bằng dz^2.
+
+105
+00:05:51.955 --> 00:05:55.380
+Bước này khá giống với hồi quy logistic, trong
+
+106
+00:05:55.380 --> 00:06:01.945
+đó chúng ta cho rằng dw bằng dz nhân x,
+
+107
+00:06:01.945 --> 00:06:05.975
+ngoại trừ việc bây giờ, a ^ 1 đóng vai trò của x,
+
+108
+00:06:05.975 --> 00:06:08.005
+và có thêm một chuyển vị ở đó.
+
+109
+00:06:08.005 --> 00:06:10.190
+Bởi vì mối quan hệ giữa
+
+110
+00:06:10.190 --> 00:06:12.040
+ma trận vốn W
+
+111
+00:06:12.040 --> 00:06:14.560
+và các tham số riêng lẻ
+
+112
+00:06:14.560 --> 00:06:16.255
+của chúng ta w là, nên có một chuyển vị ở đó,
+
+113
+00:06:16.255 --> 00:06:21.820
+bởi vì w bằng một vectơ hàng.
+
+114
+00:06:21.820 --> 00:06:23.275
+Trong trường hợp hồi quy logistic
+
+115
+00:06:23.275 --> 00:06:25.225
+với đầu ra đơn,
+
+116
+00:06:25.225 --> 00:06:28.510
+dw^2 là như vậy, trong khi w ở đây là một vectơ cột.
+
+117
+00:06:28.510 --> 00:06:32.825
+Đó là lý do tại sao có thêm một chuyển vị cho a ^ 1, trong
+
+118
+00:06:32.825 --> 00:06:36.625
+khi chúng tôi không có cho x ở đây cho hồi quy logistic.
+
+119
+00:06:36.625 --> 00:06:40.405
+Điều này hoàn thành một nửa quá trình truyền ngược.
+
+120
+00:06:40.405 --> 00:06:43.475
+Sau đó, một lần nữa, bạn có thể
+
+121
+00:06:45.355 --> 00:06:49.075
+tính da^1, nếu bạn muốn mặc dù trong thực tế, tính toán cho da^1
+
+122
+00:06:49.075 --> 00:06:52.750
+và dz^1 thường được thu gọn thành một bước.
+
+123
+00:06:52.750 --> 00:06:56.705
+Điều bạn thực sự thực hiện là dz ^ 1 bằng w ^ 2 chuyển vị nhân dz
+
+124
+00:06:56.705 --> 00:07:02.470
+^ 2 và sau đó, nhân tích theo
+
+125
+00:07:02.470 --> 00:07:11.425
+nguyên tố của g ^ 1 số nguyên tố của z ^ 1.
+
+126
+00:07:11.425 --> 00:07:13.865
+Chỉ cần kiểm tra kích thước.
+
+127
+00:07:13.865 --> 00:07:19.730
+Nếu bạn có một mạng nơ-ron trông như thế này,
+
+128
+00:07:20.370 --> 00:07:22.990
+xuất ra y nếu vậy.
+
+129
+00:07:30.220 --> 00:07:32.940
+Nếu bạn có n ^ 0 và x bằng n ^ 0, và đối với các
+
+130
+00:07:32.940 --> 00:07:36.730
+tính năng, n ^ 1 đơn vị ẩn và n ^ 2 cho đến
+
+131
+00:07:36.730 --> 00:07:38.840
+nay, và n ^ 2
+
+132
+00:07:38.840 --> 00:07:49.120
+trong trường hợp của chúng tôi,
+
+133
+00:07:49.120 --> 00:07:53.680
+chỉ một đơn vị đầu ra, thì
+
+134
+00:07:53.680 --> 00:07:57.470
+ma trận w ^ 2 là n ^ 2 x n ^ 1 chiều, z ^ 2, và do đó, dz ^ 2 sẽ là n ^ 2 theo một chiều.
+
+135
+00:07:57.470 --> 00:07:59.555
+Thực sự sẽ có từng cái một
+
+136
+00:07:59.555 --> 00:08:02.260
+khi chúng ta thực hiện phân loại nhị phân, và z
+
+137
+00:08:02.260 --> 00:08:05.750
+^ 1, và do đó dz ^ 1 cũng
+
+138
+00:08:05.750 --> 00:08:09.745
+sẽ là n ^ 1 theo một chiều.
+
+139
+00:08:09.745 --> 00:08:12.115
+Lưu ý rằng đối với bất kỳ biến nào,
+
+140
+00:08:12.115 --> 00:08:16.145
+foo và dfoo luôn có cùng kích thước.
+
+141
+00:08:16.145 --> 00:08:20.050
+Đó là lý do tại sao, w và dw luôn có cùng chiều.
+
+142
+00:08:20.050 --> 00:08:22.150
+Tương tự, đối với b
+
+143
+00:08:22.150 --> 00:08:23.785
+và db, và z và dz, v.v.
+
+144
+00:08:23.785 --> 00:08:26.885
+Để đảm bảo rằng kích thước của tất cả các kích thước này khớp với nhau,
+
+145
+00:08:26.885 --> 00:08:35.075
+chúng ta có rằng dz^1 bằng w^2 transpose, nhân với dz^2.
+
+146
+00:08:35.075 --> 00:08:41.320
+Sau đó, đây là tích theo nguyên tố nhân g ^ 1 số nguyên tố
+
+147
+00:08:41.320 --> 00:08:44.495
+của z ^ 1.
+
+148
+00:08:46.775 --> 00:08:50.195
+Trộn các kích thước từ trên cao,
+
+149
+00:08:50.195 --> 00:08:52.600
+điều này sẽ là n ^ 1 x 1, bằng
+
+150
+00:08:52.600 --> 00:08:53.705
+w^2 chuyển vị, chúng ta chuyển đổi điều này.
+
+151
+00:08:53.705 --> 00:08:58.660
+Nó sẽ chỉ là, n ^ 1 x n ^ 2 chiều,
+
+152
+00:08:59.120 --> 00:09:04.645
+dz^2 sẽ là n ^ 2 theo một chiều.
+
+153
+00:09:04.645 --> 00:09:07.455
+Sau đó, đây là cùng chiều với z^.
+
+154
+00:09:07.455 --> 00:09:10.270
+Đây cũng là, n ^ 1 theo tích
+
+155
+00:09:10.270 --> 00:09:12.790
+một chiều, vì vậy theo nguyên tố.
+
+156
+00:09:12.790 --> 00:09:14.550
+Các kích thước có ý nghĩa.
+
+157
+00:09:17.650 --> 00:09:20.620
+N ^ 1 bằng vectơ một chiều có thể
+
+158
+00:09:20.620 --> 00:09:21.865
+thu được bằng n ^ 1 bởi n ^ 2 ma trận chiều, nhân n ^ 2 bởi n
+
+159
+00:09:21.865 --> 00:09:24.580
+^ 1, bởi
+
+160
+00:09:24.580 --> 00:09:27.745
+vì tích của hai thứ này cho bạn một n ^ 1 bằng ma trận một chiều.
+
+161
+00:09:27.745 --> 00:09:32.080
+Điều này trở thành tích theo nguyên tố của 2, n
+
+162
+00:09:32.080 --> 00:09:34.580
+^ 1 bởi vectơ một chiều, vì
+
+163
+00:09:34.580 --> 00:09:36.370
+vậy các kích thước khớp với nhau.
+
+164
+00:09:42.990 --> 00:09:45.895
+Một mẹo khi triển khai backprop,
+
+165
+00:09:45.895 --> 00:09:47.220
+nếu bạn chỉ đảm bảo rằng kích thước của
+
+166
+00:09:47.220 --> 00:09:49.520
+ma trận của bạn khớp với nhau, nếu bạn suy nghĩ kỹ,
+
+167
+00:09:49.520 --> 00:09:52.240
+kích thước
+
+168
+00:09:52.240 --> 00:09:53.390
+của các ma trận khác nhau bao gồm w ^ 1, w ^ 2, z ^ 1, z
+
+169
+00:09:53.390 --> 00:09:54.665
+^ 2, a ^ 1, a ^ 2,
+
+170
+00:09:54.665 --> 00:09:58.725
+v.v.,
+
+171
+00:09:58.725 --> 00:10:00.780
+và chỉ cần đảm bảo rằng
+
+172
+00:10:00.780 --> 00:10:03.590
+kích thước của các hoạt động ma trận này có thể khớp với nhau, đôi khi điều đó sẽ loại bỏ khá nhiều lỗi trong backprop.
+
+173
+00:10:03.590 --> 00:10:06.950
+Điều này cho chúng ta dz^1. Sau đó, cuối cùng,
+
+174
+00:10:06.950 --> 00:10:11.645
+chỉ để kết thúc, dw^1 và db ^ 1,
+
+175
+00:10:11.645 --> 00:10:13.985
+chúng ta nên viết chúng ở đây, tôi đoán.
+
+176
+00:10:13.985 --> 00:10:15.430
+Nhưng vì tôi sắp hết không gian,
+
+177
+00:10:15.430 --> 00:10:17.565
+tôi sẽ viết chúng ở bên phải của slide,
+
+178
+00:10:17.565 --> 00:10:21.600
+dw^1 và db ^ 1 được đưa ra bởi các công thức sau.
+
+179
+00:10:21.600 --> 00:10:25.975
+Điều này sẽ bằng dz^1 lần x transpose,
+
+180
+00:10:25.975 --> 00:10:29.525
+và điều này sẽ bằng dz.
+
+181
+00:10:29.525 --> 00:10:31.180
+Bạn có thể nhận thấy sự tương đồng giữa các
+
+182
+00:10:31.180 --> 00:10:34.060
+phương trình này và các phương trình này,
+
+183
+00:10:34.060 --> 00:10:35.740
+điều này thực sự không phải là ngẫu nhiên,
+
+184
+00:10:35.740 --> 00:10:39.710
+bởi vì x đóng vai trò của a ^ 0.
+
+185
+00:10:39.710 --> 00:10:41.715
+Chuyển vị X là a ^ 0 chuyển vị.
+
+186
+00:10:41.715 --> 00:10:44.700
+Những phương trình đó thực sự rất giống nhau.
+
+187
+00:10:44.850 --> 00:10:50.290
+Điều đó cho thấy sự lan truyền ngược được tạo ra như thế nào.
+
+188
+00:10:50.290 --> 00:10:54.565
+Chúng ta có sáu phương trình chính ở đây cho dz_2,
+
+189
+00:10:54.565 --> 00:11:00.285
+dw_2, db_2, dz_1, dw_1 và db_1.
+
+190
+00:11:00.285 --> 00:11:02.100
+Hãy để tôi lấy sáu phương trình này và
+
+191
+00:11:02.100 --> 00:11:04.280
+sao chép chúng sang slide tiếp theo.
+
+192
+00:11:04.280 --> 00:11:07.690
+Họ đây rồi. Cho đến nay, chúng tôi đã rút
+
+193
+00:11:07.690 --> 00:11:10.240
+ra sự tuyên truyền đó để đào tạo
+
+194
+00:11:10.240 --> 00:11:13.600
+trên một ví dụ đào tạo duy nhất tại một thời điểm.
+
+195
+00:11:13.600 --> 00:11:17.425
+Nhưng không có gì ngạc nhiên khi
+
+196
+00:11:17.425 --> 00:11:21.550
+thay vì làm việc trên một ví dụ duy nhất tại một thời điểm,
+
+197
+00:11:21.550 --> 00:11:24.340
+chúng tôi muốn vectơ hóa
+
+198
+00:11:24.340 --> 00:11:27.925
+trên các ví dụ đào tạo khác nhau.
+
+199
+00:11:27.925 --> 00:11:29.695
+Bạn nhớ rằng đối với
+
+200
+00:11:29.695 --> 00:11:31.450
+một sự lan truyền khi chúng ta đang
+
+201
+00:11:31.450 --> 00:11:33.550
+hoạt động trên một ví dụ tại một thời điểm,
+
+202
+00:11:33.550 --> 00:11:35.860
+chúng ta có các phương trình như thế này,
+
+203
+00:11:35.860 --> 00:11:41.665
+cũng như giả sử a ^ 1 bằng g ^ 1 cộng với z ^ 1.
+
+204
+00:11:45.580 --> 00:11:53.690
+Để vectơ hóa, chúng tôi lấy các chữ
+
+205
+00:11:54.960 --> 00:12:00.910
+z và xếp chúng thành các cột như thế này,
+
+206
+00:12:00.910 --> 00:12:04.960
+z^1m, và gọi chữ này là chữ viết hoa Z.
+
+207
+00:12:04.960 --> 00:12:10.165
+Sau đó, chúng tôi thấy rằng bằng cách xếp chồng mọi thứ thành
+
+208
+00:12:10.165 --> 00:12:16.600
+các cột và xác định phiên bản chữ hoa của chúng,
+
+209
+00:12:16.600 --> 00:12:25.180
+sau đó chúng tôi chỉ có z^1 bằng w^1x cộng b và a^1 bằng g^1 của z^1.
+
+210
+00:12:25.180 --> 00:12:26.890
+Chúng tôi đã xác định ký hiệu rất cẩn thận
+
+211
+00:12:26.890 --> 00:12:28.915
+trong khóa học này để đảm bảo rằng việc
+
+212
+00:12:28.915 --> 00:12:32.470
+xếp các ví dụ thành các cột khác nhau
+
+213
+00:12:32.470 --> 00:12:35.425
+của ma trận thực hiện tất cả các bài tập này.
+
+214
+00:12:35.425 --> 00:12:40.105
+Hóa ra nếu bạn xem xét toán học một cách cẩn thận, thủ thuật
+
+215
+00:12:40.105 --> 00:12:43.690
+tương tự cũng có tác dụng đối với việc truyền ngược.
+
+216
+00:12:43.690 --> 00:12:46.494
+Các phương trình vectơ hóa như sau.
+
+217
+00:12:46.494 --> 00:12:50.530
+Đầu tiên, nếu bạn lấy các dzs này cho các
+
+218
+00:12:50.530 --> 00:12:52.270
+ví dụ đào tạo khác nhau và xếp
+
+219
+00:12:52.270 --> 00:12:55.870
+chúng thành các cột khác nhau của ma trận,
+
+220
+00:12:55.870 --> 00:12:58.165
+giống nhau cho cái này, giống nhau cho cái này.
+
+221
+00:12:58.165 --> 00:13:01.435
+Sau đó, đây là thực hiện vectơ hóa.
+
+222
+00:13:01.435 --> 00:13:06.160
+Đây là cách bạn có thể tính DW^2.
+
+223
+00:13:06.160 --> 00:13:08.260
+Có thêm 1 này trên n
+
+224
+00:13:08.260 --> 00:13:11.140
+vì hàm chi phí J là
+
+225
+00:13:11.140 --> 00:13:14.320
+1 trên m của tổng từ I
+
+226
+00:13:14.320 --> 00:13:18.440
+bằng 1 đến m của tổn thất.
+
+227
+00:13:18.440 --> 00:13:20.730
+Khi tính toán các đạo hàm, chúng tôi
+
+228
+00:13:20.730 --> 00:13:22.290
+có thêm 1 số hạng trên m,
+
+229
+00:13:22.290 --> 00:13:23.880
+giống như chúng tôi đã làm khi chúng tôi
+
+230
+00:13:23.880 --> 00:13:27.510
+tính toán các bản cập nhật trọng lượng cho hồi quy logistic.
+
+231
+00:13:27.510 --> 00:13:31.400
+Đó là bản cập nhật bạn nhận được cho db ^ 2, một
+
+232
+00:13:31.400 --> 00:13:33.880
+lần nữa, một số dz.
+
+233
+00:13:33.880 --> 00:13:40.000
+Sau đó, chúng ta có 1 trên m. Dz^1 được tính như sau.
+
+234
+00:13:40.000 --> 00:13:46.840
+Một lần nữa, đây chỉ là tích theo nguyên tố, trong
+
+235
+00:13:46.840 --> 00:13:50.200
+khi trước đây, chúng ta đã thấy trên trang
+
+236
+00:13:50.200 --> 00:13:52.750
+chiếu trước rằng đây là
+
+237
+00:13:52.750 --> 00:13:56.455
+một n1 theo vectơ một chiều.
+
+238
+00:13:56.455 --> 00:14:02.980
+Không w, đây là ma trận chiều n1 x m.
+
+239
+00:14:02.980 --> 00:14:09.370
+Cả hai đều có chiều n1 x m.
+
+240
+00:14:09.370 --> 00:14:16.280
+Đó là lý do tại sao dấu hoa thị đó là sản phẩm theo yếu tố.
+
+241
+00:14:17.340 --> 00:14:21.550
+Cuối cùng, hai bản cập nhật còn lại
+
+242
+00:14:21.550 --> 00:14:24.410
+có lẽ sẽ không quá đáng ngạc nhiên.
+
+243
+00:14:24.660 --> 00:14:27.760
+Tôi hy vọng điều đó cung cấp cho bạn một số trực giác về cách
+
+244
+00:14:27.760 --> 00:14:30.145
+thuật toán truyền ngược được tạo ra.
+
+245
+00:14:30.145 --> 00:14:32.080
+Trong tất cả các lĩnh vực học máy,
+
+246
+00:14:32.080 --> 00:14:35.035
+tôi nghĩ sự dẫn xuất của thuật toán truyền ngược
+
+247
+00:14:35.035 --> 00:14:36.100
+thực sự là một trong những phần
+
+248
+00:14:36.100 --> 00:14:38.545
+toán phức tạp nhất mà tôi từng thấy.
+
+249
+00:14:38.545 --> 00:14:42.490
+Nó đòi hỏi phải biết cả đại số tuyến tính cũng như đạo
+
+250
+00:14:42.490 --> 00:14:44.440
+hàm của ma trận để thực sự rút ra
+
+251
+00:14:44.440 --> 00:14:46.735
+nó từ đầu từ nguyên tắc đầu tiên.
+
+252
+00:14:46.735 --> 00:14:50.184
+Nếu bạn là một chuyên gia về giải tích ma trận,
+
+253
+00:14:50.184 --> 00:14:52.180
+sử dụng quy trình này, bạn
+
+254
+00:14:52.180 --> 00:14:54.130
+có thể muốn tự suy ra thuật toán.
+
+255
+00:14:54.130 --> 00:14:56.200
+Nhưng tôi nghĩ rằng thực sự có rất nhiều
+
+256
+00:14:56.200 --> 00:14:59.230
+học viên học sâu đã nhìn thấy
+
+257
+00:14:59.230 --> 00:15:01.090
+sự dẫn xuất ở mức độ bạn đã
+
+258
+00:15:01.090 --> 00:15:03.430
+thấy trong video này và đã
+
+259
+00:15:03.430 --> 00:15:05.560
+có thể có tất cả các trực giác phù hợp và có thể thực hiện
+
+260
+00:15:05.560 --> 00:15:08.515
+thuật toán này rất hiệu quả.
+
+261
+00:15:08.515 --> 00:15:10.780
+Nếu bạn là một chuyên gia về giải tích, hãy
+
+262
+00:15:10.780 --> 00:15:13.270
+xem liệu bạn có thể rút ra toàn bộ từ đầu hay không.
+
+263
+00:15:13.270 --> 00:15:15.820
+Đây là một trong những phần toán học khó nhất dựa trên
+
+264
+00:15:15.820 --> 00:15:17.589
+các đạo hàm khó nhất
+
+265
+00:15:17.589 --> 00:15:19.855
+mà tôi từng thấy trong tất cả máy học.
+
+266
+00:15:19.855 --> 00:15:22.585
+Nhưng dù bằng cách nào, nếu bạn thực hiện điều
+
+267
+00:15:22.585 --> 00:15:24.460
+này, điều này sẽ hoạt động và tôi nghĩ bạn có
+
+268
+00:15:24.460 --> 00:15:27.860
+đủ trực giác để điều chỉnh và làm cho nó hoạt động.
+
+269
+00:15:28.170 --> 00:15:30.640
+Chỉ có một chi tiết cuối cùng,
+
+270
+00:15:30.640 --> 00:15:34.150
+tôi chia sẻ với bạn trước khi bạn triển khai mạng nơ-ron của mình,
+
+271
+00:15:34.150 --> 00:15:35.320
+đó là cách
+
+272
+00:15:35.320 --> 00:15:37.585
+khởi tạo trọng số của mạng nơ-ron của bạn.
+
+273
+00:15:37.585 --> 00:15:38.880
+Hóa ra việc
+
+274
+00:15:38.880 --> 00:15:41.505
+khởi tạo các tham số của bạn không bằng 0,
+
+275
+00:15:41.505 --> 00:15:43.320
+nhưng ngẫu nhiên hóa ra lại
+
+276
+00:15:43.320 --> 00:15:45.495
+rất quan trọng để đào tạo mạng nơ-ron của bạn.
+
+277
+00:15:45.495 --> 00:15:48.670
+Trong video tiếp theo, bạn sẽ thấy lý do tại sao.

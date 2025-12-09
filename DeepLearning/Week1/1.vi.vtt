@@ -1,0 +1,429 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.395
+Xin chào và chào mừng.
+
+2
+00:00:02.395 --> 00:00:03.810
+Như bạn có thể biết,
+
+3
+00:00:03.810 --> 00:00:05.640
+học sâu đã biến đổi
+
+4
+00:00:05.640 --> 00:00:09.325
+các doanh nghiệp internet truyền thống như tìm kiếm web và quảng cáo.
+
+5
+00:00:09.325 --> 00:00:11.160
+Nhưng học sâu cũng cho phép tạo ra
+
+6
+00:00:11.160 --> 00:00:15.085
+các sản phẩm và doanh nghiệp hoàn toàn mới và những cách giúp mọi người được tạo ra. Tất cả
+
+7
+00:00:15.085 --> 00:00:17.205
+mọi thứ, từ chăm sóc sức khỏe tốt hơn,
+
+8
+00:00:17.205 --> 00:00:19.410
+nơi học sâu đang trở nên thực sự giỏi trong việc đọc
+
+9
+00:00:19.410 --> 00:00:22.935
+hình ảnh X-quang đến cung cấp giáo dục cá nhân hóa,
+
+10
+00:00:22.935 --> 00:00:28.320
+đến nông nghiệp chính xác, thậm chí cả ô tô tự lái và nhiều thứ khác.
+
+11
+00:00:28.320 --> 00:00:30.790
+Nếu bạn muốn tìm hiểu các công cụ học sâu và
+
+12
+00:00:30.790 --> 00:00:33.495
+có thể áp dụng chúng để xây dựng những điều tuyệt vời này,
+
+13
+00:00:33.495 --> 00:00:35.675
+tôi muốn giúp bạn đạt được điều đó.
+
+14
+00:00:35.675 --> 00:00:38.725
+Khi bạn hoàn thành chuỗi các khóa học trên Coursera,
+
+15
+00:00:38.725 --> 00:00:41.190
+được gọi là chuyên môn, bạn sẽ có thể
+
+16
+00:00:41.190 --> 00:00:44.455
+tự tin đưa việc học sâu vào sơ yếu lý lịch của mình.
+
+17
+00:00:44.455 --> 00:00:45.615
+Trong thập kỷ tới,
+
+18
+00:00:45.615 --> 00:00:50.430
+tôi nghĩ tất cả chúng ta đều có cơ hội xây dựng một thế giới tuyệt vời, một xã hội tuyệt vời,
+
+19
+00:00:50.430 --> 00:00:52.004
+được hỗ trợ bởi AI,
+
+20
+00:00:52.004 --> 00:00:57.364
+và tôi hy vọng rằng bạn sẽ đóng một vai trò lớn trong việc tạo ra xã hội được hỗ trợ bởi AI này.
+
+21
+00:00:57.364 --> 00:01:00.782
+Vì vậy, hãy bắt đầu.
+
+22
+00:01:00.782 --> 00:01:03.690
+Tôi nghĩ rằng AI là điện mới.
+
+23
+00:01:03.690 --> 00:01:05.485
+Bắt đầu từ khoảng 100 năm trước,
+
+24
+00:01:05.485 --> 00:01:10.055
+sự điện khí hóa của xã hội chúng ta đã biến đổi mọi ngành công nghiệp lớn,
+
+25
+00:01:10.055 --> 00:01:12.430
+mọi thứ từ giao thông vận tải, sản xuất,
+
+26
+00:01:12.430 --> 00:01:15.430
+chăm sóc sức khỏe, truyền thông và nhiều hơn nữa.
+
+27
+00:01:15.430 --> 00:01:18.280
+Và tôi nghĩ rằng ngày nay, chúng ta thấy một con đường rõ ràng đáng ngạc nhiên
+
+28
+00:01:18.280 --> 00:01:22.225
+để AI mang lại một sự chuyển đổi lớn không kém.
+
+29
+00:01:22.225 --> 00:01:25.090
+Và tất nhiên, phần của AI đang phát triển
+
+30
+00:01:25.090 --> 00:01:29.530
+nhanh chóng và thúc đẩy rất nhiều sự phát triển này, là học sâu.
+
+31
+00:01:29.530 --> 00:01:31.630
+Vì vậy, ngày nay, deep learning là một trong những
+
+32
+00:01:31.630 --> 00:01:34.920
+kỹ năng được tìm kiếm nhiều nhất trong thế giới công nghệ.
+
+33
+00:01:34.920 --> 00:01:37.795
+Và thông qua khóa học này, và một vài khóa học sau khóa học này,
+
+34
+00:01:37.795 --> 00:01:40.900
+tôi muốn giúp bạn đạt được và thành thạo những kỹ năng đó.
+
+35
+00:01:40.900 --> 00:01:43.870
+Vì vậy, đây là những gì bạn sẽ học trong chuỗi các
+
+36
+00:01:43.870 --> 00:01:47.290
+khóa học này còn được gọi là chuyên ngành về Coursera.
+
+37
+00:01:47.290 --> 00:01:48.775
+Trong khóa học đầu tiên,
+
+38
+00:01:48.775 --> 00:01:51.925
+bạn sẽ tìm hiểu về nền tảng của mạng nơ-ron,
+
+39
+00:01:51.925 --> 00:01:54.555
+bạn sẽ tìm hiểu về mạng nơ-ron và học sâu.
+
+40
+00:01:54.555 --> 00:01:56.650
+Video mà bạn đang xem này là một phần của
+
+41
+00:01:56.650 --> 00:01:59.895
+khóa học đầu tiên này, kéo dài tổng cộng bốn tuần.
+
+42
+00:01:59.895 --> 00:02:05.450
+Và mỗi khóa học trong số năm khóa học trong chuyên ngành sẽ kéo dài khoảng hai đến bốn tuần,
+
+43
+00:02:05.450 --> 00:02:08.490
+với hầu hết trong số chúng thực sự ngắn hơn bốn tuần.
+
+44
+00:02:08.490 --> 00:02:09.685
+Nhưng trong khóa học đầu tiên này,
+
+45
+00:02:09.685 --> 00:02:12.340
+bạn sẽ học cách xây dựng một mạng nơ-ron, bao gồm
+
+46
+00:02:12.340 --> 00:02:15.520
+một mạng nơ-ron sâu và cách đào tạo nó trên dữ liệu.
+
+47
+00:02:15.520 --> 00:02:16.840
+Và khi kết thúc khóa học này,
+
+48
+00:02:16.840 --> 00:02:21.445
+bạn sẽ có thể xây dựng một mạng lưới thần kinh sâu để nhận ra, đoán xem?
+
+49
+00:02:21.445 --> 00:02:23.710
+Mèo. Vì một số lý do,
+
+50
+00:02:23.710 --> 00:02:27.370
+có một meme mèo chạy xung quanh trong quá trình học sâu.
+
+51
+00:02:27.370 --> 00:02:30.020
+Và vì vậy, theo truyền thống trong khóa học đầu tiên này,
+
+52
+00:02:30.020 --> 00:02:32.700
+chúng tôi sẽ xây dựng một thiết bị nhận dạng mèo.
+
+53
+00:02:32.700 --> 00:02:35.395
+Sau đó, trong khóa học thứ hai,
+
+54
+00:02:35.395 --> 00:02:38.420
+bạn sẽ tìm hiểu về các khía cạnh thực tế của học sâu.
+
+55
+00:02:38.420 --> 00:02:40.810
+Vì vậy, bạn sẽ học được, bây giờ bạn đã xây dựng một mạng neurak, làm
+
+56
+00:02:40.810 --> 00:02:42.765
+thế nào để thực sự làm cho nó hoạt động tốt.
+
+57
+00:02:42.765 --> 00:02:46.295
+Vì vậy, bạn tìm hiểu về điều chỉnh siêu tham số, chính quy hóa,
+
+58
+00:02:46.295 --> 00:02:49.060
+cách chẩn đoán sai lệch và các biến thể cũng như các
+
+59
+00:02:49.060 --> 00:02:54.755
+thuật toán tối ưu hóa nâng cao, như động lượng, tay vịn, giá đỡ và thuật toán ủy quyền quảng cáo.
+
+60
+00:02:54.755 --> 00:02:56.645
+Đôi khi có vẻ như có rất nhiều điều chỉnh,
+
+61
+00:02:56.645 --> 00:02:59.925
+thậm chí một số phép thuật đen trong cách bạn xây dựng một mạng mới.
+
+62
+00:02:59.925 --> 00:03:02.740
+Vì vậy, khóa học thứ hai, chỉ kéo dài ba tuần,
+
+63
+00:03:02.740 --> 00:03:04.900
+sẽ làm sáng tỏ một số ma thuật đen đó.
+
+64
+00:03:04.900 --> 00:03:07.710
+Trong khóa học thứ ba, chỉ kéo dài hai tuần,
+
+65
+00:03:07.710 --> 00:03:10.930
+bạn sẽ học cách cấu trúc dự án học máy của mình.
+
+66
+00:03:10.930 --> 00:03:13.270
+Hóa ra chiến lược xây dựng
+
+67
+00:03:13.270 --> 00:03:16.820
+một hệ thống học máy đã thay đổi trong kỷ nguyên học sâu.
+
+68
+00:03:16.820 --> 00:03:20.785
+Vì vậy, ví dụ, cách bạn chia dữ liệu của mình thành đào tạo,
+
+69
+00:03:20.785 --> 00:03:26.095
+phát triển hoặc phát triển, còn được gọi là bộ xác thực chênh lệch và bộ kiểm tra,
+
+70
+00:03:26.095 --> 00:03:29.005
+đã thay đổi trong kỷ nguyên của deep learning.
+
+71
+00:03:29.005 --> 00:03:31.860
+Vậy các phương pháp hay nhất mới để làm điều đó là gì?
+
+72
+00:03:31.860 --> 00:03:36.215
+Và nếu bộ đào tạo của bạn và bài kiểm tra của bạn đến từ các phân phối khác nhau, điều
+
+73
+00:03:36.215 --> 00:03:38.760
+đó đang xảy ra nhiều hơn trong kỷ nguyên học sâu.
+
+74
+00:03:38.760 --> 00:03:40.710
+Vậy, làm thế nào để bạn đối phó với điều đó?
+
+75
+00:03:40.710 --> 00:03:44.500
+Và nếu bạn đã nghe nói về học sâu từ đầu đến cuối,
+
+76
+00:03:44.900 --> 00:03:48.375
+bạn cũng sẽ tìm hiểu thêm về điều đó trong khóa học thứ ba này
+
+77
+00:03:48.375 --> 00:03:51.690
+và xem khi nào bạn nên sử dụng nó và có thể khi nào bạn không nên sử dụng nó.
+
+78
+00:03:51.690 --> 00:03:54.960
+Tài liệu trong khóa học thứ ba này tương đối độc đáo.
+
+79
+00:03:54.960 --> 00:03:57.990
+Tôi sẽ chia sẻ với các bạn rất nhiều bài học khó khăn mà tôi đã học được,
+
+80
+00:03:57.990 --> 00:04:01.860
+xây dựng và vận chuyển khá nhiều sản phẩm deep learning.
+
+81
+00:04:01.860 --> 00:04:03.075
+Theo như tôi biết,
+
+82
+00:04:03.075 --> 00:04:06.420
+đây phần lớn là tài liệu không được giảng dạy ở
+
+83
+00:04:06.420 --> 00:04:10.650
+hầu hết các trường đại học có các khóa học đào tạo sâu.
+
+84
+00:04:10.650 --> 00:04:15.266
+Nhưng tôi nghĩ rằng nó sẽ thực sự giúp bạn làm cho hệ thống học sâu của bạn hoạt động tốt.
+
+85
+00:04:15.266 --> 00:04:16.755
+Trong khóa học tiếp theo,
+
+86
+00:04:16.755 --> 00:04:22.530
+sau đó chúng ta sẽ nói về mạng nơ-ron convolutional, thường được viết tắt là CNN.
+
+87
+00:04:22.530 --> 00:04:28.670
+Mạng chập, hoặc mạng nơ-ron chập, thường được áp dụng cho hình ảnh.
+
+88
+00:04:28.670 --> 00:04:31.439
+Vì vậy, bạn sẽ học cách xây dựng các mô hình này trong khóa học bốn.
+
+89
+00:04:31.439 --> 00:04:33.435
+Cuối cùng, trong khóa học năm,
+
+90
+00:04:33.435 --> 00:04:36.300
+bạn sẽ học các mô hình trình tự và cách áp dụng
+
+91
+00:04:36.300 --> 00:04:40.080
+chúng vào xử lý ngôn ngữ tự nhiên và các vấn đề khác.
+
+92
+00:04:40.080 --> 00:04:42.600
+Vì vậy, các mô hình trình tự bao gồm các
+
+93
+00:04:42.600 --> 00:04:47.465
+mô hình như mạng nơ-ron lặp lại, RNN viết tắt và mô hình LSTM,
+
+94
+00:04:47.465 --> 00:04:49.645
+là viết tắt của mô hình bộ nhớ ngắn hạn dài hạn.
+
+95
+00:04:49.645 --> 00:04:52.740
+Bạn sẽ tìm hiểu ý nghĩa của các thuật ngữ này trong khóa học năm và có thể
+
+96
+00:04:52.740 --> 00:04:56.865
+áp dụng chúng vào các vấn đề xử lý ngôn ngữ tự nhiên.
+
+97
+00:04:56.865 --> 00:05:02.220
+Vì vậy, bạn sẽ tìm hiểu các mô hình này trong khóa học năm và có thể áp dụng chúng vào dữ liệu trình tự.
+
+98
+00:05:02.220 --> 00:05:05.670
+Vì vậy, ví dụ, ngôn ngữ tự nhiên chỉ là một chuỗi các từ
+
+99
+00:05:05.670 --> 00:05:10.504
+và bạn cũng sẽ hiểu cách các mô hình này có thể được áp dụng cho nhận dạng giọng nói,
+
+100
+00:05:10.504 --> 00:05:14.140
+hoặc tạo nhạc và các vấn đề khác.
+
+101
+00:05:14.140 --> 00:05:15.735
+Vì vậy, thông qua các khóa học này,
+
+102
+00:05:15.735 --> 00:05:17.705
+bạn sẽ học được các công cụ học sâu,
+
+103
+00:05:17.705 --> 00:05:20.100
+bạn sẽ có thể áp dụng chúng để xây dựng những điều tuyệt vời,
+
+104
+00:05:20.100 --> 00:05:24.810
+và tôi hy vọng nhiều bạn thông qua điều này cũng sẽ có thể thăng tiến sự nghiệp của mình.
+
+105
+00:05:24.810 --> 00:05:26.910
+Vì vậy, với điều đó, hãy bắt đầu.
+
+106
+00:05:26.910 --> 00:05:29.145
+Vui lòng chuyển sang video tiếp theo nơi chúng ta sẽ nói về
+
+107
+00:05:29.145 --> 00:05:31.000
+học sâu áp dụng cho học tập có giám sát.
